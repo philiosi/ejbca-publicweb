@@ -1,5 +1,4 @@
 <%@ include file="header.jsp" %>
-<div style="margin-left:25%">
   <h1 class="title">Welcome to the public KISTI CA (Certificate Authority) web site.</h1>
   <ul>
     <li>KISTI Certification Authority is operated by the Grid Technology Research Team of KISTI (Korea Institute of Science and Technology Information).</li>
@@ -41,5 +40,4 @@
 	  <li>Documentation - Go to the on-line EJBCA documentation.</li>  
       <% } %>
   </ul>
-</div>
 <%@ include file="footer.inc" %>

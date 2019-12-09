@@ -113,7 +113,7 @@
         </ul>
       </div>
     </div>
-    <div class="main">
+    <div class="main" style="margin-left: 25%;">
       <div class="content">
     </c:if>
     
