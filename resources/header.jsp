@@ -14,6 +14,7 @@
     <title><%= org.ejbca.config.InternalConfiguration.getAppNameCapital() %> Public Web</title>
 	<link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script type="text/javascript" src="scripts/functions.js"></script>
     <script type="text/vbscript" src="scripts/functions.vbs"></script>
   </head>
@@ -25,7 +26,8 @@
 		</div>
     </div>
     <c:if test="${hidemenu != 'true'}">
-    <div class="menucontainer">
+    <!-- <div class="menucontainer"> -->
+    <div class="w3-sidebar w3-bar-block" style="width:25%">
       <div class="menu">
         <ul>
           <li><div class="menuheader">Enroll</div>
