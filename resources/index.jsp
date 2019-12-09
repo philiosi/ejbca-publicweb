@@ -1,6 +1,16 @@
 <%@ include file="header.jsp" %>
-  <h1 class="title">Welcome to the public KISTI CA (Certificate Authority)</h1>
-  <h2 class="title">This site has been customizing</h2>
+  <h1 class="title">Welcome to the public KISTI CA (Certificate Authority) web site.</h1>
+  <ul>
+    <li>KISTI Certification Authority is operated by the Grid Technology Research Team of KISTI (Korea Institute of Science and Technology Information).</li>
+    <li>The authority satisfies requirements from APGrid PMA.</li>
+    <li>Certificate issues by the KISTI Grid CA are compatible with the Globus Toolkit middleware.</li>
+    <br>
+    <li>The public key cryptography is the basis of grid security architecture.</li>
+    <li>Certification Authority(CA) is a mandatory componant of public key infrastructure(PKI).</li>
+    <li>Please read <a href="http://www.globus.org/security/overview.html" target="_blank">"Overview of the Grid Security Infrastructure"</a> from Globus site.</li>
+  </ul>
+  
+  <h2 class="title">Reference</h2>
   <h2>Enroll</h2>
   <ul>
 	  <li>Create Browser Certificate - Install a certificate in your web browser. This certificate may be exportable depending on browser and browser settings.</li>
