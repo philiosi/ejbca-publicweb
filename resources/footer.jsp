@@ -193,7 +193,6 @@
 
   </script>
 
-
   <script>
     $('a.info').tooltip();
 
