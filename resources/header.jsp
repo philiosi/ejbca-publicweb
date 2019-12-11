@@ -65,7 +65,7 @@
   </head>
 
   <body>
-    <div id="header">
+    <!-- <div id="header"> -->
       <!--header start-->
     <header class="head-section">
         <div class="navbar navbar-default navbar-static-top container">
@@ -75,7 +75,9 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">A<span>cme</span></a>
+                <!-- <span class="navbar-brand" href="index.html">A<span>cme</span></a> -->
+                <!-- <a class="navbar-brand" href="index.html"><img src="images/banner_ejbca-public.png" alt="EJBCA PKI by PrimeKey" /></a> -->
+                <a class="navbar-brand" href="index.html">KISTI <span>Grid CA</span></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -231,12 +233,13 @@
             </div>
         </div>
       </header>
-      <!--header end-->
-		<div id="banner">
+      <!--ACM header end-->
+    
+    <!-- <div id="banner">
 			<a href="."><img src="images/banner_ejbca-public.png" alt="EJBCA PKI by PrimeKey" /></a>
     </div>
     
-    </div>  <!-- id=header -->
+    </div>  id=header -->
 
 
     <!-- <c:if test="${hidemenu != 'true'}">
