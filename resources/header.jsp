@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <%@ page pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
@@ -8,18 +7,16 @@
 %>
 
 <c:set var="hidemenu" value="${param['hidemenu'] == 'true' ? 'true' : 'false'}" />
-<!doctype html>
 <html lang="en">
-
 <head>
     <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
+    <!-- <meta charset="utf-8"> -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Unfold - Personal Portfolio & CV Template</title>
+    <title>KISTI Grid CA</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
