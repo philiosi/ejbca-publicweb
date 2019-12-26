@@ -41,11 +41,12 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav ml-auto">
                               <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
-                              <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
-                              <li class="nav-item"><a class="page-scroll" href="#service">Services</a></li>
-                              <li class="nav-item"><a class="page-scroll" href="#work">Portfolio</a></li>
-                              <li class="nav-item"><a class="page-scroll" href="#blog">Blog</a></li>
+                              <li class="nav-item"><a class="page-scroll" href="#about">CA Certificates</a></li>
+                              <li class="nav-item"><a class="page-scroll" href="#service">Documents</a></li>
+                              <li class="nav-item"><a class="page-scroll" href="#request">Request Certificates</a></li>
+                              <li class="nav-item"><a class="page-scroll" href="#blog">Issued Certificates</a></li>
                               <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
+                              <li class="nav-item"><a class="page-scroll" href="#site">Related Sites</a></li>
                           </ul>
                       </div> <!-- navbar collapse -->
                   </nav> <!-- navbar -->
@@ -89,15 +90,17 @@
           <div class="row align-items-center">
               <div class="col-xl-5 col-lg-6">
                   <div class="header-content-right">
-                      <h4 class="sub-title">Hello, I’m</h4>
-                      <h1 class="title">Mark Parker</h1>
-                      <p>A Freelance UI Designer & Web Developer</p>
-                      <a class="main-btn" href="#work">View my Work</a>
+                      <h4 class="sub-title">Welcome,</h4>
+                      <h1 class="title">KISTI CA (Certificate Authority)</h1>
+                      <p>KISTI Certification Authority is operated by the Grid Technology Research Team of KISTI</p>
+                      <p>The authority satisfies requirements from APGrid PMA</p>
+                      <p>Certificate issues by the KISTI Grid CA are compatible with the Globus Toolkit middleware.</p>
+                      <a class="main-btn" href="#request">REQUEST CERTIFICATES</a>
                   </div> <!-- header content right -->
               </div>
               <div class="col-lg-6 offset-xl-1">
                   <div class="header-image d-none d-lg-block">
-                      <img src="assets/images/banner/hero.png" alt="hero">
+                      <img src="assets/images/banner/kisti.png" alt="kisti">
                   </div> <!-- header image -->
               </div>
           </div> <!-- row -->
@@ -366,7 +369,7 @@
 
 <!--====== WORK PART START ======-->
 
-<section id="work" class="work-area pt-125 pb-130">
+<section id="request" class="work-area pt-125 pb-130">
   <div class="container">
       <div class="row">
           <div class="col-lg-8">
