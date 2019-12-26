@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <!DOCTYPE html> 
+=======
+<!DOCTYPE html>
+>>>>>>> 02837af29417919b8a0e2cb79408d7167fed5c01
 <%@ page pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
@@ -8,7 +12,6 @@
 
 <c:set var="hidemenu" value="${param['hidemenu'] == 'true' ? 'true' : 'false'}" />
 <html lang="en">
-
 <head>
     <!--====== Required meta tags ======-->
     <!-- <meta charset="utf-8"> -->
