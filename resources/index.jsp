@@ -92,9 +92,7 @@
                   <div class="header-content-right">
                       <h4 class="sub-title">Welcome,</h4>
                       <h1 class="title">KISTI CA</h1>
-                      <p>KISTI Certification Authority is operated by the Grid Technology Research Team of KISTI</p>
-                      <p>The authority satisfies requirements from APGrid PMA</p>
-                      <p>Certificate issues by the KISTI Grid CA are compatible with the Globus Toolkit middleware.</p>
+                      <p>(KISTI Certification Authority)</p>
                       <a class="main-btn" href="#request">REQUEST CERTIFICATES</a>
                   </div> <!-- header content right -->
               </div>
@@ -134,7 +132,9 @@
           <div class="col-lg-8">
               <div class="section-title text-center">
                   <h2 class="title">About Me</h2>
-                  <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                  <p>>KISTI Certification Authority is operated by the Grid Technology Research Team of KISTI</br>
+                    The authority satisfies requirements from APGrid PMA</br>
+                    Certificate issues by the KISTI Grid CA are compatible with the Globus Toolkit middleware.</p>
               </div> <!-- section title -->
           </div>
       </div> <!-- row -->
