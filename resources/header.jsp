@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <%@ page pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%
+<!-- <%
   response.setContentType("text/html; charset="+org.ejbca.config.WebConfiguration.getWebContentEncoding());
   org.ejbca.ui.web.RequestHelper.setDefaultCharacterEncoding(request);
-%>
+%> -->
 
 <c:set var="hidemenu" value="${param['hidemenu'] == 'true' ? 'true' : 'false'}" />
 <html lang="en">

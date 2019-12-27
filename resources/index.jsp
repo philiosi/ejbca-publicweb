@@ -41,12 +41,12 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav ml-auto">
                               <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
-                              <li class="nav-item"><a class="page-scroll" href="#about">CA Certificates</a></li>
+                              <li class="nav-item"><a class="page-scroll" href="#about">KISTI CA</a></li>
                               <li class="nav-item"><a class="page-scroll" href="#service">Documents</a></li>
-                              <li class="nav-item"><a class="page-scroll" href="#request">Request Certificates</a></li>
-                              <li class="nav-item"><a class="page-scroll" href="#blog">Issued Certificates</a></li>
+                              <li class="nav-item"><a class="page-scroll" href="#request">Request</a></li>
+                              <li class="nav-item"><a class="page-scroll" href="#blog">Certificates</a></li>
                               <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
-                              <li class="nav-item"><a class="page-scroll" href="#site">Related Sites</a></li>
+                              <li class="nav-item"><a class="page-scroll" href="#site">Reference</a></li>
                           </ul>
                       </div> <!-- navbar collapse -->
                   </nav> <!-- navbar -->
@@ -91,7 +91,7 @@
               <div class="col-xl-5 col-lg-6">
                   <div class="header-content-right">
                       <h4 class="sub-title">Welcome,</h4>
-                      <h1 class="title">KISTI CA (Certificate Authority)</h1>
+                      <h1 class="title">KISTI CA</h1>
                       <p>KISTI Certification Authority is operated by the Grid Technology Research Team of KISTI</p>
                       <p>The authority satisfies requirements from APGrid PMA</p>
                       <p>Certificate issues by the KISTI Grid CA are compatible with the Globus Toolkit middleware.</p>
