@@ -150,7 +150,7 @@
                                   <i class="lni-calendar"></i>
                               </div>
                               <div class="info-text">
-                                  <p><span>Date of birth:</span> 8 June 1995</p>
+                                  <p><span>Operation Started:</span> April 2002</p>
                               </div>
                           </div> <!-- single info -->
                       </li>
@@ -160,7 +160,7 @@
                                   <i class="lni-envelope"></i>
                               </div>
                               <div class="info-text">
-                                  <p><span>Email:</span> parker@mysite.com</p>
+                                  <p><span>Email:</span> kisti-grid-ca@kisti.re.kr</p>
                               </div>
                           </div> <!-- single info -->
                       </li>
@@ -170,7 +170,7 @@
                                   <i class="lni-phone-handset"></i>
                               </div>
                               <div class="info-text">
-                                  <p><span>Phone:</span> +1-202-555-0138</p>
+                                  <p><span>Phone:</span> +82-42-869-0663</p>
                               </div>
                           </div> <!-- single info -->
                       </li>
@@ -180,7 +180,7 @@
                                   <i class="lni-map-marker"></i>
                               </div>
                               <div class="info-text">
-                                  <p><span>Location:</span> 4373, El Centro, CA</p>
+                                  <p><span>Location:</span> Daejeon, Republic of Korea</p>
                               </div>
                           </div> <!-- single info -->
                       </li>
