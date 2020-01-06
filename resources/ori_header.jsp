@@ -1,57 +1,32 @@
-<<<<<<< HEAD
-<!DOCTYPE html> 
-=======
-<!DOCTYPE html>
->>>>>>> 02837af29417919b8a0e2cb79408d7167fed5c01
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%@ page pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
   response.setContentType("text/html; charset="+org.ejbca.config.WebConfiguration.getWebContentEncoding());
   org.ejbca.ui.web.RequestHelper.setDefaultCharacterEncoding(request);
-%> 
+%>
 
 <c:set var="hidemenu" value="${param['hidemenu'] == 'true' ? 'true' : 'false'}" />
-<html lang="en">
-<head>
-    <!--====== Required meta tags ======-->
-    <!-- <meta charset="utf-8"> -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=<%= org.ejbca.config.WebConfiguration.getWebContentEncoding() %>" />
+    <title><%= org.ejbca.config.InternalConfiguration.getAppNameCapital() %> Public Web</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="scripts/functions.js"></script>
+    <script type="text/vbscript" src="scripts/functions.vbs"></script>
+  </head>
 
-    <!--====== Title ======-->
-    <title>KISTI Grid CA</title>
-
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
-
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
-
-    <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-  
-<body>
-  
-    
-    <!-- <div id="banner">
+  <body>
+    <div id="header">
+		<div id="banner">
 			<a href="."><img src="images/banner_ejbca-public.png" alt="EJBCA PKI by PrimeKey" /></a>
+		</div>
     </div>
-    
-    </div>  id=header -->
-
-
-    <!-- <c:if test="${hidemenu != 'true'}">
+    <c:if test="${hidemenu != 'true'}">
+    <!-- <div class="menucontainer"> -->
     <div class="w3-sidebar w3-bar-block" style="width:25%">
       <div class="menu">
         <ul>
@@ -75,7 +50,7 @@
               </li>
               <% } %>
             </ul>
-          </li>
+          </li>ds
           <li><div class="menuheader">Register</div>
             <ul>
               <li>
@@ -141,8 +116,8 @@
     <div class="main" style="margin-left: 25%;">
       <div class="content">
     </c:if>
-
+    
     <c:if test="${hidemenu == 'true'}">
     <div class="main hidemenu">
       <div class="content hidemenu">
-    </c:if> -->
+    </c:if>
