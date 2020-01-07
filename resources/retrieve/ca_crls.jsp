@@ -63,4 +63,4 @@
 		</tbody>
 		</table>
 	</c:forEach>
-<%@ include file="footer.inc" %>
+<%@ include file="footer.jsp" %>

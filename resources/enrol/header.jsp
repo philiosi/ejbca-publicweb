@@ -88,13 +88,13 @@
 
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <ul class="navbar-nav ml-auto">
-                                  <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
-                                  <li class="nav-item"><a class="page-scroll" href="#about">KISTI CA</a></li>
-                                  <li class="nav-item"><a class="page-scroll" href="#service">GRID RESOURCES</a></li>
-                                  <li class="nav-item"><a class="page-scroll" href="#enroll">registration</a></li>
-                                  <li class="nav-item"><a class="page-scroll" href="#certificates">Certificates</a></li>
-                                  <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
-                                  <li class="nav-item"><a class="page-scroll" href="#site">Reference</a></li>
+                                  <li class="nav-item active"><a class="page-scroll" href="../index.jsp#home">Home</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#about">KISTI CA</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#service">GRID RESOURCES</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#enroll">registration</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#certificates">Certificates</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#contact">Contact</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#site">Reference</a></li>
                               </ul>
                           </div> <!-- navbar collapse -->
                       </nav> <!-- navbar -->

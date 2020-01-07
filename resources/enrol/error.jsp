@@ -23,4 +23,4 @@
     
     <p><a href="javascript:history.back()">Go back</a></p>
     
-<%@ include file="footer.inc" %>
+<%@ include file="footer.jsp" %>

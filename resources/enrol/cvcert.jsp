@@ -42,4 +42,4 @@ or paste a PEM-formated request into the field below and click OK to fetch your 
   </fieldset>
 </form>
 
-<%@ include file="footer.inc" %>
+<%@ include file="footer.jsp" %>
