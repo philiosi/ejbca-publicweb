@@ -76,4 +76,4 @@
 		</c:choose>
 	</c:forEach>
 	
-<%@ include file="footer.inc" %>
+<%@ include file="footer.jsp" %>

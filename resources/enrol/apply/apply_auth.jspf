@@ -3,14 +3,17 @@
 <p>Welcome to ${THIS_TITLE}.</p>
 <p>Please enter your username and
 <c:choose>
-    <c:when test="${PASSWORD_TERMINOLOGY == 'enrollment_code'}">enrollment code.</c:when>
+    <c:when test="${PASSWORD_TERMINOLOGY == 'enrollment_code'}">enrollment code. (check your email)</c:when>
     <c:otherwise>password.</c:otherwise>
 </c:choose>
 Then click OK to generate your token.</p>
 
-<form name="CertReqForm" action="${THIS_FILENAME}"  method="post">
+<form class="d-flex justify-content-center h-100" name="CertReqForm" action="${THIS_FILENAME}"  method="post">
   <fieldset>
-    <legend>Authentication</legend>
+  <div class="card">
+    <div class="card-header">
+		<h3>Authentication</h3>
+	</div> <!-- card-header END -->
 
 	<c:if test="${forcedBrowser != null}">
         <input type="hidden" name="${FORCE_BROWSER}" value="<c:out value="${forcedBrowser}" />" />
@@ -34,5 +37,94 @@ Then click OK to generate your token.</p>
     <br />
     <label for="${BUTTON_SUBMIT_USERNAME}"></label>
     <input type="submit" value="OK" name="${BUTTON_SUBMIT_USERNAME}" id="${BUTTON_SUBMIT_USERNAME}" />
+  </div> <!-- card END -->
   </fieldset>
+  
 </form>
+
+
+
+<!--====== SERVICES PART START ======-->
+
+<section id="service" class="services-area gray-bg pt-125 pb-25">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-8">
+              <div class="section-title text-center pb-30">
+                  <h2 class="title">${THIS_TITLE}</h2>
+                  <p>Welcome to ${THIS_TITLE}.</p>
+                  <p>Please enter your username and
+                <c:choose>
+                    <c:when test="${PASSWORD_TERMINOLOGY == 'enrollment_code'}">enrollment code. (check your email)</c:when>
+                    <c:otherwise>password.</c:otherwise>
+                </c:choose>
+                Then click OK to generate your token.</p>
+              </div> <!-- section title -->
+          </div>
+      </div> <!-- row -->
+      <div class="row justify-content-center">
+          <div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Authentication</h3>
+			</div>
+            
+            <c:if test="${forcedBrowser != null}">
+                <input type="hidden" name="${FORCE_BROWSER}" value="<c:out value="${forcedBrowser}" />" />
+	        </c:if>
+
+			<div class="card-body">
+				<form name="CertReqForm" action="${THIS_FILENAME}"  method="post">
+
+                    <input type="hidden" name="${ACTION}" value="${ACTION_GENERATETOKEN}" />
+	                <input type="hidden" name="hidemenu" value="<c:out value="${hidemenu}" />" />
+
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="username" name="${TEXTFIELD_USERNAME}" id="${TEXTFIELD_USERNAME}" accesskey="u">	
+					</div>
+
+					<div class="input-group form-group">
+                        <c:choose>
+                            <c:when test="${PASSWORD_TERMINOLOGY == 'enrollment_code'}">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                            </c:when>
+                            <c:otherwise>
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                            </c:otherwise>
+                            <input type="password" class="form-control" placeholder="password" autocomplete="off" name="${TEXTFIELD_PASSWORD}" id="${TEXTFIELD_PASSWORD}" accesskey="p">
+                        </c:choose>
+					</div>
+
+					
+					<div class="form-group">
+						<input type="submit" value="OK" class="btn float-right login_btn" name="${BUTTON_SUBMIT_USERNAME}" id="${BUTTON_SUBMIT_USERNAME}">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Don't register?<a href="#">Enroll</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="#">Please check your email for registration!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+      </div> 
+  </div> <!-- container -->
+</section>
+
+<!--====== SERVICES PART ENDS ======-->
+
+
