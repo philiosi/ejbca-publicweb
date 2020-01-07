@@ -725,7 +725,7 @@
                         <c:set var="THIS_FILENAME" value="/${internalConfiguration.appNameLowerDynamic}/enrol/browser.jsp" />
                         <c:set var="PASSWORD_TERMINOLOGY" value="enrollment_code" />
                         
-                        <%@ include file="enroll/apply/apply_main.jsp" %>
+                        <%@ include file="enrol/apply/apply_main.jsp" %>
                         
                       </div>
                   </div>
