@@ -19,29 +19,29 @@
     <title>KISTI CA</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
 
     <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
+    <link rel="stylesheet" href="../assets/css/LineIcons.css">
 
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/default.css">
 
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     <!--====== w3 css ======-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <script type="text/javascript" src="scripts/functions.js"></script>
-    <script type="text/vbscript" src="scripts/functions.vbs"></script>
+    <script type="text/javascript" src="../scripts/functions.js"></script>
+    <script type="text/vbscript" src="../scripts/functions.vbs"></script>
 
 </head>
   
@@ -75,8 +75,8 @@
               <div class="row">
                   <div class="col-lg-12">
                       <nav class="navbar navbar-expand-lg">
-                          <a class="navbar-brand" href="index.html">
-                              <img src="assets/images/logo.png" alt="Logo" style="width: 3em;">
+                          <a class="navbar-brand" href="../index.jsp">
+                              <img src="../assets/images/logo.png" alt="Logo" style="width: 3em;">
                           </a> <!-- Logo -->
                           <button class="navbar-toggler" type="button" data-toggle="collapse"
                               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
