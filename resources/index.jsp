@@ -694,7 +694,8 @@
                   <div class="modal-body">
                       <ul class="list-group list-group-flush">
                           <li class="list-group-item"><span class="lni-angle-double-right" style="line-height: 20px;"> 
-                              <a data-toggle="collapse" href="enrol/browser.jsp" role="button" aria-expanded="true"><b>Create Browser Certificate</b></a>
+                              <a data-toggle="collapse" href="#browser-cert" role="button" aria-expanded="true"><b>Create Browser Certificate</b></a>
+                              <a href="enrol/browser.jsp"><b>Create Browser Certificate</b></a>
                               <br>Install a certificate in your web browser. This certificate may be exportable depending on browser and browser settings.</span></li>
                           <li class="list-group-item"><span class="lni-angle-double-right" style="line-height: 20px;"> 
                               <a data-toggle="collapse" href="#cert-from-csr" role="button" aria-expanded="true"><b>Create Certificate from CSR</b></a>
