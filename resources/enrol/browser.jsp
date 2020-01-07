@@ -8,4 +8,4 @@
 <c:set var="PASSWORD_TERMINOLOGY" value="enrollment_code" />
 <%@ include file="apply/apply_main.jsp" %>
 
-<%@ include file="footer.inc" %>
+<%@ include file="footer.jsp" %>
