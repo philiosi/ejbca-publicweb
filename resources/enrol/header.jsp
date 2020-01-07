@@ -1,60 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html> 
 <%@ page pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> <!--for apply_main.jsp-->
 <%
-   response.setContentType("text/html; charset="+org.ejbca.config.WebConfiguration.getWebContentEncoding());
-   org.ejbca.ui.web.RequestHelper.setDefaultCharacterEncoding(request);
-%>
+  response.setContentType("text/html; charset="+org.ejbca.config.WebConfiguration.getWebContentEncoding());
+  org.ejbca.ui.web.RequestHelper.setDefaultCharacterEncoding(request);
+%> 
 
 <c:set var="hidemenu" value="${param['hidemenu'] == 'true' ? 'true' : 'false'}" />
-<%@page import="org.ejbca.config.WebConfiguration, org.ejbca.util.HTMLTools"%><html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=<%= org.ejbca.config.WebConfiguration.getWebContentEncoding() %>" />
-    <meta http-equiv="x-ua-compatible" content="IE=10">
-    <title>Certificate Enrollment - <%= org.ejbca.config.InternalConfiguration.getAppNameCapital() %></title>
-	<link rel="shortcut icon" href="../images/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="../styles.css" type="text/css" />
-    <script type="text/javascript" src="../scripts/functions.js"></script>
-    <script type="text/vbscript" src="../scripts/functions.vbs"></script>
-    <c:if test="${!empty header_redirect_url}">
-        <noscript><meta http-equiv="Refresh" content="1; URL=<c:out value="${header_redirect_url}"/>"></noscript>
-        <script type="text/javascript">
-        //<![CDATA[
-        setTimeout(function(){window.location = '<%= HTMLTools.javascriptEscape((String)request.getAttribute("header_redirect_url")) %>';}, 500);
-        //]]>
-        </script>
-    </c:if>
-  </head>
+<html lang="en">
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
-    <div id="header">
-		<div id="banner">
-			<a href="../"><img src="../images/banner_ejbca-public.png" alt="EJBCA" /></a>
-		</div>
+    <!--====== Title ======-->
+    <title>KISTI CA</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+  
+<body>
+  
+    
+    <!-- <div id="banner">
+			<a href="."><img src="images/banner_ejbca-public.png" alt="EJBCA PKI by PrimeKey" /></a>
     </div>
-    <c:if test="${hidemenu != 'true'}">
-    <div class="menucontainer">
+    
+    </div>  id=header -->
+
+
+    <!-- <c:if test="${hidemenu != 'true'}">
+    <div class="w3-sidebar w3-bar-block" style="width:25%">
       <div class="menu">
         <ul>
           <li><div class="menuheader">Enroll</div>
             <ul>
               <li>
-                <a href="browser.jsp">Create Browser Certificate</a>
+                <a href="enrol/browser.jsp">Create Browser Certificate</a>
               </li>
               <li>
-                <a href="server.jsp">Create Certificate from CSR</a>
+                <a href="enrol/server.jsp">Create Certificate from CSR</a>
               </li>
               <li>
-                <a href="keystore.jsp">Create Keystore</a>
+                <a href="enrol/keystore.jsp">Create Keystore</a>
               </li>
               <li>
-                <a href="cvcert.jsp">Create CV certificate</a>
+                <a href="enrol/cvcert.jsp">Create CV certificate</a>
               </li>
               <% if(org.ejbca.config.WebConfiguration.getRenewalEnabled()) { %>
               <li>
-                <a href="../renew/">Renew Browser Certificate</a>
+                <a href="renew/">Renew Browser Certificate</a>
               </li>
               <% } %>
             </ul>
@@ -62,33 +77,33 @@
           <li><div class="menuheader">Register</div>
             <ul>
               <li>
-                <a href="reg.jsp">Request Registration</a>
+                <a href="enrol/reg.jsp">Request Registration</a>
               </li>
             </ul>
           </li>
           <li><div class="menuheader">Retrieve</div>
             <ul>
               <li>
-                <a href="../retrieve/ca_certs.jsp">Fetch CA Certificates</a>
+                <a href="retrieve/ca_certs.jsp">Fetch CA Certificates</a>
               </li>
               <li>
-                <a href="../retrieve/ca_crls.jsp">Fetch CA CRLs</a>
+                <a href="retrieve/ca_crls.jsp">Fetch CA CRLs</a>
               </li>
               <li>
-                <a href="../retrieve/list_certs.jsp">List  User's Certificates</a>
+                <a href="retrieve/list_certs.jsp">List User's Certificates</a>
               </li>
               <li>
-                <a href="../retrieve/latest_cert.jsp">Fetch User's Latest Certificate</a>
+                <a href="retrieve/latest_cert.jsp">Fetch User's Latest Certificate</a>
               </li>
             </ul>
           </li>  
           <li><div class="menuheader">Inspect</div>
             <ul>
               <li>
-                <a href="../inspect/request.jsp">Inspect certificate/CSR</a>
+                <a href="inspect/request.jsp">Inspect certificate/CSR</a>
               </li>
-              <li>
-                <a href="../retrieve/check_status.jsp">Check Certificate Status</a>
+                <li>
+                <a href="retrieve/check_status.jsp">Check Certificate Status</a>
               </li>
             </ul>
           </li>
@@ -99,11 +114,11 @@
                 		org.ejbca.config.WebConfiguration.getExternalPrivateHttpsPort(),
                 		"/"+org.ejbca.config.InternalConfiguration.getAppNameLower()+"/adminweb/");  %>
                 <a href="<%=adminURL.toString() %>">Administration</a>
-            </li>
+              </li>
               <% if (!"disabled".equalsIgnoreCase(org.ejbca.config.WebConfiguration.getDocBaseUri())) {
                   if ("internal".equalsIgnoreCase(org.ejbca.config.WebConfiguration.getDocBaseUri())) { %>
               <li>
-                <a href="../doc/concepts.html" target="<%= org.ejbca.config.GlobalConfiguration.DOCWINDOW %>">Documentation</a>
+                <a href="doc/index.html" target="<%= org.ejbca.config.GlobalConfiguration.DOCWINDOW %>">Documentation</a>
               </li>
               <%  } else { %>
               <li>
@@ -121,11 +136,11 @@
         </ul>
       </div>
     </div>
-    <div class="main">
+    <div class="main" style="margin-left: 25%;">
       <div class="content">
     </c:if>
-    
+
     <c:if test="${hidemenu == 'true'}">
     <div class="main hidemenu">
       <div class="content hidemenu">
-    </c:if>
+    </c:if> -->
