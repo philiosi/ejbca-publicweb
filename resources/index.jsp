@@ -718,7 +718,15 @@
                   </div>
                   <div class="collapse" id="browser-cert">
                       <div class="card card-body">
-                        create browser certificate
+                        
+                        <c:set var="THIS_TITLE" value="Certificate Enrollment" />
+                        <jsp:useBean id="internalConfiguration" class="org.ejbca.config.InternalConfiguration" scope="request" />
+
+                        <c:set var="THIS_FILENAME" value="/${internalConfiguration.appNameLowerDynamic}/enrol/browser.jsp" />
+                        <c:set var="PASSWORD_TERMINOLOGY" value="enrollment_code" />
+                        
+                        <%@ include file="enroll/apply/apply_main.jsp" %>
+                        
                       </div>
                   </div>
                   <div class="collapse" id="cert-from-csr">
