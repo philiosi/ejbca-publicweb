@@ -1,4 +1,5 @@
-<!DOCTYPE html> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%@ page pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
@@ -7,11 +8,12 @@
 %>
 
 <c:set var="hidemenu" value="${param['hidemenu'] == 'true' ? 'true' : 'false'}" />
+<%@page import="org.ejbca.config.WebConfiguration, org.ejbca.util.HTMLTools"%>
 <html lang="en">
 <head>
     <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=<%= org.ejbca.config.WebConfiguration.getWebContentEncoding() %>" />
+    <meta http-equiv="x-ua-compatible" content="IE=10">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -44,7 +46,7 @@
     <script type="text/vbscript" src="../scripts/functions.vbs"></script>
 
     <c:if test="${!empty header_redirect_url}">
-        <noscript><meta http-equiv="Refresh" content="1; URL=<c:out value='${header_redirect_url}' />"></noscript>
+        <noscript><meta http-equiv="Refresh" content="1; URL=<c:out value="${header_redirect_url}"/>"></noscript>
         <script type="text/javascript">
         //<![CDATA[
         setTimeout(function(){window.location = '<%= HTMLTools.javascriptEscape((String)request.getAttribute("header_redirect_url")) %>';}, 500);
