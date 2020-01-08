@@ -1136,11 +1136,26 @@ p {
   border-top-right-radius: 5px;
   font-size: 22px;
   color: #fff;
-  padding: 0px; 
-  height: 60px;}
-  .card .card-body .input-group .input-group-prepend{
-    background-color: #754ef9;
-     }
+  padding: 10px; }
+  .card .card-header .title {
+    font-size: 22px;
+    color: #fff;
+    padding: 6px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 0;  }
+  /* .card .card-body .input-group .input-group-prepend{
+    background-color: #754ef9; 
+    ;} */
+    .input-group-prepend{
+      margin-right: -8px;
+    }
+    .input-group-prepend span {
+      width: 50px;
+      background-color: #754ef9;
+      color: white;
+      border: 0 !important;
+    }
 
 /*===========================
        6.certificate css 

@@ -15,12 +15,12 @@
         </div>  <!-- row End -->
     </div>
     <div class="row justify-content-center">
-        
-            <div class="card single-certificate text-center mt-30">
-                <div class="card-header certificate-package"> 
-                    <h3 class="package-title" style="padding: 0;">Authentication</h3>
+        <div class="col-lg-4 col-md-8 col-sm-9">        
+            <div class="card text-center mt-30">
+                <div class="card-header "> 
+                    <h3 class="title"> Authentication </h3>
                 </div>
-                <div class="card-body certificate-body">
+                <div class="card-body">
                     <form name="CertReqForm" action="${THIS_FILENAME}"  method="post">
 
                     <c:if test="${forcedBrowser != null}">
@@ -29,10 +29,10 @@
                     <input type="hidden" name="${ACTION}" value="${ACTION_GENERATETOKEN}" />
 	                <input type="hidden" name="hidemenu" value="<c:out value="${hidemenu}" />" />
 
-                    <fieldset>
+                    
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="lni-user"></i></span>
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
                             <label for="${TEXTFIELD_USERNAME}"></label>
                             <input type="text" class="form-control" placeholder="username" name="${TEXTFIELD_USERNAME}" id="${TEXTFIELD_USERNAME}" accesskey="u" />	
@@ -40,37 +40,38 @@
                         <div class="input-group form-group">
                             <c:choose>
                                 <c:when test="${PASSWORD_TERMINOLOGY == 'enrollment_code'}">
-                                    <label for="password" title="Please enter your one-time authentication code."></label>
+                                    
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="lni-lock"></i></span>
+                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
+                                    <label for="password" title="Please enter your one-time authentication code."></label>
                                     <input type="password" class="form-control" placeholder="Enrollment Code" autocomplete="off" name="${TEXTFIELD_PASSWORD}" id="${TEXTFIELD_PASSWORD}" accesskey="p" />
                                 </c:when>
                                 <c:otherwise>
-                                    <label for="${TEXTFIELD_PASSWORD}"></label>
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="lni-lock"></i></span>
+                                        <<span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
+                                    <label for="${TEXTFIELD_PASSWORD}"></label>
                                     <input type="password" class="form-control" placeholder="Password" autocomplete="off" name="${TEXTFIELD_PASSWORD}" id="${TEXTFIELD_PASSWORD}" accesskey="p" />
                                 </c:otherwise>
                             </c:choose>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="text-align:right;">
                             <label for="${BUTTON_SUBMIT_USERNAME}"></label>
-                            <input class="main-btn" type="submit" value="OK" class="btn float-right login_btn" name="${BUTTON_SUBMIT_USERNAME}" id="${BUTTON_SUBMIT_USERNAME}">
+                            <input style="font-family: Poppins, sans-serif; font-weight: 500;" class="main-btn" type="submit" value="OK" class="btn float-right login_btn" name="${BUTTON_SUBMIT_USERNAME}" id="${BUTTON_SUBMIT_USERNAME}">
                         </div>
-                    </fieldset>
+                    <%-- </fieldset> --%>
                     </form>
                 </div>
                 <div class="card-footer">
                     <div class="d-flex justify-content-center links">
-                        Don't register?<a href="../index.jsp#registeration">Sign Up</a>
+                        Don't register?<a href="../index.jsp#register">Sign Up</a>
                     </div>
                     <div class="d-flex justify-content-center">
                         <a href="#">Forgot your password?</a>
                     </div>
                 </div>
             </div>
-        
+        </div>
     </div>
 </section>
