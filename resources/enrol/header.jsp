@@ -100,11 +100,11 @@
 
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <ul class="navbar-nav ml-auto">
-                                  <a class="page-scroll" href="../index.jsp#home">Home</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#home">Home</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="../index.jsp#about">KISTI CA</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="../index.jsp#service">GRID RESOURCES</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="../index.jsp#register">registration</a></li>
-                                  <li class="nav-item active"><li class="nav-item"><a class="page-scroll" href="../index.jsp#certificates">Certificates</a></li>
+                                  <li class="nav-item active"><a class="page-scroll" href="../index.jsp#certificates">Certificates</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="../index.jsp#contact">Contact</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="../index.jsp#site">Reference</a></li>
                               </ul>

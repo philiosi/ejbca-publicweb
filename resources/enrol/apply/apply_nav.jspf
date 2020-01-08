@@ -20,7 +20,7 @@
 								<c:param name="level" value="0" />
 								<c:param name="caid" value="${caid}" />
 							</c:url>
-							<a href="${chain_url}">Certificate chain</a>
+							<a href="${chain_url}"><i class="fas fa-link"></i> Certificate chain</a>
 						</c:otherwise>
 					</c:choose>
 				</p>
