@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>KISTI CA</title>
+    <title>Certificate Enrollment</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
@@ -43,6 +43,14 @@
     <script type="text/javascript" src="../scripts/functions.js"></script>
     <script type="text/vbscript" src="../scripts/functions.vbs"></script>
 
+    <c:if test="${!empty header_redirect_url}">
+        <noscript><meta http-equiv="Refresh" content="1; URL=<c:out value="${header_redirect_url}"/>"></noscript>
+        <script type="text/javascript">
+        //<![CDATA[
+        setTimeout(function(){window.location = '<%= HTMLTools.javascriptEscape((String)request.getAttribute("header_redirect_url")) %>';}, 500);
+        //]]>
+        </script>
+    </c:if>
 </head>
   
 <body>
@@ -91,7 +99,7 @@
                                   <li class="nav-item active"><a class="page-scroll" href="../index.jsp#home">Home</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="../index.jsp#about">KISTI CA</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="../index.jsp#service">GRID RESOURCES</a></li>
-                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#enroll">registration</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#register">registration</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="../index.jsp#certificates">Certificates</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="../index.jsp#contact">Contact</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="../index.jsp#site">Reference</a></li>

@@ -85,7 +85,7 @@
                                   <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="#about">KISTI CA</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="#service">GRID RESOURCES</a></li>
-                                  <li class="nav-item"><a class="page-scroll" href="#enroll">registration</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="#register">registration</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="#certificates">Certificates</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="#site">Reference</a></li>

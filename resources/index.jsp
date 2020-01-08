@@ -471,43 +471,6 @@
                   </div>
               </div> <!-- single service -->
           </div>
-      
-          <!-- <div class="col-lg-4 col-md-6 col-sm-8">
-              <div class="single-service text-center mt-30">
-                  <div class="service-icon">
-                      <i class="lni-vector"></i>
-                  </div>
-                  <div class="service-content">
-                      <h4 class="service-title"><a href="#">Illustration Design</a></h4>
-                      <p>Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit
-                          enimdicta sunt.</p>
-                  </div>
-              </div> 
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-8">
-              <div class="single-service text-center mt-30">
-                  <div class="service-icon">
-                      <i class="lni-website"></i>
-                  </div>
-                  <div class="service-content">
-                      <h4 class="service-title"><a href="#">Web Development</a></h4>
-                      <p>Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit
-                          enimdicta sunt.</p>
-                  </div>
-              </div> 
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-8">
-              <div class="single-service text-center mt-30">
-                  <div class="service-icon">
-                      <i class="lni-support"></i>
-                  </div>
-                  <div class="service-content">
-                      <h4 class="service-title"><a href="#">Consultancy and Support</a></h4>
-                      <p>Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit
-                          enimdicta sunt.</p>
-                  </div>
-              </div> 
-          </div>-->
       </div> 
   </div> <!-- container -->
 </section>
@@ -517,7 +480,7 @@
 
 <!--====== CALL TO ACTION PART START ======-->
 
-<section id="enroll" class="call-to-action pt-50 pb-25 bg_cover"
+<section id="register" class="call-to-action pt-50 pb-25 bg_cover"
   style="background-image: url(assets/images/banner/gridcomputing3.png)">
   <div class="container">
       <div class="row justify-content-center">
@@ -648,18 +611,6 @@
                           <li class="list-group-item"><span class="lni-angle-double-right" style="line-height: 20px;">
                               <a data-toggle="collapse" href="#keystore" role="button" aria-expanded="true"><b>Create Keystore</b></a>
                               <br>Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. This keystore can be installed in a server, browser or in other applications.</span></li>
-                          <!-- <li class="list-group-item"><span class="lni-angle-double-right"> Download :</span>
-                              <a href="http://ca.gridcenter.or.kr/certs/certificates/47183fda.0"
-                                  target="_blank"><u>47183fda.0</u></a>
-                              (<a href="http://ca.gridcenter.or.kr/certs/certificates/47183fda.txt"
-                                  target="_blank">.txt</a>)
-                              (<a href="http://ca.gridcenter.or.kr/certs/certificates/47183fda.signing_policy"
-                                  target="_blank"><u>signing_policy</u></a>)
-                          </li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> CRL(Certificate
-                                  Revocation List): <a
-                                      href="http://ca.gridcenter.or.kr/CRL/47183fda.crl">http://ca.gridcenter.or.kr/CRL/47183fda.crl</a></span>
-                          </li> -->
                       </ul>
                   </div>
                   <div class="collapse" id="browser-cert">
@@ -842,56 +793,4 @@
 
 <!--====== CONTACT PART ENDS ======-->
 
-<%@ include file="footer.jsp" %>
-
-
-<%@ include file="footer.jsp" %> -->
-
-
-
-<!--container end-->
-
-
-
-<!-- <h1 class="title">Welcome to the public KISTI CA (Certificate Authority) web site.</h1>
-  <ul>
-    <li>KISTI Certification Authority is operated by the Grid Technology Research Team of KISTI (Korea Institute of Science and Technology Information).</li>
-    <li>The authority satisfies requirements from APGrid PMA.</li>
-    <li>Certificate issues by the KISTI Grid CA are compatible with the Globus Toolkit middleware.</li>
-    <br>
-    <li>The public key cryptography is the basis of grid security architecture.</li>
-    <li>Certification Authority(CA) is a mandatory componant of public key infrastructure(PKI).</li>
-    <li>Please read <a href="http://www.globus.org/security/overview.html" target="_blank">"Overview of the Grid Security Infrastructure"</a> from Globus site.</li>
-  </ul>
-
-  <h2 class="title">Reference</h2>
-  <h2>Enroll</h2>
-  <ul>
-	  <li>Create Browser Certificate - Install a certificate in your web browser. This certificate may be exportable depending on browser and browser settings.</li>
-	  <li>Create Certificate from CSR -  Send a PKCS#10 certificate request generated by your server, and receive a certificate that can be installed on the server. Consult your server documentation.</li>
-	  <li>Create Keystore - Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. This keystore can be installed in a server, browser or in other applications.</li>
-	  <li>Create CV Certificate -  Used for EU EAC ePassport PKI. Send a CVC certificate request generated by an Inspection System, and receive a CV certificate. Note: this can not be used for regular certificates, CV certificates are completely different.</li>
-      <% if(org.ejbca.config.WebConfiguration.getRenewalEnabled()) { %>
-	  <li>Renew Browser Certificate - Authenticate using a browser certificate and request it to be renewed. Requires client certificate authentication.</li>
-      <% } %>
-  </ul>
-  <h2>Retrieve</h2>
-  <ul>
-	  <li>Fetch CA Certificates - Browse and download CA certificates.</li>
-	  <li>Fetch CA CRLs - Download Certificate Revocation Lists.</li>
-	  <li>Fetch User's Latest Certificate - Download the last issued certificate for a user for whom you know the certificate Distinguished Name.</li>
-  </ul>
-  <h2>Inspect</h2>
-  <ul>
-	  <li>Inspect certificate/CSR - Inspect a dump of a CSR or a certificate. This gives an output of a CVC or ASN.1 dump, suitable for technical inspection and debugging.</li>
-  </ul>
-  <h2>Miscellaneous</h2>
-  <ul>
-	  <li>List User's Certificates - List certificates for a user for whom you know the certificate Distinguished Name.</li>
-	  <li>Check Certificate Status - Check revocation status for a certificate where you know the Issuer Distinguished Name and the serial number.</li>
-	  <li>Administration - Go to the EJBCA Admin-GUI. Requires client certificate authentication.</li>  
-      <% if (!"disabled".equalsIgnoreCase(org.ejbca.config.WebConfiguration.getDocBaseUri())) { %>
-	  <li>Documentation - Go to the on-line EJBCA documentation.</li>  
-      <% } %>
-  </ul>
-<%@ include file="footer.inc" %> -->
+<%@ include file="footer.inc" %>
