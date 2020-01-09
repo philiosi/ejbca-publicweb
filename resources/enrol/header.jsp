@@ -41,7 +41,7 @@
     <!--====== w3 css ======-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <script src="https://kit.fontawesome.com/be00ef9623.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <script type="text/javascript" src="../scripts/functions.js"></script>
     <script type="text/vbscript" src="../scripts/functions.vbs"></script>
