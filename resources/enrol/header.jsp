@@ -25,7 +25,6 @@
 
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
 
     <!--====== Line Icons css ======-->
     <link rel="stylesheet" href="../assets/css/LineIcons.css">
