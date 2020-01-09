@@ -72,8 +72,8 @@
 
                             <c:if test="${fn:length(availableTokenKeySpecs) > 1}">
                                 <div class="dropdown">
-                                    <label for="tokenKeySpec"><i class="fas fa-key"> Key specification:</label>
-                                    <button class="btn dropdown-toggle" type="button" id="keyspec" data-toggle="dropdown" aria-haspopup="true" aria-expaced="false">select
+                                    <label for="tokenKeySpec"> Key specification:</label>
+                                    <button class="btn dropdown-toggle" type="button" id="keyspec" data-toggle="dropdown" aria-haspopup="true" aria-expacted="false">select
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="keyspec" name="tokenKeySpec" id="tokenKeySpec" size="1">
                                     <c:forEach var="tokenKeySpec" items="${availableTokenKeySpecs}">
