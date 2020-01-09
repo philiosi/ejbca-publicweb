@@ -64,8 +64,8 @@ a {
   display: inline-block; }
 
 .icon {
-  padding-right: 5px;  }
-
+  padding-right: 5px;
+  }
 h1,
 h2,
 h3,
@@ -126,6 +126,20 @@ p {
   color: rgb(180, 144, 214);
 }
 
+.list-arrow {
+  font-size: 10px;
+  color: #754ef9; 
+}
+
+.list-certificate {
+  font-size: 14px;
+  padding-right: 5px;
+  color: rgb(180, 144, 214); }
+
+.modal-dialog {
+  min-width: 50em;
+}
+
 /*===== All Button Style =====*/
 .main-btn {
   display: inline-block;
@@ -176,7 +190,7 @@ p {
 /*===== All Section Title Style =====*/
 .section-title .title {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 30px;
   color: #000;
   padding-bottom: 20px; }
   @media (max-width: 767px) {
@@ -810,6 +824,9 @@ p {
     padding-top: 70px;
     padding-bottom: 80px; } }
 
+  .about-content {
+    min-width: 35em; }
+    
 .about-content .about-title {
   font-size: 18px;
   font-weight: 500;
@@ -1135,7 +1152,7 @@ p {
        login 
 ============================*/
 .card {
-  width:100% !important;
+  width:40em !important;
   }
 .card .card-header {
   background-color: #754ef9;
@@ -1445,7 +1462,7 @@ p.form-message.success, p.form-message.error {
 
 .back-to-top {
   font-size: 20px;
-  color: #fff;
+  color: #754ef9;
   position: fixed;
   right: 20px;
   bottom: 20px;

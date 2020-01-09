@@ -268,156 +268,159 @@
       </div>
       <!-- certificate modals -->
       <!-- KISTI CA V3.0 -->
-      <div class="modal fade" id="kisticav3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">KISTI CA v3.0</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Subject: C=KR,
-                                  O=KISTI, CN=KISTI Certification Authority</span></li>
-                          <li class="list-group-item"><a class="lni-angle-double-right"
-                                  href="http://ca.gridcenter.or.kr/certs/cps/KISTI-CA-CPCPS-3.0.pdf"
-                                  target="_blank"> Certificate Policy and Certification Practice Statement (for
-                                  v3.0)</a></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Valid From: Apr 14,
-                                  2017</span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Valid Until: Apr 9,
-                                  2037 (for 20 years) </span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Key size: 4096
-                                  bits</span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Download :</span>
-                              <a href="http://ca.gridcenter.or.kr/certs/certificates/kisti-ca-v3.0"
-                                  target="_blank"><u>kisti-ca-v3.0</u></a>
-                              (<a href="http://ca.gridcenter.or.kr/certs/certificates/kisti-ca-v3.crt"
-                                  target="_blank">.crt</a>)
-                              (<a href="http://ca.gridcenter.or.kr/certs/certificates/kisti-ca-v3.txt"
-                                  target="_blank">.txt</a>)
-                              (<a href="http://ca.gridcenter.or.kr/certs/certificates/kisti-ca-v3.signing_policy"
-                                  target="_blank"><u>signing_policy</u></a>)
-                          </li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> SHA256
-                                  Fingerprint=CD:D6:F9:D8:39:75:94:29:71:6F:61:07:8E:77:91:A0:61:F7:42:B7:BE:72:CF:A9:CE:7C:E2:60:7F:5A:09:F1</span>
-                          </li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> SHA1
-                                  Fingerprint=06:52:34:EE:81:0A:E5:9C:43:68:54:84:8C:8A:D4:DF:0D:75:A7:45</span>
-                          </li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Issued Certificates <a
-                                      href="http://ca.gridcenter.or.kr/issued_v3/" class="badge badge-light"
-                                      target="_blank">list</a></span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> CRL(Certificate
-                                  Revocation List): <a
-                                      href="http://ca.gridcenter.or.kr/CRL/kisti-ca-v3.crl">http://ca.gridcenter.or.kr/CRL/kisti-ca-v3.crl</a></span>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- KISTI CA V2.0 -->
-      <div class="modal fade" id="kisticav2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">KISTI CA v2.0</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><span class="lni-angle-double-right"> C=KR, O=KISTI, O=GRID,
-                                  CN=KISTI Grid Certificate Authority</span></li>
-                          <li class="list-group-item"><a class="lni-angle-double-right"
-                                  href="http://ca.gridcenter.or.kr/cps/KISTI-CPCPS-2.0.html" target="_blank">
-                                  Certificate Policy and Certification Practice Statement (for v2.0)</a></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Valid From: Jul 12,
-                                  2007</span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Valid Until: Aug 1,
-                                  2017 (for 10 years) </span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Key size: 2048
-                                  bits</span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Download :</span>
-                              <a href="http://ca.gridcenter.or.kr/certs/certificates/722e5071.0"
-                                  target="_blank"><u>722e5071.0</u></a>
-                              (<a href="http://ca.gridcenter.or.kr/certs/certificates/722e5071.crt"
-                                  target="_blank">.crt</a>)
-                              (<a href="http://ca.gridcenter.or.kr/certs/certificates/722e5071.txt"
-                                  target="_blank">.txt</a>)
-                              (<a href="http://ca.gridcenter.or.kr/certs/certificates/722e5071.signing_policy"
-                                  target="_blank"><u>signing_policy</u></a>)
-                          </li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> SHA256
-                                  Fingerprint=EA:08:BA:6A:36:C9:F1:0A:B5:2F:BB:67:C7:A4:3D:C9:52:B7:CE:DB</span>
-                          </li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> SHA1
-                                  Fingerprint=06:52:34:EE:81:0A:E5:9C:43:68:54:84:8C:8A:D4:DF:0D:75:A7:45</span>
-                          </li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Issued Certificates <a
-                                      href="http://ca.gridcenter.or.kr/issued/" class="badge badge-light"
-                                      target="_blank">list</a></span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> CRL(Certificate
-                                  Revocation List): <a
-                                      href="http://ca.gridcenter.or.kr/CRL/722e5071.crl">http://ca.gridcenter.or.kr/CRL/722e5071.crl</a></span>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- Production Level -->
-      <div class="modal fade" id="productionLevel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Production Level CA (June 1, 2004 - Nov.
-                          2006)</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Subject : C=KR,
-                                  O=KISTI, CN=KISTI GRID ROOT CA</span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Valid until : May 30,
-                                  2009 GMT </span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Key size: 2048
-                                  bits</span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> Download :</span>
-                              <a href="http://ca.gridcenter.or.kr/certs/certificates/47183fda.0"
-                                  target="_blank"><u>47183fda.0</u></a>
-                              (<a href="http://ca.gridcenter.or.kr/certs/certificates/47183fda.txt"
-                                  target="_blank">.txt</a>)
-                              (<a href="http://ca.gridcenter.or.kr/certs/certificates/47183fda.signing_policy"
-                                  target="_blank"><u>signing_policy</u></a>)
-                          </li>
-                          <li class="list-group-item"><span class="lni-angle-double-right"> CRL(Certificate
-                                  Revocation List): <a
-                                      href="http://ca.gridcenter.or.kr/CRL/47183fda.crl">http://ca.gridcenter.or.kr/CRL/47183fda.crl</a></span>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-              </div>
-          </div>
-      </div>
+       <div class="modal fade" id="kisticav3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">KISTI CA v3.0</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group list-group-flush" >
+                                <li class="list-group-item">
+                                    <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>Subject: C=KR,
+                                        O=KISTI, CN=KISTI Certification Authority</li>
+                                <li class="list-group-item">
+                                    <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                    <a href="http://ca.gridcenter.or.kr/certs/cps/KISTI-CA-CPCPS-3.0.pdf"
+                                        target="_blank"> Certificate Policy and Certification Practice Statement (for
+                                        v3.0)</a></li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Valid From: Apr 14,
+                                        2017</li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Valid Until: Apr 9,
+                                        2037 (for 20 years) </li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Key size: 4096
+                                        bits</li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Download :
+                                    <a href="http://ca.gridcenter.or.kr/certs/certificates/kisti-ca-v3.0"
+                                        target="_blank"><u>kisti-ca-v3.0</u></a>
+                                    (<a href="http://ca.gridcenter.or.kr/certs/certificates/kisti-ca-v3.crt"
+                                        target="_blank">.crt</a>)
+                                    (<a href="http://ca.gridcenter.or.kr/certs/certificates/kisti-ca-v3.txt"
+                                        target="_blank">.txt</a>)
+                                    (<a href="http://ca.gridcenter.or.kr/certs/certificates/kisti-ca-v3.signing_policy"
+                                        target="_blank"><u>signing_policy</u></a>)
+                                </li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA256
+                                        Fingerprint=<br>CD:D6:F9:D8:39:75:94:29:71:6F:61:07:8E:77:91:A0:61:F7:42:B7:BE:72:CF:A9:CE:7C:E2:60:7F:5A:09:F1
+                                </li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA1
+                                        Fingerprint=<br>06:52:34:EE:81:0A:E5:9C:43:68:54:84:8C:8A:D4:DF:0D:75:A7:45
+                                </li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Issued Certificates <a
+                                            href="http://ca.gridcenter.or.kr/issued_v3/" class="badge badge-light"
+                                            target="_blank">list</a></li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> CRL(Certificate
+                                        Revocation List): <a
+                                            href="http://ca.gridcenter.or.kr/CRL/kisti-ca-v3.crl">http://ca.gridcenter.or.kr/CRL/kisti-ca-v3.crl</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- KISTI CA V2.0 -->
+            <div class="modal fade" id="kisticav2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">KISTI CA v2.0</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> C=KR, O=KISTI, O=GRID,
+                                        CN=KISTI Grid Certificate Authority</li>
+                                <li class="list-group-item">
+                                    <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                    <a href="http://ca.gridcenter.or.kr/cps/KISTI-CPCPS-2.0.html" target="_blank">
+                                        Certificate Policy and Certification Practice Statement (for v2.0)</a></li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Valid From: Jul 12,
+                                        2007</li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Valid Until: Aug 1,
+                                        2017 (for 10 years)</li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Key size: 2048
+                                        bits</li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Download :
+                                    <a href="http://ca.gridcenter.or.kr/certs/certificates/722e5071.0"
+                                        target="_blank"><u>722e5071.0</u></a>
+                                    (<a href="http://ca.gridcenter.or.kr/certs/certificates/722e5071.crt"
+                                        target="_blank">.crt</a>)
+                                    (<a href="http://ca.gridcenter.or.kr/certs/certificates/722e5071.txt"
+                                        target="_blank">.txt</a>)
+                                    (<a href="http://ca.gridcenter.or.kr/certs/certificates/722e5071.signing_policy"
+                                        target="_blank"><u>signing_policy</u></a>)
+                                </li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA256
+                                        Fingerprint=EA:08:BA:6A:36:C9:F1:0A:B5:2F:BB:67:C7:A4:3D:C9:52:B7:CE:DB
+                                </li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA1
+                                        Fingerprint=06:52:34:EE:81:0A:E5:9C:43:68:54:84:8C:8A:D4:DF:0D:75:A7:45
+                                </li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Issued Certificates <a
+                                            href="http://ca.gridcenter.or.kr/issued/" class="badge badge-light"
+                                            target="_blank">list</a></li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> CRL(Certificate
+                                        Revocation List): <a
+                                            href="http://ca.gridcenter.or.kr/CRL/722e5071.crl">http://ca.gridcenter.or.kr/CRL/722e5071.crl</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Production Level -->
+            <div class="modal fade" id="productionLevel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Production Level CA (June 1, 2004 - Nov.
+                                2006)</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Subject : C=KR,
+                                        O=KISTI, CN=KISTI GRID ROOT CA</li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Valid until : May 30,
+                                        2009 GMT </li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Key size: 2048
+                                        bits</li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Download :</span>
+                                    <a href="http://ca.gridcenter.or.kr/certs/certificates/47183fda.0"
+                                        target="_blank"><u>47183fda.0</u></a>
+                                    (<a href="http://ca.gridcenter.or.kr/certs/certificates/47183fda.txt"
+                                        target="_blank">.txt</a>)
+                                    (<a href="http://ca.gridcenter.or.kr/certs/certificates/47183fda.signing_policy"
+                                        target="_blank"><u>signing_policy</u></a>)
+                                </li>
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> CRL(Certificate
+                                        Revocation List): <a
+                                            href="http://ca.gridcenter.or.kr/CRL/47183fda.crl">http://ca.gridcenter.or.kr/CRL/47183fda.crl</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
   </div> <!-- container -->
 </section>
 
@@ -491,8 +494,8 @@
                   <p>Please Fill out the form below and contact the Registration Authority (RA) of your experiment community.
                   <br><i class="lni-envelope" style="padding-right:10px"></i><a class="page-scroll" href="#contact" style="color:#FFF"> Community mail list</a></p>
                   <ul>
-                      <li><a class="main-btn custom" href="assets/docs/kisti_ca_user_form_v1.5.pdf" target="_blank"><i class="lni-download"></i>  Applicant</a></li>
-                      <li><a class="main-btn custom-2" href="assets/docs/Personal_Information_Protection_Act.pdf" target="_blank"><i class="lni-download"></i>  Agreement</a></li>
+                      <li><a class="main-btn custom" href="assets/docs/kisti_ca_user_form_v1.5.pdf" target="_blank"><i class="lni-download icon"></i>  Applicant</a></li>
+                      <li><a class="main-btn custom-2" href="assets/docs/Personal_Information_Protection_Act.pdf" target="_blank"><i class="lni-download icon"></i>  Agreement</a></li>
                   </ul>
                   <p style="padding-left:200px"><i class="lni-pin-alt"></i> KOREAN only</p>
               </div> <!-- call action content -->
@@ -601,17 +604,21 @@
                   </div>
                   <div class="modal-body">
                       <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><span class="lni-angle-double-right" style="line-height: 20px;"> 
-                              <a data-toggle="collapse" href="#browser-cert" role="button" aria-expanded="true"><b>Create Browser Certificate</b></a>
-                              <a href="enrol/browser.jsp"><b>Create Browser Certificate</b></a>
-                              <br>Install a certificate in your web browser. This certificate may be exportable depending on browser and browser settings.</span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right" style="line-height: 20px;"> 
-                              <a data-toggle="collapse" href="#cert-from-csr" role="button" aria-expanded="true"><b>Create Certificate from CSR</b></a>
-                              <br>Send a PKCS#10 certificate request generated by your server, and receive a certificate that can be installed on the server. Consult your server documentation.</span></li>
-                          <li class="list-group-item"><span class="lni-angle-double-right" style="line-height: 20px;">
-                              <a data-toggle="collapse" href="#keystore" role="button" aria-expanded="true"><b>Create Keystore</b></a>
-                              <br>Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. This keystore can be installed in a server, browser or in other applications.</span></li>
-                      </ul>
+                            <li class="list-group-item">
+                                <span class="list-arrow"><i class="fas fa-arrow-alt-circle-right"></i></span>
+                                <a href="enrol/browser.jsp" role="button"><h6 class="title">Create Browser Certificate</h6></a>
+                                <p class="pt-10">Install a certificate in your web browser. This certificate may be exportable depending on browser and browser settings.</span></li>
+                            <li class="list-group-item">
+                                <span class="list-arrow"><i class="fas fa-arrow-alt-circle-right"></i></span>
+                                <a href="enrol/server.jsp" role="button"><h6 class="title">Create Certificate from CSR</h6></a>
+                                <p class="pt-10">Send a PKCS#10 certificate request generated by your server, and receive a certificate that can be installed on the server. Consult your server documentation.</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="list-arrow"><i class="fas fa-arrow-alt-circle-right"></i></span>
+                                <a href="enrol/keystore.jsp" role="button"><h6 class="title">Create Keystore</h6></a>
+                                <p class="pt-10">Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. This keystore can be installed in a server, browser or in other applications.</span>
+                            </li>
+                        </ul>
                   </div>
                   <div class="collapse" id="browser-cert">
                       <div class="card card-body">

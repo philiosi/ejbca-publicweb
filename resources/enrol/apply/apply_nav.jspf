@@ -4,12 +4,12 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
                 <div class="section-title text-center pb-30">
-					<h2><%= org.ejbca.config.InternalConfiguration.getAppNameCapital() %> Firefox Certificate Enrollment</h2>
+					<h6 class="title" style="font-size:30px;"><%= org.ejbca.config.InternalConfiguration.getAppNameCapital() %> Firefox Certificate Enrollment</h6>
 					<p>Welcome to certificate enrollment.</p>
-					<p>If you want to, you can manually install the CA certificate(s)
+					<p class="emphasis-mid">If you want to, you can manually install the CA certificate(s)
 					in your browser, otherwise this will be done automatically when
 					your certificate is retrieved.</p>
-					<p>Install CA certificates:
+					<p class="black"><i class="fas fa-link icon"></i><b>Install CA certificates</b>:
 					<c:choose>
 						<c:when test="${fn:length(finder.CACertificateChain) == 0}">
 							<em>No CA certificates exist</em>
@@ -20,7 +20,7 @@
 								<c:param name="level" value="0" />
 								<c:param name="caid" value="${caid}" />
 							</c:url>
-							<a href="${chain_url}"><i class="fas fa-link"></i> Certificate chain</a>
+							<a href="${chain_url}">Certificate chain</a>
 						</c:otherwise>
 					</c:choose>
 				</p>
@@ -32,7 +32,7 @@
 	<div class="row justify-content-center">
         <div class="col-lg-4 col-md-8 col-sm-9">        
             <div class="card text-center mt-30">
-                <div class="card-header "> 
+                <div class="card-header"> 
                     <h3 class="title"> Options </h3>
                 </div>
                 <div class="card-body">
@@ -40,7 +40,7 @@
 
 					<c:if test="${minKeyLength <= 1024 || applybean.certificateProfileListShown}">
 					<%-- <fieldset> --%>
-						<i><c:out value="Leave values as default if unsure."/></i>
+						<span class="emphasis-mid"><i><c:out value="Leave values as default if unsure."/></i></span>
 						<br/>
 					</c:if>
 						<input name="user" type="hidden" value="<c:out value="${username}" />" />
