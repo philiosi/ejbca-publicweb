@@ -63,6 +63,9 @@ span,
 a {
   display: inline-block; }
 
+.icon {
+  padding-right: 5px;  }
+
 h1,
 h2,
 h3,
