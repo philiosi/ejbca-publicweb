@@ -37,6 +37,8 @@
 
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/be00ef9623.js" crossorigin="anonymous"></script>
 </head>
   
 <body>
