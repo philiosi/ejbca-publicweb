@@ -1,42 +1,22 @@
 <!--====== FOOTER PART START ======-->
 
-<footer id="footer" class="footer-area">
-    <div class="footer-widget pt-130 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="footer-content text-center">
-                        <a href="index.html">
-                            <img src="assets/images/logo-2.png" alt="Logo">
-                        </a>
-                        <p class="mt-">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <ul>
-                            <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                            <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                            <li><a href="#"><i class="lni-pinterest"></i></a></li>
-                            <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                        </ul>
-                    </div> <!-- footer content -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </div> <!-- footer widget -->
-    <div class="footer-copyright pb-20">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="copyright-text text-center pt-20">
-                        <p>Copyright © 2020. KISTI CA </p>
-                    </div> <!-- copyright text -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </div> <!-- footer widget -->
-</footer>
+    <footer id="footer" class="footer-area">
+        <div class="footer-copyright pb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text text-center pt-20">
+                            <p>Copyright © 2020. GSDC, 
+                                <!-- <img src="assets/images/gsdc-blue.png" style="width: 3em;" alt="gsdc Logo"> -->
+                                Korea Institute of Science and Technology Information </p>
+                        </div> <!-- copyright text -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+    </footer>
 
-<!--====== FOOTER PART ENDS ======-->
+    <!--====== FOOTER PART ENDS ======-->
 
 <!--====== BACK TOP TOP PART START ======-->
 

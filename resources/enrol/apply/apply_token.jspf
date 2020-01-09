@@ -1,21 +1,21 @@
 <section id="certificate" class="service-area gray-bg pt-125 pb-25">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8">
-                <div class="section-title text-center pb-30">
+			<div class="col-lg-10">
+                <div class="section-title text-left pb-30">
 					<h2><%= org.ejbca.config.InternalConfiguration.getAppNameCapital() %> Token Certificate Enrollment</h2>
 					<p>Welcome to certificate enrollment.</p>
-					<p>If you want to, you can manually install the CA certificate(s)
+					<p class="emphasis-mid">If you want to, you can manually install the CA certificate(s)
 					in your browser, otherwise this will be done automatically when
 					your certificate is retrieved.</p>
-					<p><i class="fas fa-link"></i> Install CA certificates:
+					<p class="black"><i class="fas fa-link icon"></i><b>Install CA certificates</b>:
                     <c:if test="${forcedBrowser != null}">
                         <c:set var="browser" value="${forcedBrowser}" />
                     </c:if>
 
                     <c:choose>
                         <c:when test="${fn:length(finder.CACertificateChain) == 0}">
-                            <p>No CA certificates exist</p>
+                            <p class="emphasis-mid">No CA certificates exist</p>
                         </c:when>
                         <c:otherwise>
                             <c:url var="chain_url" value="../publicweb/webdist/certdist" >
@@ -64,14 +64,14 @@
 
                         <c:if test="${!applybean.keyRecovery}">
                             <c:if test="${hasOptions}">
-                                <fieldset>
-                                    <legend>Options</legend>
+                                <%-- <fieldset> --%>
+                                    <%-- <legend>Options</legend> --%>
                                     <i><c:out value="Leave values as default if unsure."/></i>
                                     <br />
                             </c:if>
 
+                            <label for="tokenKeySpec"><i class="fas fa-key"> Key specification:</label>
                             <c:if test="${fn:length(availableTokenKeySpecs) > 1}">
-                                <label for="tokenKeySpec"><i class="fas fa-key"> Key specification:</label>
                                 <select name="tokenKeySpec" id="tokenKeySpec" size="1">
                                     <c:forEach var="tokenKeySpec" items="${availableTokenKeySpecs}">
                                         <option value="${fn:split(tokenKeySpec,";")[0]}">${fn:split(tokenKeySpec,";")[1]}</option>
@@ -106,7 +106,7 @@
                         <input class="main-btn" type="submit" id="ok" value="Enroll" />
 
                         <c:if test="${hasOptions && !applybean.keyRecovery}">
-                            </fieldset>
+                            <%-- </fieldset> --%>
                         </c:if>
 
                     </form>

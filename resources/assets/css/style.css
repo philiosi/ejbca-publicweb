@@ -119,6 +119,10 @@ p {
   color: rgb(180, 144, 214);
 }
 
+.emphasis-mid {
+  color: rgb(180, 144, 214);
+}
+
 /*===== All Button Style =====*/
 .main-btn {
   display: inline-block;

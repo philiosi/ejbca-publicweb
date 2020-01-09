@@ -536,7 +536,7 @@
                           </ul>
                       </div>
                       <div class="certificate-btn">
-                          <a class="main-btn" href="#enroll-cert" data-toggle="modal" data-target="#enroll-cert"><i class="lni-enter"></i> go</a>
+                          <a class="main-btn" href="#enroll-cert" data-toggle="modal" data-target="#enroll-cert"><i class="lni-enter icon"></i>get certificate</a>
                       </div>
                   </div>
               </div> <!-- single certificate -->
@@ -559,7 +559,7 @@
                           </ul>
                       </div>
                       <div class="certificate-btn">
-                          <a class="main-btn" href="#contact">get quote</a>
+                          <a class="main-btn" href="#contact"><i class="lni-enter icon"></i>fetch certificate</a>
                       </div>
                   </div>
               </div> <!-- single certificate -->
@@ -581,7 +581,7 @@
                           </ul>
                       </div>
                       <div class="certificate-btn">
-                          <a class="main-btn" href="#contact">get quote</a>
+                          <a class="main-btn" href="#contact"><i class="lni-enter icon"></i>inspect certificate</a>
                       </div>
                   </div>
               </div> <!-- single certificate -->
@@ -647,69 +647,9 @@
 
 <!--====== CERTIFICATE PART ENDS ======-->
 
-<!--====== BLOG PART START ======-->
-
-<section id="blog" class="blog-area pt-125 pb-130">
-  <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-lg-8">
-              <div class="section-title text-center pb-25">
-                  <h2 class="title">From The Blog</h2>
-                  <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur
-                      sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
-              </div> <!-- section title -->
-          </div>
-      </div> <!-- row -->
-      <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-8 col-sm-9">
-              <div class="single-blog mt-30">
-                  <div class="blog-image">
-                      <img src="assets/images/blog/b-1.jpg" alt="Blog">
-                  </div>
-                  <div class="blog-content">
-                      <h4 class="blog-title"><a href="#">Hired Releases 2023 Brand Health.</a></h4>
-                      <span>July 26, 2022</span>
-                  </div>
-              </div> <!-- single blog -->
-          </div>
-          <div class="col-lg-4 col-md-8 col-sm-9">
-              <div class="single-blog mt-30">
-                  <div class="blog-image">
-                      <img src="assets/images/blog/b-2.jpg" alt="Blog">
-                  </div>
-                  <div class="blog-content">
-                      <h4 class="blog-title"><a href="#">Hired Releases 2023 Brand Health.</a></h4>
-                      <span>July 26, 2022</span>
-                  </div>
-              </div> <!-- single blog -->
-          </div>
-          <div class="col-lg-4 col-md-8 col-sm-9">
-              <div class="single-blog mt-30">
-                  <div class="blog-image">
-                      <img src="assets/images/blog/b-3.jpg" alt="Blog">
-                  </div>
-                  <div class="blog-content">
-                      <h4 class="blog-title"><a href="#">Hired Releases 2023 Brand Health.</a></h4>
-                      <span>July 26, 2022</span>
-                  </div>
-              </div> <!-- single blog -->
-          </div>
-      </div> <!-- row -->
-      <div class="row">
-          <div class="col-lg-12">
-              <div class="blog-more text-center mt-50">
-                  <a class="main-btn" href="#">More posts</a>
-              </div> <!-- blog more -->
-          </div>
-      </div> <!-- row -->
-  </div> <!-- container -->
-</section>
-
-<!--====== BLOG PART ENDS ======-->
-
 <!--====== CONTACT PART START ======-->
 
-<section id="contact" class="contact-area pt-125 pb-130 gray-bg">
+<section id="contact" class="contact-area pt-125 pb-130 white-bg">
   <div class="container">
       <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -759,36 +699,27 @@
           </div>
       </div> <!-- row -->
       <div class="row">
-          <div class="col-lg-6">
-              <div class="contact-form pt-30">
-                  <form id="contact-form" action="assets/contact.php">
-                      <div class="single-form">
-                          <input type="text" name="name" placeholder="Name">
-                      </div> <!-- single form -->
-                      <div class="single-form">
-                          <input type="email" name="email" placeholder="Email">
-                      </div> <!-- single form -->
-                      <div class="single-form">
-                          <textarea name="message" placeholder="Message"></textarea>
-                      </div> <!-- single form -->
-                      <p class="form-message"></p>
-                      <div class="single-form">
-                          <button class="main-btn" type="submit">Send Message</button>
-                      </div> <!-- single form -->
-                  </form>
-              </div> <!-- contact form -->
-          </div>
-          <div class="col-lg-6">
-              <div class="contact-map mt-60">
-                  <div class="gmap_canvas">
-                      <iframe id="gmap_canvas"
-                          src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                  </div>
-              </div> <!-- contact map -->
-          </div>
-      </div> <!-- row -->
-  </div> <!-- container -->
+           <div class="col-lg-6">
+                <div class="contact-box mt-60">
+                    <div class="contact-icon">
+                        <i class="lni-users"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h6 class="contact-title">RA mailing list</h6>
+                        <ul>
+                            <li><span class="emphasis-mid">KISTI RA mailing list</span>: kisti-grid-ra@kisti.re.kr</li>
+                            <li><span class="emphasis-mid">GSDC ALICE Support</span>: Sang-Un Ahn (sahn@kisti.re.kr) </li>
+                            <li><span class="emphasis-mid">GSDC CMS Support</span>: Geonmo Ryu (geonmo@kisti.re.kr) </li>
+                            <li><span class="emphasis-mid">GSDC LIGO Support</span>: Sangwook Bae (wookie@kisti.re.kr) </li>
+                            <li><span class="emphasis-mid">GSDC Belle II Support</span>: Ilyeon Yeo (ilyeon9@kisti.re.kr) </li>
+                        </ul>
+                    </div>
+                </div> <!-- contact form -->
+            </div>
+            <div class="col-lg-6">
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
 </section>
 
 <!--====== CONTACT PART ENDS ======-->
