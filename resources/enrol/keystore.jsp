@@ -18,15 +18,14 @@
                                 <span class="nav-item emphasis-mid pr-30"><b>Enroll</b></span>
                                 <li class="nav-item pr-15"><a href="browser.jsp">Create Browser Certificate</a></li>
                                 <li class="nav-item pr-15"><a href="server.jsp">Create Certificate from CSR</a></li>
-                                <li class="nav-item pr-15"><a href="keystore.jsp">Create Keystore</a></li>
+                                <li class="nav-item pr-15"><a href="keystore.jsp"><b>Create Keystore</b></a></li>
                                 <li class="nav-item pl-30 pr-15 emphasis-mid"><a href="retrieve/list_certs.jsp">Fetch Certificate</a></li>
                             <li class="nav-item  pl-30 pr-15 emphasis-mid"><a href="inpect/request.jsp">Inspect Certificate</a></li>
                             </ul>
                         </ul>
                         </div> <!-- navbar collapse -->
                     </nav> <!-- navbar -->
-                    <h6 class="title">Create Keystore</h6>
-                    <p class="pt-10">Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. This keystore can be installed in a server, browser or in other applications.</span>
+                    <p class="pt-10 ml-70">Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. This keystore can be installed in a server, browser or in other applications.</span>
                 </div>
             </div>
         </div>
