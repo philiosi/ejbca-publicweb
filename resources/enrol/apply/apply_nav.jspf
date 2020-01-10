@@ -58,9 +58,9 @@
 						
 						<c:if test="${applybean.certificateProfileListShown}">
 							<label for="certprofile">Certificate profile:</label>
-							<select name="certprofile" id="certprofile" size="1">
+							<select class="custom-select" name="certprofile" id="certprofile" size="1">
 								<c:forEach var="profile" items="${availableCertProfiles}">
-									<option value="<c:out value="${profile}" />" 
+									<option class="dropdown-item" value="<c:out value="${profile}" />" 
 									<c:if test="${userCertProfile==profile}">selected</c:if>><c:out value="${profile}"/>
 									</option>
 								</c:forEach>
