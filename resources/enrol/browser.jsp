@@ -6,7 +6,7 @@
 
 <c:set var="THIS_FILENAME" value="/${internalConfiguration.appNameLowerDynamic}/enrol/browser.jsp" />
 <c:set var="PASSWORD_TERMINOLOGY" value="enrollment_code" />
-<section id="about" class="about-area pt-30">
+<section id="about" class="about-area pt-90">
     <div class="navigation-2nd">
         <div class="container">
             <div class="row">
