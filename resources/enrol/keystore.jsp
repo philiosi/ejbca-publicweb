@@ -6,7 +6,7 @@
 
 <c:set var="THIS_FILENAME" value="/${internalConfiguration.appNameLowerDynamic}/enrol/keystore.jsp" />
 
-<section id="about" class="about-area pt-30">
+<section id="about" class="about-area pt-90">
     <div class="navigation-2nd">
         <div class="container">
             <div class="row">
