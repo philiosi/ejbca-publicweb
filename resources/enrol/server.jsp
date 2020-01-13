@@ -8,7 +8,7 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto pt-15">
+                            <ul class="navbar-nav ml-auto">
                                 <span class="nav-item emphasis-mid pr-30"><b>Enroll</b></span>
                                 <li class="nav-item pr-15"><a href="browser.jsp" class="nav-link">Create Browser Certificate</a></li>
                                 <li class="nav-item pr-15"><a href="server.jsp" class="nav-link nav-link-b"><b>Create Certificate from CSR</b></a></li>
@@ -37,12 +37,12 @@
         </div> <!-- row END -->
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-11 col-sm-12">
-                <p>Please give your username and enrollment code, select a PEM- or DER-formated certification request file (CSR) for upload, 
+                <p class="mr-45 ml-45">Please give your username and enrollment code, select a PEM- or DER-formated certification request file (CSR) for upload, 
                     or paste a PEM-formated request into the field below and click OK to fetch your certificate. </p>
                 <%-- <p>A PEM-formatted request is a BASE64 encoded certificate request <br />
                         starting with <code class="emphasis-mid"><b>-----BEGIN CERTIFICATE REQUEST-----</code></b><br />
                         and ending with <code class="emphasis-mid"><b>-----END CERTIFICATE REQUEST-----</code></b></p>         --%>
-                <div class="card text-center mt-10" style="width:48em:important">
+                <div class="card text-center mt-10 ml-45 mr-45">
                     <div class="card-header "> 
                         <h3 class="title"> Enroll </h3>
                     </div> <!-- card-header END -->
@@ -84,10 +84,11 @@
                                 placeholder="-----BEGIN CERTIFICATE REQUEST-----
 
                                 -----END CERTIFICATE REQUEST-----"></textarea> --%>
-                                <textarea class="form-control" rows="15" cols="66" name="pkcs10req" id="pkcs10req" aria-label="With textarea"
-                                placeholder=""><p>A PEM-formatted request is a BASE64 encoded certificate request <br />
-                                starting with <code class="emphasis-mid"><b>-----BEGIN CERTIFICATE REQUEST-----</code></b><br />
-                                and ending with <code class="emphasis-mid"><b>-----END CERTIFICATE REQUEST-----</code></b></p>   </textarea>
+                                <textarea class="form-control" rows="15" cols="66" name="pkcs10req" id="pkcs10req" aria-label="With textarea" placeholder="">
+                                <p>A PEM-formatted request is a BASE64 encoded certificate request</p>
+                                <p> starting with <span class="emphasis-mid">-----BEGIN CERTIFICATE REQUEST-----</span></p>
+                                <p> and ending with <span class="emphasis-mid">-----END CERTIFICATE REQUEST-----</span></p>   
+                                </textarea>
                             </div>
 
                             <br />

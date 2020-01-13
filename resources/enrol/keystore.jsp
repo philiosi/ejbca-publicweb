@@ -13,7 +13,7 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto pt-15">
+                            <ul class="navbar-nav ml-auto">
                                 <span class="nav-item emphasis-mid pr-30"><b>Enroll</b></span>
                                 <li class="nav-item pr-15"><a href="browser.jsp" class="nav-link">Create Browser Certificate</a></li>
                                 <li class="nav-item pr-15"><a href="server.jsp"  class="nav-link">Create Certificate from CSR</a></li>
