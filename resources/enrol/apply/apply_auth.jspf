@@ -6,10 +6,11 @@
                     <h6 class="title" style="font-size:30px;">CERTIFICATE ENROLLMENT
                     <c:choose>
                         <c:when test="${PASSWORD_TERMINOLOGY == 'enrollment_code'}">(Browser) </h6>
-                        <p class="pt-10"> Install a certificate in your web browser. This certificate may be exportable depending on browser and browser settings.</span></c:when>
+                        <p class="pt-10 "> Install a certificate in your web browser. This certificate may be exportable depending on browser and browser settings.</span></c:when>
                         <c:otherwise>
-                        (Keystore Token)</h6>
-                        <p class="pt-10 ml-70">Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. This keystore can be installed in a server, browser or in other applications.</span>
+                        (Keystore)</h6>
+                        <p class="pt-10">Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. 
+                        <br>This keystore can be installed in a server, browser or in other applications.</span>
                         </c:otherwise>
                     </c:choose>
                 </div> <!-- section title END -->
@@ -18,18 +19,19 @@
     
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-11 col-sm-12">
-                <p>Please enter your username and
-                <c:choose>
-                    <c:when test="${PASSWORD_TERMINOLOGY == 'enrollment_code'}">enrollment code. (check your email)</c:when>
-                    <c:otherwise>password.</c:otherwise>
-                </c:choose>        
-                <div class="card text-center mt-10">
+                <div class="card text-center mt-10 mr-55 ml-55">
                     <div class="card-header "> 
                         <h3 class="title"> Authentication </h3>
                     </div>
                     <div class="card-body">
                         <form name="CertReqForm" action="${THIS_FILENAME}"  method="post">
-                        <br>Then click OK to generate your certificate.</p>
+                        <p style="text-align: left;">
+                        <span class="emphasis-mid">Please enter your username and
+                        <c:choose>
+                            <c:when test="${PASSWORD_TERMINOLOGY == 'enrollment_code'}">enrollment code. (check your email)</c:when>
+                            <c:otherwise>password.</c:otherwise>
+                        </c:choose>
+                        <br>Then click OK to generate your certificate. </span></p>
                         <c:if test="${forcedBrowser != null}">
                             <input type="hidden" name="${FORCE_BROWSER}" value="<c:out value="${forcedBrowser}" />" />
                         </c:if>

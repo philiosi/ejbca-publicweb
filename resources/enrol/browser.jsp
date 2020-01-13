@@ -15,11 +15,11 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <span class="nav-item emphasis-mid pr-30"><b>Enroll</b></span>
-                                <li class="nav-item pr-15"><a href="browser.jsp"><b>Create Browser Certificate</b></a></li>
-                                <li class="nav-item pr-15"><a href="server.jsp">Create Certificate from CSR</a></li>
-                                <li class="nav-item pr-15"><a href="keystore.jsp">Create Keystore</a></li>
-                                <li class="nav-item pl-30 pr-15 emphasis-mid"><a href="retrieve/list_certs.jsp">Fetch Certificate</a></li>
-                            <li class="nav-item  pl-30 pr-15 emphasis-mid"><a href="inpect/request.jsp">Inspect Certificate</a></li>
+                                <li class="nav-item pr-15"><a href="browser.jsp" style="color:#8a8fa3"><b>Create Browser Certificate</b></a></li>
+                                <li class="nav-item pr-15"><a href="server.jsp" style="color:#8a8fa3">Create Certificate from CSR</a></li>
+                                <li class="nav-item pr-15"><a href="keystore.jsp" style="color:#8a8fa3">Create Keystore</a></li>
+                                <li class="nav-item pl-30 pr-15"><a href="retrieve/list_certs.jsp" class="emphasis-mid"><b>Fetch Certificate</b></a></li>
+                                <li class="nav-item  pl-30 pr-15"><a href="inpect/request.jsp" class="emphasis-mid"> <b>Inspect Certificate</b></a></li>
                             </ul>
                         </ul>
                         </div> <!-- navbar collapse -->
