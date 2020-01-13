@@ -15,7 +15,7 @@
                                 <li class="nav-item pr-15"><a href="server.jsp" style="color:#8a8fa3"><b>Create Certificate from CSR</b></a></li>
                                 <li class="nav-item pr-15"><a href="keystore.jsp" style="color:#8a8fa3">Create Keystore</a></li>
                                 <li class="nav-item pl-30 pr-15"><a href="retrieve/list_certs.jsp" class="emphasis-mid"><b>Fetch Certificate</b></a></li>
-                                <li class="nav-item  pl-30 pr-15"><a href="inpect/request.jsp" class="emphasis-mid"> <b>Inspect Certificate</b></li>
+                                <li class="nav-item  pl-30 pr-15"><a href="inpect/request.jsp" class="emphasis-mid"> <b>Inspect Certificate</b></a></li>
                             </ul>
                         </ul>
                         </div> <!-- navbar collapse -->
