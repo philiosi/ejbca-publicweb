@@ -131,6 +131,14 @@ p {
   color: #754ef9; 
 }
 
+.nav-link {
+  color:#8a8fa3;
+}
+
+.nav-link-b {
+  font-weight: 500;
+}
+
 .list-certificate {
   font-size: 14px;
   padding-right: 5px;
