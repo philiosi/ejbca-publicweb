@@ -1,9 +1,9 @@
-<section id="certificate" class="service-area gray-bg pt-125 pb-25">
+<section id="certificate" class="service-area gray-bg pt-30 pb-25">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="section-title text-center pb-30">
-                    <h6 class="title" style="font-size:30px;"">KISTI CA CERTIFICATE ENROLLMENT </h6>
+                    <h6 class="title" style="font-size:30px;">KISTI CA CERTIFICATE ENROLLMENT </h6>
                     <p>Please enter your username and
                     <c:choose>
                         <c:when test="${PASSWORD_TERMINOLOGY == 'enrollment_code'}">enrollment code. (check your email)</c:when>
@@ -40,7 +40,7 @@
                             <div class="input-group form-group">
                                 <c:choose>
                                     <c:when test="${PASSWORD_TERMINOLOGY == 'enrollment_code'}">
-                                        
+                                        <p class="pt-10 ml-70"> Install a certificate in your web browser. This certificate may be exportable depending on browser and browser settings.</span>
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                                         </div>
@@ -48,6 +48,7 @@
                                         <input type="password" class="form-control" placeholder="Enrollment Code" autocomplete="off" name="${TEXTFIELD_PASSWORD}" id="${TEXTFIELD_PASSWORD}" accesskey="p" />
                                     </c:when>
                                     <c:otherwise>
+                                        <p class="pt-10 ml-70">Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. This keystore can be installed in a server, browser or in other applications.</span>
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                                         </div>

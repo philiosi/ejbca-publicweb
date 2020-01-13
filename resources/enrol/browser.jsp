@@ -6,7 +6,7 @@
 
 <c:set var="THIS_FILENAME" value="/${internalConfiguration.appNameLowerDynamic}/enrol/browser.jsp" />
 <c:set var="PASSWORD_TERMINOLOGY" value="enrollment_code" />
-<section id="about" class="about-area pt-90">
+<section id="about" class="about-area pt-30">
     <div class="navigation-2nd">
         <div class="container">
             <div class="row">
@@ -24,7 +24,6 @@
                         </ul>
                         </div> <!-- navbar collapse -->
                     </nav> <!-- navbar -->
-                    <p class="pt-10 ml-70"> Install a certificate in your web browser. This certificate may be exportable depending on browser and browser settings.</span>
                 </div>
             </div>
         </div>

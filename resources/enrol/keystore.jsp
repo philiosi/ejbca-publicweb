@@ -6,7 +6,6 @@
 
 <c:set var="THIS_FILENAME" value="/${internalConfiguration.appNameLowerDynamic}/enrol/keystore.jsp" />
 
-
 <section id="about" class="about-area pt-90">
     <div class="navigation-2nd">
         <div class="container">
@@ -25,7 +24,6 @@
                         </ul>
                         </div> <!-- navbar collapse -->
                     </nav> <!-- navbar -->
-                    <p class="pt-10 ml-70">Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. This keystore can be installed in a server, browser or in other applications.</span>
                 </div>
             </div>
         </div>
