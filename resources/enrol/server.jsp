@@ -10,7 +10,6 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <span class="nav-item emphasis-mid pr-30"><b>Enroll</b></span>
-                                <span class="nav-item emphasis-mid pr-30"><b>Enroll</b></span>
                                 <li class="nav-item pr-15"><a href="browser.jsp" style="color:#8a8fa3">Create Browser Certificate</a></li>
                                 <li class="nav-item pr-15"><a href="server.jsp" style="color:#8a8fa3"><b>Create Certificate from CSR</b></a></li>
                                 <li class="nav-item pr-15"><a href="keystore.jsp" style="color:#8a8fa3">Create Keystore</a></li>
