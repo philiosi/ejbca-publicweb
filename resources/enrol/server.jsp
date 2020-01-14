@@ -87,8 +87,8 @@
                                 placeholder="-----BEGIN CERTIFICATE REQUEST-----
 
                                 -----END CERTIFICATE REQUEST-----"></textarea> --%>
-                                <textarea class="form-control" rows="15" cols="66" name="pkcs10req" id="pkcs10req" aria-label="With textarea" placeholder="please check a PEM-formatted request infomation above!">
-                                </textarea>
+                                <textarea class="form-control" rows="15" cols="66" name="pkcs10req" id="pkcs10req" 
+                                aria-label="With textarea" placeholder="please check a PEM-formatted request infomation above!"></textarea>
                             </div>
 
                             <br />

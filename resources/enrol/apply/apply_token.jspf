@@ -105,7 +105,8 @@
 
                         <label for="ok"></label>
                         <%-- <br><input class="main-btn" type="submit" id="ok" value="Enroll" /> --%>
-                        <br><input class="main-btn" type="submit" id="ok" name="redirect_to" value="../result_download.jsp" /> 
+                        <input type="hidden" name="result" value="../result_download.jsp" />
+                        <br><br><input class="main-btn" type="submit" id="ok" name="redirect_to" value="Enroll" /> 
 
                         <c:if test="${hasOptions && !applybean.keyRecovery}">
                             <%-- </fieldset> --%>
