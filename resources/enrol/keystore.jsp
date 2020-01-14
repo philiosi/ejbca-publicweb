@@ -18,8 +18,8 @@
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="browser.jsp" class="nav-alink">Create Browser Certificate</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="server.jsp"  class="nav-alink">Create Certificate from CSR</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="keystore.jsp"  class="nav-alink nav-alink-b">Create Keystore</a></li>
-                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="retrieve/list_certs.jsp" class="nav-alink-b emphasis-mid">Fetch Certificate</a></li>
-                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="inpect/request.jsp" class="nav-alink-b emphasis-mid">Inspect Certificate</a></li>
+                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="retrieve/list_certs.jsp" class="nav-alink-b nav-sub">Fetch Certificate</a></li>
+                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="inpect/request.jsp" class="nav-alink-b nav-sub">Inspect Certificate</a></li>
                             </ul>
                         </ul>
                         </div> <!-- navbar collapse -->

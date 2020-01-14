@@ -1,14 +1,14 @@
 <section id="certificate" class="service-area gray-bg pt-90 pb-25">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row justify-content-center ml-50 mr-50">
 			<div class="col-lg-10">
-                <div class="section-title text-left pb-30">
-					<h6 class="title" style="font-size:30px;"><%= org.ejbca.config.InternalConfiguration.getAppNameCapital() %> Token Certificate Enrollment</h6>
-					<p>Welcome to certificate enrollment.</p>
-					<p class="emphasis-mid">If you want to, you can manually install the CA certificate(s)
+                <div class="section-title text-center">
+					<h6 class="title" style="font-size:30px;">KISTICA Token Certificate Enrollment</h6>
+					<p class="text-left">Welcome to certificate enrollment.</p>
+					<p class="emphasis-mid text-left">If you want to, you can manually install the CA certificate(s)
 					in your browser, otherwise this will be done automatically when
 					your certificate is retrieved.</p>
-					<p class="black"><i class="fas fa-link icon"></i><b>Install CA certificates</b>:
+					<p class="black text-left ml-10"><i class="fas fa-link icon"></i><b>Install CA certificates</b>:
                     <c:if test="${forcedBrowser != null}">
                         <c:set var="browser" value="${forcedBrowser}" />
                     </c:if>
@@ -30,10 +30,11 @@
                     <c:set var="availableTokenKeySpecs" value="${applybean.availableTokenKeySpecs}" />
                     <c:set var="hasOptions" value="${fn:length(availableTokenKeySpecs) > 1 || applybean.certificateProfileListShown || applybean.openVPNInstallerConfigured}" />
 
+                    <br><br>
                     <!-- Information text -->
                     <c:if test="${!applybean.keyRecovery}">
                         <c:if test="${hasOptions}">
-                            <p>Please choose a key length, then click 'Enroll' to fetch your certificate.</p>
+                            <p class="text-left"><span class="emphasis-mid">Please choose a key length, then click 'Enroll' to fetch your certificate.</span></p>
                             <c:if test="${applybean.openVPNInstallerConfigured}">
                                 <p>Tick the &quot;OpenVPN&quot; checkbox if you want to create an OpenVPN installer. This options requires special configuration of the CA.</p>
                             </c:if>
@@ -51,7 +52,7 @@
     </div> <!-- container END -->
     <div class="row justify-content-center">
         <div class="col-lg-4 col-md-8 col-sm-9">        
-            <div class="card text-center mt-30">
+            <div class="card text-center mt-10">
                 <div class="card-header "> 
                     <h3 class="title"> Options </h3>
                 </div>
@@ -103,7 +104,8 @@
                         </c:if>
 
                         <label for="ok"></label>
-                        <input class="main-btn" type="submit" id="ok" value="Enroll" />
+                        <%-- <br><input class="main-btn" type="submit" id="ok" value="Enroll" /> --%>
+                        <br><input class="main-btn" type="submit" id="ok" name="redirect_to" value="../result_download.jsp" /> 
 
                         <c:if test="${hasOptions && !applybean.keyRecovery}">
                             <%-- </fieldset> --%>

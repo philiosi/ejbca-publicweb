@@ -13,8 +13,8 @@
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="browser.jsp" class="nav-alink">Create Browser Certificate</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="server.jsp" class="nav-alink nav-alink-b">Create Certificate from CSR</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="keystore.jsp" class="nav-alink">Create Keystore</a></li>
-                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="retrieve/list_certs.jsp" class="nav-alink-b emphasis-mid">Fetch Certificate</a></li>
-                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="inpect/request.jsp" class="nav-alink-b emphasis-mid">Inspect Certificate</a></li>
+                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="retrieve/list_certs.jsp" class="nav-alink-b nav-sub">Fetch Certificate</a></li>
+                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="inpect/request.jsp" class="nav-alink-b nav-sub">Inspect Certificate</a></li>
                             </ul>
                         </ul>
                         </div> <!-- navbar collapse -->
@@ -39,7 +39,8 @@
             <div class="col-lg-8 col-md-11 col-sm-12">
                 <p class="mr-45 ml-45">Please give your username and enrollment code, select a PEM- or DER-formated certification request file (CSR) for upload, 
                     or paste a PEM-formated request into the field below and click OK to fetch your certificate. </p>
-                <p>
+                <br>
+                <p class="mr-45 ml-45">
                         A PEM-formatted request is a BASE64 encoded certificate request <br />
                         starting with <code class="emphasis-mid"><b>-----BEGIN CERTIFICATE REQUEST-----</code></b><br />
                         and ending with <code class="emphasis-mid"><b>-----END CERTIFICATE REQUEST-----</code></b>
