@@ -67,6 +67,19 @@
 
     });
 
+    $(document).ready( function(){
+        certHeight = $('#certificate').height();
+        bodyHeight = $('body').height();
+
+        // console.log('cert', certHeight);
+        // console.log('body', bodyHeight);
+
+        if(bodyHeight > certHeight) {
+            $('#certificate').height(bodyHeight);
+            certHeight = $('#certificate').height();
+            // console.log('aftercert', certHeight);
+        }
+    });
 
 
 </script>
