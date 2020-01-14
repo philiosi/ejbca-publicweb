@@ -23,7 +23,7 @@
 							<a href="${chain_url}">Certificate chain</a>
 						</c:otherwise>
 					</c:choose>
-				</p>
+					</p>
 				</div> <!-- section title END -->
 			</div>
 		</div> <!-- row END -->
