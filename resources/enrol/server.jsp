@@ -39,11 +39,11 @@
             <div class="col-lg-8 col-md-11 col-sm-12">
                 <p class="mr-45 ml-45">Please give your username and enrollment code, select a PEM- or DER-formated certification request file (CSR) for upload, 
                     or paste a PEM-formated request into the field below and click OK to fetch your certificate. </p>
-                <p><span><i class="fas fa-info-circle icon"><i>
+                <p>
                         A PEM-formatted request is a BASE64 encoded certificate request <br />
                         starting with <code class="emphasis-mid"><b>-----BEGIN CERTIFICATE REQUEST-----</code></b><br />
                         and ending with <code class="emphasis-mid"><b>-----END CERTIFICATE REQUEST-----</code></b>
-                </span></p>        
+                </p>        
                 <div class="card text-center mt-10 ml-45 mr-45">
                     <div class="card-header "> 
                         <h3 class="title"> Enroll </h3>
