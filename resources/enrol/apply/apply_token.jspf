@@ -1,7 +1,7 @@
-<section id="certificate" class="service-area gray-bg pt-90 pb-25">
+<section id="certificate" class="service-area gray-bg pt-30 pb-25">
 	<div class="container">
 		<div class="row justify-content-center ml-50 mr-50">
-			<div class="col-lg-10">
+			<div class="col-lg-8 col-md-11 col-sm-12">
                 <div class="section-title text-center">
 					<h6 class="title" style="font-size:30px;">KISTICA Token Certificate Enrollment</h6>
 					<p class="text-left">Welcome to certificate enrollment.</p>
@@ -49,70 +49,71 @@
                 </div>
             </div>
         </div> <!-- row END -->
-    </div> <!-- container END -->
-    <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-8 col-sm-9">        
-            <div class="card text-center mt-10">
-                <div class="card-header "> 
-                    <h3 class="title"> Options </h3>
-                </div>
-                <div class="card-body">
-                    <form action="../certreq" enctype="x-www-form-encoded" method="post">
+    
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-8 col-sm-9">        
+                <div class="card text-center mt-10">
+                    <div class="card-header "> 
+                        <h3 class="title"> Options </h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="../certreq" enctype="x-www-form-encoded" method="post">
 
-                        <input name="user" type="hidden" value="<c:out value="${username}" />">
-                        <input name="password" type="hidden" value="<c:out value="${password}" />">
-                        <input type="hidden" name="hidemenu" value="<c:out value="${hidemenu}" />" />
+                            <input name="user" type="hidden" value="<c:out value="${username}" />">
+                            <input name="password" type="hidden" value="<c:out value="${password}" />">
+                            <input type="hidden" name="hidemenu" value="<c:out value="${hidemenu}" />" />
 
-                        <c:if test="${!applybean.keyRecovery}">
-                            <c:if test="${hasOptions}">
-                                <%-- <fieldset> --%>
-                                    <%-- <legend>Options</legend> --%>
-                                    <span class="emphasis-mid"><i><c:out value="Leave values as default if unsure."/></i></span>
-                                    <br />
-                            </c:if>
+                            <c:if test="${!applybean.keyRecovery}">
+                                <c:if test="${hasOptions}">
+                                    <%-- <fieldset> --%>
+                                        <%-- <legend>Options</legend> --%>
+                                        <span class="emphasis-mid"><i><c:out value="Leave values as default if unsure."/></i></span>
+                                        <br />
+                                </c:if>
 
-                            <c:if test="${fn:length(availableTokenKeySpecs) > 1}">
-                                <label for="tokenKeySpec">Key specification:</label>
-                                <select class="custom-select" name="tokenKeySpec" id="tokenKeySpec" size="1">
-                                <c:forEach var="tokenKeySpec" items="${availableTokenKeySpecs}">
-                                    <option class="dropdown-item" value="${fn:split(tokenKeySpec,";")[0]}">${fn:split(tokenKeySpec,";")[1]}</option>
-                                </c:forEach>
-                                </select>
-                                <br />
-                            </c:if>
-                            <c:if test="${fn:length(availableTokenKeySpecs) == 1}">
-                                <input name="tokenKeySpec" type="hidden" value="${fn:split(availableTokenKeySpecs[0],";")[0]}" />
-                            </c:if>
-
-                            <c:if test="${applybean.certificateProfileListShown}">
-                                <label for="certprofile">Certificate profile:</label>
-                                <select class="custom-select" name="certprofile" id="certprofile" size="1">
-                                    <c:forEach var="profile" items="${availableCertProfiles}">
-                                        <option value="<c:out value="${profile}" />" <c:if test="${userCertProfile==profile}">selected</c:if>>
-                                            <c:out value="${profile}"/>
-                                        </option>
+                                <c:if test="${fn:length(availableTokenKeySpecs) > 1}">
+                                    <label for="tokenKeySpec">Key specification:</label>
+                                    <select class="custom-select" name="tokenKeySpec" id="tokenKeySpec" size="1">
+                                    <c:forEach var="tokenKeySpec" items="${availableTokenKeySpecs}">
+                                        <option class="dropdown-item" value="${fn:split(tokenKeySpec,";")[0]}">${fn:split(tokenKeySpec,";")[1]}</option>
                                     </c:forEach>
-                                </select>
-                                <br />
+                                    </select>
+                                    <br />
+                                </c:if>
+                                <c:if test="${fn:length(availableTokenKeySpecs) == 1}">
+                                    <input name="tokenKeySpec" type="hidden" value="${fn:split(availableTokenKeySpecs[0],";")[0]}" />
+                                </c:if>
+
+                                <c:if test="${applybean.certificateProfileListShown}">
+                                    <label for="certprofile">Certificate profile:</label>
+                                    <select class="custom-select" name="certprofile" id="certprofile" size="1">
+                                        <c:forEach var="profile" items="${availableCertProfiles}">
+                                            <option value="<c:out value="${profile}" />" <c:if test="${userCertProfile==profile}">selected</c:if>>
+                                                <c:out value="${profile}"/>
+                                            </option>
+                                        </c:forEach>
+                                    </select>
+                                    <br />
+                                </c:if>
+
+                                <c:if test="${applybean.openVPNInstallerConfigured}">
+                                    <label for="openvpn">OpenVPN installer:</label>
+                                    <input type="checkbox" name="openvpn" id="openvpn" accesskey="o" />
+                                    <br />
+                                </c:if>
                             </c:if>
 
-                            <c:if test="${applybean.openVPNInstallerConfigured}">
-                                <label for="openvpn">OpenVPN installer:</label>
-                                <input type="checkbox" name="openvpn" id="openvpn" accesskey="o" />
-                                <br />
+                            <label for="ok"></label>
+                            <%-- <br><input class="main-btn" type="submit" id="ok" value="Enroll" /> --%>
+                            <input type="hidden" name="result" value="../result_download.jsp" />
+                            <br><br><input class="main-btn" type="submit" id="ok" name="redirect_to" value="Enroll" /> 
+
+                            <c:if test="${hasOptions && !applybean.keyRecovery}">
+                                <%-- </fieldset> --%>
                             </c:if>
-                        </c:if>
 
-                        <label for="ok"></label>
-                        <%-- <br><input class="main-btn" type="submit" id="ok" value="Enroll" /> --%>
-                        <input type="hidden" name="result" value="../result_download.jsp" />
-                        <br><br><input class="main-btn" type="submit" id="ok" name="redirect_to" value="Enroll" /> 
-
-                        <c:if test="${hasOptions && !applybean.keyRecovery}">
-                            <%-- </fieldset> --%>
-                        </c:if>
-
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
