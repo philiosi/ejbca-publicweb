@@ -8,114 +8,109 @@
 %>
 
 <c:set var="hidemenu" value="${param['hidemenu'] == 'true' ? 'true' : 'false'}" />
-<html>
-  <head>
+<html lang="en">
+<head>
+    <!--====== Required meta tags ======-->
     <meta http-equiv="Content-Type" content="text/html; charset=<%= org.ejbca.config.WebConfiguration.getWebContentEncoding() %>" />
-    <title>Certificate/CRL Retrieval - <%= org.ejbca.config.InternalConfiguration.getAppNameCapital() %> Public Web</title>
-	<link rel="shortcut icon" href="../images/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="../styles.css" type="text/css" />
+    <meta http-equiv="x-ua-compatible" content="IE=10">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Certificate Enrollment</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="../assets/css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="../assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--====== w3 css ======-->
+    <%-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> --%>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <script type="text/javascript" src="../scripts/functions.js"></script>
     <script type="text/vbscript" src="../scripts/functions.vbs"></script>
-  </head>
 
-  <body>
-    <div id="header">
-		<div id="banner">
-			<a href="../"><img src="../images/banner_ejbca-public.png" alt="EJBCA" /></a>
-		</div>
-    </div>
-    <c:if test="${hidemenu != 'true'}">
-    <div class="menucontainer">
-      <div class="menu">
-        <ul>
-          <li><div class="menuheader">Enroll</div>
-            <ul>
-              <li>
-                <a href="../enrol/browser.jsp">Create Browser Certificate</a>
-              </li>
-              <li>
-                <a href="../enrol/server.jsp">Create Certificate from CSR</a>
-              </li>
-              <li>
-                <a href="../enrol/keystore.jsp">Create Keystore</a>
-              </li>
-              <li>
-                <a href="../enrol/cvcert.jsp">Create CV certificate</a>
-              </li>
-              <% if(org.ejbca.config.WebConfiguration.getRenewalEnabled()) { %>
-              <li>
-                <a href="../renew/">Renew Browser Certificate</a>
-              </li>
-              <% } %>
-            </ul>
-          </li>
-          <li><div class="menuheader">Register</div>
-            <ul>
-              <li>
-                <a href="../enrol/reg.jsp">Request Registration</a>
-              </li>
-            </ul>
-          </li>
-          <li><div class="menuheader">Retrieve</div>
-            <ul>
-              <li>
-                <a href="ca_certs.jsp">Fetch CA Certificates</a>
-              </li>
-              <li>
-                <a href="ca_crls.jsp">Fetch CA CRLs</a>
-              </li>
-              <li>
-                <a href="list_certs.jsp">List  User's Certificates</a>
-              </li>
-              <li>
-                <a href="latest_cert.jsp">Fetch User's Latest Certificate</a>
-              </li>
-            </ul>
-          </li>  
-          <li><div class="menuheader">Inspect</div>
-            <ul>
-              <li>
-                <a href="../inspect/request.jsp">Inspect certificate/CSR</a>
-              </li>
-              <li>
-                <a href="check_status.jsp">Check Certificate Status</a>
-              </li>
-            </ul>
-          </li>
-          <li><div class="menuheader">Miscellaneous</div>
-            <ul>
-              <li>
-                <% java.net.URL adminURL = new java.net.URL("https",org.ejbca.util.HTMLTools.htmlescape(request.getServerName()),
-                		org.ejbca.config.WebConfiguration.getExternalPrivateHttpsPort(),
-                		"/"+org.ejbca.config.InternalConfiguration.getAppNameLower()+"/adminweb/");  %>
-                <a href="<%=adminURL.toString() %>">Administration</a>
-            </li>
-              <% if (!"disabled".equalsIgnoreCase(org.ejbca.config.WebConfiguration.getDocBaseUri())) {
-                  if ("internal".equalsIgnoreCase(org.ejbca.config.WebConfiguration.getDocBaseUri())) { %>
-              <li>
-                <a href="../doc/concepts.html" target="<%= org.ejbca.config.GlobalConfiguration.DOCWINDOW %>">Documentation</a>
-              </li>
-              <%  } else { %>
-              <li>
-                <a href="<%= org.ejbca.config.WebConfiguration.getDocBaseUri() %>/concepts.html" target="<%= org.ejbca.config.GlobalConfiguration.DOCWINDOW %>">Documentation</a>
-              </li>
-              <%  }
-                 } %>
-              <% if (org.ejbca.config.WebConfiguration.isProxiedAuthenticationEnabled()) { %>
-              <li>
-                <a href="/logout">Logout</a>
-              </li>
-              <% } %>
-            </ul>
-          </li>  
-        </ul>
+    <c:if test="${!empty header_redirect_url}">
+        <noscript><meta http-equiv="Refresh" content="1; URL=<c:out value="${header_redirect_url}"/>"></noscript>
+        <script type="text/javascript">
+        //<![CDATA[
+        setTimeout(function(){window.location = '<%= HTMLTools.javascriptEscape((String)request.getAttribute("header_redirect_url")) %>';}, 500);
+        //]]>
+        </script>
+    </c:if>
+</head>
+
+<body>
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+      <div class="loader_34">
+          <div class="ytp-spinner">
+              <div class="ytp-spinner-container">
+                  <div class="ytp-spinner-rotator">
+                      <div class="ytp-spinner-left">
+                          <div class="ytp-spinner-circle"></div>
+                      </div>
+                      <div class="ytp-spinner-right">
+                          <div class="ytp-spinner-circle"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
     </div>
-    <div class="main">
-      <div class="content">
-    </c:if>
-    
-    <c:if test="${hidemenu == 'true'}">
-    <div class="main hidemenu">
-      <div class="content hidemenu">
-    </c:if>
+
+    <!--====== PRELOADER ENDS START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header id="home" class="header-area">
+      <div class="navigation fixed-top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <nav class="navbar navbar-expand-lg">
+                          <a class="navbar-brand" href="../index.jsp">
+                              <img src="../assets/images/logo.png" alt="Logo" style="width: 3em;">
+                          </a> <!-- Logo -->
+                          <button class="navbar-toggler" type="button" data-toggle="collapse"
+                              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="toggler-icon"></span>
+                              <span class="toggler-icon"></span>
+                              <span class="toggler-icon"></span>
+                          </button>
+
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#home">Home</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#about">KISTI CA</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#service">GRID RESOURCES</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#register">registration</a></li>
+                                  <li class="nav-item active"><a class="page-scroll" href="../index.jsp#certificates">Certificates</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#contact">Contact</a></li>
+                                  <li class="nav-item"><a class="page-scroll" href="../index.jsp#site">Reference</a></li>
+                              </ul>
+                          </div> <!-- navbar collapse -->
+                      </nav> <!-- navbar -->
+                  </div>
+              </div> <!-- row -->
+          </div> <!-- container -->
+      </div> <!-- navigation -->    
+    </header>
+   

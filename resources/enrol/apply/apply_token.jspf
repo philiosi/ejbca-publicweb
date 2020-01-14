@@ -1,4 +1,4 @@
-<section id="certificate" class="service-area gray-bg pt-30 pb-25">
+<section id="certificates" class="service-area gray-bg pt-30 pb-25">
 	<div class="container">
 		<div class="row justify-content-center ml-50 mr-50">
 			<div class="col-lg-8 col-md-11 col-sm-12">
@@ -50,7 +50,7 @@
             </div>
         </div> <!-- row END -->
     
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ml-50 mr-50">
             <div class="col-lg-8 col-md-8 col-sm-9">        
                 <div class="card text-center mt-10">
                     <div class="card-header "> 
