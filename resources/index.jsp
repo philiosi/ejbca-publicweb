@@ -529,7 +529,7 @@
                   </div>
                   <div class="certificate-body">
                       <div class="certificate-text">
-                          <p>Simple project management for teams and small businesses.</p>
+                          <p>Inspect Certificate/CSR</p>
                           <!-- <span class="price">$29.00</span> -->
                       </div>
                       <div class="certificate-list">
@@ -575,29 +575,6 @@
                             </li>
                         </ul>
                   </div>
-                  <div class="collapse" id="browser-cert">
-                      <div class="card card-body">
-                        
-                        <c:set var="THIS_TITLE" value="Certificate Enrollment" />
-                        <jsp:useBean id="internalConfiguration" class="org.ejbca.config.InternalConfiguration" scope="request" />
-
-                        <c:set var="THIS_FILENAME" value="/${internalConfiguration.appNameLowerDynamic}/enrol/browser.jsp" />
-                        <c:set var="PASSWORD_TERMINOLOGY" value="enrollment_code" />
-                        
-                        <%@ include file="enrol/apply/apply_main.jsp" %>
-                        
-                      </div>
-                  </div>
-                  <div class="collapse" id="cert-from-csr">
-                      <div class="card card-body">
-                        create certificate from certificate
-                      </div>
-                  </div>
-                  <div class="collapse" id="keystore">
-                      <div class="card card-body">
-                        create keystore
-                      </div>
-                  </div>
                   <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
@@ -639,35 +616,12 @@
                             </li>
                         </ul>
                   </div>
-                  <div class="collapse" id="browser-cert">
-                      <div class="card card-body">
-                        
-                        <c:set var="THIS_TITLE" value="Certificate Enrollment" />
-                        <jsp:useBean id="internalConfiguration" class="org.ejbca.config.InternalConfiguration" scope="request" />
-
-                        <c:set var="THIS_FILENAME" value="/${internalConfiguration.appNameLowerDynamic}/enrol/browser.jsp" />
-                        <c:set var="PASSWORD_TERMINOLOGY" value="enrollment_code" />
-                        
-                        <%@ include file="enrol/apply/apply_main.jsp" %>
-                        
-                      </div>
-                  </div>
-                  <div class="collapse" id="cert-from-csr">
-                      <div class="card card-body">
-                        create certificate from certificate
-                      </div>
-                  </div>
-                  <div class="collapse" id="keystore">
-                      <div class="card card-body">
-                        create keystore
-                      </div>
-                  </div>
                   <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
               </div>
           </div>
-      </div> <!-- Modal End: Enroll Certificate -->
+      </div> <!-- Modal End: Retrieve Certificate -->
   </div> <!-- container -->
 </section>
 

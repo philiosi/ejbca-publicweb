@@ -15,7 +15,7 @@
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/ca_certs.jsp" class="nav-alink">Fetch CA Certificate</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/ca_crls.jsp" class="nav-alink">Fetch CA CRLs</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/list_certs.jsp" class="nav-alink">List User's Certificates</a></li>
-                                <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/latest_certs.jsp" class="nav-alink">Fetch User's Lastest Certificate</a></li>
+                                <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/latest_cert.jsp" class="nav-alink">Fetch User's Lastest Certificate</a></li>
                                 <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="../inspect/request.jsp" class="nav-alink-b nav-sub">Inspect Certificate</a></li>
                             </ul>
                         </ul>
@@ -30,7 +30,7 @@
 <section id="certificates" class="service-area gray-bg pt-30 pb-25">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8">
+			<div class="col-lg-6">
                 <div class="section-title text-left pb-30">
 					<h3 class="title text-center">Fetch CA certificates</h3>
 
@@ -66,7 +66,7 @@
 									</p>
 									<p>
 									<!-- Each Certificate -->
-									<p class="emphasis-mid pl-10"><i class="fas fa-download icon"></i><b><c:out value="CA certificate: " /></b>
+									<p class="pl-10"><i class="fas fa-download icon"></i><b><c:out value="CA certificate: " /></b>
 									<c:url var="pem" value="../publicweb/webdist/certdist" >
 										<c:param name="cmd" value="cacert" />
 										<c:param name="issuer" value="${issuerdn}" />
@@ -82,14 +82,15 @@
 									</c:url>
 									<!-- Firefox Download -->									
 									<a href="${ns}" type="button" class="badge certDownLink">
-										<i class="lni-certificate icon"></i>Firefox</a>
+										<i class="fab fa-firefox icon"></i>Firefox</a>
 									<c:url var="ie" value="../publicweb/webdist/certdist" >
 										<c:param name="cmd" value="iecacert" />
 										<c:param name="issuer" value="${issuerdn}" />
 										<c:param name="level" value="${chainsize - status.count}" />
 									</c:url>
 									<!-- IE Download -->																		
-									<a href="${ie}" type="button" class="badge certDownLink">IE</a>
+									<a href="${ie}" type="button" class="badge certDownLink">
+										<i class="fab fa-internet-explorer icon"></i></i>IE</a>
 									</p>
 									</div>
 								</c:forEach>
