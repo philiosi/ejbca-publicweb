@@ -77,15 +77,15 @@
 							<tr>
 								<td style="padding-right: 4em;">
 									<ul>
-										<li><a href="${der}">DER format</a></li> 
-										<li><a href="${pem}">PEM format</a></li> 
+										<li><a href="${der}" style="color:#8a8fa3;">DER format</a></li> 
+										<li><a href="${pem}" style="color:#8a8fa3;">PEM format</a></li> 
 									</ul>
 								</td>
 								<td>
 								<% if(finder.existsDeltaCrlForCurrentCA()) { %>
 									<ul>
-										<li><a href="${derdelta}">DER format</a></li> 
-										<li><a href="${pemdelta}">PEM format</a></li> 
+										<li><a href="${derdelta}" style="color:#8a8fa3;">DER format</a></li> 
+										<li><a href="${pemdelta}" style="color:#8a8fa3;">PEM format</a></li> 
 									</ul>
 									<% } else { %>
 										<p><i>None available</i><p>

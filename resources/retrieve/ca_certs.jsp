@@ -32,7 +32,7 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-6">
                 <div class="section-title text-left pb-30">
-					<h3 class="title text-center">Fetch CA certificates</h3>
+					<h3 class="title text-center" style="font-size:30px;">Fetch CA certificates</h3>
 
 					<jsp:useBean id="finder" class="org.ejbca.ui.web.pub.retrieve.CertificateFinderBean" scope="page" />
 

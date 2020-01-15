@@ -58,26 +58,32 @@
                                     <c:forEach var="certificate" items="${certificates}">
                                         <%-- <pre> --%>
                                         <ul class="list-group list-group-flush text-left pb-20">
-                                            <li class="list-group-item"><c:out value="Subject:            ${certificate.subjectDN}" />
-                                            <span class="list-certificate"><i class="fas fa-certificate icon"></i></span></li>
+                                            <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                            <c:out value="Subject:            ${certificate.subjectDN}" /></li>
                                             
-                                            <li class="list-group-item"><c:out value="Issuer:             ${certificate.issuerDN}" />
-                                            <span class="list-certificate"><i class="fas fa-certificate icon"></i></span></li>
+                                            <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                            <c:out value="Issuer:             ${certificate.issuerDN}" />
+                                            </li>
 
-                                            <li class="list-group-item"><c:out value="NotBefore:          ${certificate.validFromString}" />
-                                            <span class="list-certificate"><i class="fas fa-certificate icon"></i></span></li>
+                                            <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                            <c:out value="NotBefore:          ${certificate.validFromString}" />
+                                            </li>
 
-                                            <li class="list-group-item"><c:out value="NotAfter:           ${certificate.validToString}" />
-                                            <span class="list-certificate"><i class="fas fa-certificate icon"></i></span></li>
+                                            <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                            <c:out value="NotAfter:           ${certificate.validToString}" />
+                                            </li>
 
-                                            <li class="list-group-item"><c:out value="Serial number:      ${certificate.serialNumber}" />
-                                            <span class="list-certificate"><i class="fas fa-certificate icon"></i></span></li>
+                                            <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                            <c:out value="Serial number:      ${certificate.serialNumber}" />
+                                            </li>
 
-                                            <li class="list-group-item"><c:out value="SHA1 fingerprint:   ${certificate.SHA1Fingerprint}" />
-                                            <span class="list-certificate"><i class="fas fa-certificate icon"></i></span></li>
+                                            <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                            <c:out value="SHA1 fingerprint:   ${certificate.SHA1Fingerprint}" />
+                                            </li>
 
-                                            <li class="list-group-item"><c:out value="SHA256 fingerprint: ${certificate.SHA256Fingerprint}" />
-                                            <span class="list-certificate"><i class="fas fa-certificate icon"></i></span></li>
+                                            <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                            <c:out value="SHA256 fingerprint: ${certificate.SHA256Fingerprint}" />
+                                            </li>
                                         </ul>
                                         <%-- </pre> --%>
                                         <c:url var="download" value="../publicweb/webdist/certdist" >

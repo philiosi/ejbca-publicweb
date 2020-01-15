@@ -29,9 +29,9 @@
 <section id="certificates" class="service-area gray-bg pt-30 pb-25">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8">
-                <div class="section-title text-center pb-30">
-					<h6 class="title" style="font-size:30px;">Certificate Status</h6>
+			<div class="col-lg-6">
+                <div class="section-title text-left pb-30">
+					<h6 class="title text-center" style="font-size:30px;">Certificate Status</h6>
 				    <c:set var="issuer" value="${param.issuer}" />
 					<c:set var="serno" value="${param.serno}" />
 
@@ -85,4 +85,10 @@
 							</c:choose> 
 						</c:otherwise>
 					</c:choose>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <%@ include file="footer.inc" %>
