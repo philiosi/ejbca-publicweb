@@ -77,7 +77,7 @@
         if(bodyHeight > certHeight) {
             $('#certificates').height(bodyHeight);
             // certHeight = $('#certificates').height();
-            // console.log('aftercert', certHeight);
+            console.log('aftercert', certHeight);
         }
     });
 

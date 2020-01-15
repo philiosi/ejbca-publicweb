@@ -9,7 +9,7 @@
                     <nav class="navbar navbar-expand-lg">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
-                                <span class="nav-item emphasis-mid pt-10 pb-10 pr-30 nav-sub nav-alink-b">Enroll</span>
+                                <span class="nav-item emphasis-mid pt-10 pb-10 pr-30 nav-sub nav-alink-b"><a href="../enrol/browser.jsp">Enroll</span>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="browser.jsp" class="nav-alink">Create Browser Certificate</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="server.jsp" class="nav-alink nav-alink-b">Create Certificate from CSR</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="keystore.jsp" class="nav-alink">Create Keystore</a></li>
