@@ -597,21 +597,21 @@
                       <ul class="list-group list-group-flush">
                             <li class="list-group-item">
                                 <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
-                                <a href="../retrieve/ca_certs.jsp" role="button"><h6 class="title">Fetch CA Certificate</h6></a>
+                                <a href="retrieve/ca_certs.jsp" role="button"><h6 class="title">Fetch CA Certificate</h6></a>
                                 <p class="pt-10">Browse and download CA certificates.</span></li>
                             <li class="list-group-item">
                                 <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
-                                <a href="../retrieve/list_crls.jsp" role="button"><h6 class="title">Fetch CA CRLs</h6></a>
+                                <a href="retrieve/list_crls.jsp" role="button"><h6 class="title">Fetch CA CRLs</h6></a>
                                 <p class="pt-10">Download Certificate Revocation Lists.</span>
                             </li>
                             <li class="list-group-item">
                                 <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
-                                <a href="../retrieve/list_certs.hsp" role="button"><h6 class="title">List User's Certificates</h6></a>
+                                <a href="retrieve/list_certs.hsp" role="button"><h6 class="title">List User's Certificates</h6></a>
                                 <p class="pt-10">Browse and download a certificate for whom you know the certificate Distinguished Name.</span>
                             </li>
                             <li class="list-group-item">
                                 <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
-                                <a href="../retrieve/latest_cert.jsp" role="button"><h6 class="title">Fetch User's Latest Certificate</h6></a>
+                                <a href="retrieve/latest_cert.jsp" role="button"><h6 class="title">Fetch User's Latest Certificate</h6></a>
                                 <p class="pt-10">Download the last issued certificate for a user for whom you know the certificate Distinguished Name.</span>
                             </li>
                         </ul>
