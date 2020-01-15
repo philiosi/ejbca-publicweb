@@ -30,9 +30,9 @@
 <section id="certificates" class="service-area gray-bg pt-30 pb-25">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-12">
-                <div class="section-title text-center pb-30">
-					<h6 class="title" style="font-size:30px;">Fetch CA certificates</h6>
+			<div class="col-lg-8">
+                <div class="section-title text-left pb-30">
+					<h3 class="title text-center">Fetch CA certificates</h3>
 
 					<jsp:useBean id="finder" class="org.ejbca.ui.web.pub.retrieve.CertificateFinderBean" scope="page" />
 
@@ -43,7 +43,7 @@
 						<c:set var="ca" value="${finder.CAInfo}" />
 
 						<hr />
-						<h2><c:out value="CA: ${ca.name}" /></h2>
+						<h4 class="pb-10"><i class="fas fa-university icon"></i><c:out value="CA: ${ca.name}" /></h4>
 
 						<c:set var="chain" value="${finder.CACertificateChainReversed}" />
 						<c:set var="chainsize" value="${fn:length(chain)}" />
@@ -58,48 +58,55 @@
 
 								<div>
 								<c:forEach var="cert" items="${chain}" varStatus="status">
-									<div style="padding-left: ${status.index}0px ; margin-left: ${status.index}0px ;">
+									<div class="pb-10" style="padding-left: ${status.index*2}0px ; margin-left: ${status.index*2}0px;">
 									<p>
 									<c:if test="${status.last}"><b></c:if>
-										<i><c:out value="${cert.subjectDN}" /></i>
+										<i><b><c:out value="${cert.subjectDN}" /></b></i>
 									<c:if test="${status.last}"></b></c:if>
-									</p><p>
-									<c:out value="CA certificate: " />
+									</p>
+									<p>
+									<!-- Each Certificate -->
+									<p class="emphasis-mid pl-10"><i class="fas fa-download icon"></i><b><c:out value="CA certificate: " /></b>
 									<c:url var="pem" value="../publicweb/webdist/certdist" >
 										<c:param name="cmd" value="cacert" />
 										<c:param name="issuer" value="${issuerdn}" />
 										<c:param name="level" value="${chainsize - status.count}" />
 									</c:url>
-									<a href="${pem}">Download as PEM</a>,
+									<!-- PEM Download -->
+									<a href="${pem}" type="button" class="badge certDownLink" >
+										<i class="lni-certificate icon"></i>PEM</a>
 									<c:url var="ns" value="../publicweb/webdist/certdist" >
 										<c:param name="cmd" value="nscacert" />
 										<c:param name="issuer" value="${issuerdn}" />
 										<c:param name="level" value="${chainsize - status.count}" />
 									</c:url>
-									<a href="${ns}">Download to Firefox</a>,
+									<!-- Firefox Download -->									
+									<a href="${ns}" type="button" class="badge certDownLink">
+										<i class="lni-certificate icon"></i>Firefox</a>
 									<c:url var="ie" value="../publicweb/webdist/certdist" >
 										<c:param name="cmd" value="iecacert" />
 										<c:param name="issuer" value="${issuerdn}" />
 										<c:param name="level" value="${chainsize - status.count}" />
 									</c:url>
-									<a href="${ie}">Download to Internet Explorer</a>
+									<!-- IE Download -->																		
+									<a href="${ie}" type="button" class="badge certDownLink">IE</a>
 									</p>
 									</div>
 								</c:forEach>
 								<p>
-								<c:out value="CA certificate chain: " />
+								<i class="fas fa-link icon"></i><c:out value="CA certificate chain: " />
 								<c:url var="pemchain" value="../publicweb/webdist/certdist" >
 									<c:param name="cmd" value="cachain" />
 									<c:param name="caid" value="${ca_id}" />
 									<c:param name="format" value="pem" />
 								</c:url>					
-								<a href="${pemchain}">Download PEM chain</a>, 
+								<a href="${pemchain}" type="button" class="badge certDownLink"><i class="lni-certificate icon"></i>PEM chain</a>, 
 								<c:url var="jkschain" value="../publicweb/webdist/certdist" >
 									<c:param name="cmd" value="cachain" />
 									<c:param name="caid" value="${ca_id}" />
 									<c:param name="format" value="jks" />
 								</c:url>					
-								<a href="${jkschain}">Download JKS truststore</a> (password changeit)
+								<a href="${jkschain}" type="button" class="badge certDownLink">JKS truststore</a> (password changeit)
 								</p>				
 								</div>
 							</c:otherwise>

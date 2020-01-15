@@ -42,6 +42,11 @@ html{
   width: 100%;
 }
 
+.certDownLink {
+  background-color: rgb(144, 153, 214);
+  color:white;
+}
+
 /* #certificate {
   height: 100%;
 } */

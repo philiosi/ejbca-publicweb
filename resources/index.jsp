@@ -517,7 +517,7 @@
                           </ul>
                       </div>
                       <div class="certificate-btn">
-                          <a class="main-btn" href="#contact"><i class="lni-enter icon"></i>fetch certificate</a>
+                          <a class="main-btn" href="#retrieve-cert" data-toggle="modal" data-target="#enroll-cert"><i class="lni-enter icon"></i>fetch certificate</a>
                       </div>
                   </div>
               </div> <!-- single certificate -->
@@ -572,6 +572,70 @@
                                 <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
                                 <a href="enrol/keystore.jsp" role="button"><h6 class="title">Create Keystore</h6></a>
                                 <p class="pt-10">Create a server generated keystore in PEM, PKCS#12 or JKS format and save to your disc. This keystore can be installed in a server, browser or in other applications.</span>
+                            </li>
+                        </ul>
+                  </div>
+                  <div class="collapse" id="browser-cert">
+                      <div class="card card-body">
+                        
+                        <c:set var="THIS_TITLE" value="Certificate Enrollment" />
+                        <jsp:useBean id="internalConfiguration" class="org.ejbca.config.InternalConfiguration" scope="request" />
+
+                        <c:set var="THIS_FILENAME" value="/${internalConfiguration.appNameLowerDynamic}/enrol/browser.jsp" />
+                        <c:set var="PASSWORD_TERMINOLOGY" value="enrollment_code" />
+                        
+                        <%@ include file="enrol/apply/apply_main.jsp" %>
+                        
+                      </div>
+                  </div>
+                  <div class="collapse" id="cert-from-csr">
+                      <div class="card card-body">
+                        create certificate from certificate
+                      </div>
+                  </div>
+                  <div class="collapse" id="keystore">
+                      <div class="card card-body">
+                        create keystore
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div> <!-- Modal End: Enroll Certificate -->
+
+        <!-- Retrieve Certificate -->
+      <div class="modal fade" id="retrieve-cert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Fetch CA/User Certificate </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                <a href="..retrieve/ca_certs.jsp" role="button"><h6 class="title">Fetch CA Certificate/h6></a>
+                                <p class="pt-10">Browse and download CA certificates.</span></li>
+                            <li class="list-group-item">
+                                <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                <a href="..retrieve/list_crls.jsp" role="button"><h6 class="title">Fetch CA CRLs</h6></a>
+                                <p class="pt-10">Download Certificate Revocation Lists.</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                <a href="..retrieve/list_certs.hsp" role="button"><h6 class="title">List User's Certificates</h6></a>
+                                <p class="pt-10">Browse and download a certificate for whom you know the certificate Distinguished Name.</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                <a href="../retrieve/latest_cert.jsp" role="button"><h6 class="title">Fetch User's Latest Certificate</h6></a>
+                                <p class="pt-10">Download the last issued certificate for a user for whom you know the certificate Distinguished Name.</span>
                             </li>
                         </ul>
                   </div>
