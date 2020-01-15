@@ -68,15 +68,15 @@
     });
 
     $(document).ready( function(){
-        certHeight = $('#certificate').height();
+        certHeight = $('#certificates').height();
         bodyHeight = $('body').height();
 
         // console.log('cert', certHeight);
         // console.log('body', bodyHeight);
 
         if(bodyHeight > certHeight) {
-            $('#certificate').height(bodyHeight);
-            certHeight = $('#certificate').height();
+            $('#certificates').height(bodyHeight);
+            // certHeight = $('#certificates').height();
             // console.log('aftercert', certHeight);
         }
     });

@@ -26,20 +26,21 @@
 </section>
 
 
-<section id="certificates" class="service-area gray-bg pt-125 pb-25">
+<section id="certificates" class="service-area gray-bg pt-30 pb-25">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8">
-                <div class="section-title text-center pb-30">
-					<h6 class="title" style="font-size:30px;">List certificates</h6>
+			<div class="col-lg-8 col-md-11 col-sm-12">
+        <div class="section-title text-center pb-30">
+				  <h6 class="title" style="font-size:30px;">List certificates</h6>
           <p>Enter the subject DN (e.g., &quot<code>c=SE, O=AnaTom, CN=foo</code>&quot;) to list a user's certificates.</p>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center">
-			<div class="col-lg-4 col-md-8 col-sm-9">        
-				<div class="card text-center mt-30">
+			<div class="col-lg-8 col-md-11 col-sm-12">        
+				<div class="card text-center">
 					<div class="card-header"> 
-						<h3 class="title"> Distinguished name </h3>
+						<h3 class="title"> Distinguished Name </h3>
 					</div>
 					<div class="card-body">
             <form action="list_certs_result.jsp" enctype="x-www-form-encoded" method="post">
@@ -52,7 +53,7 @@
                 <input type="hidden" name="cmd" value="listcerts" />
 
                 <label for="subject"></label>
-                <input name="subject" placeholder="Subject DN" id="subject" type="text" size="60" accesskey="s" />
+                <input name="subject" class="form-control" placeholder="Subject DN" id="subject" type="text" size="60" accesskey="s" />
               </div>
               <br />
               <label for="ok"></label>
