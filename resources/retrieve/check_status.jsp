@@ -28,7 +28,7 @@
 <section id="certificates" class="service-area gray-bg pt-30 pb-25">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-12">
+			<div class="col-lg-8">
                 <div class="section-title text-center pb-30 mr-55 ml-55">
 					<h6 class="title" style="font-size:30px;">Check certificate status</h6>
 					<p>Enter the serial number of a certificate (in hexadecimal form) and click 'Check revocation' to see if the certificate is revoked.</p>

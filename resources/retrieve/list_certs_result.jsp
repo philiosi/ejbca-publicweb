@@ -31,7 +31,7 @@
 <section id="certificates" class="service-area gray-bg pt-30 pb-25">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-12">
+			<div class="col-lg-8">
                 <div class="section-title text-center pb-30">
                     <c:set var="subject" value="${param.subject}" />
                     <c:choose> 
@@ -48,7 +48,7 @@
                                 finder.lookupCertificatesBySubject(subject, certificates);
                             %>
                     
-                            <h1 class="title"><c:out value="Certificates for ${subject}" /></h1> 
+                            <h6 class="title" style="font-size:30px;"><c:out value="Certificates for ${subject}" /></h6> 
                     
                             <c:choose> 
                                 <c:when test="${certificates == null || fn:length(certificates) == 0}"> 
@@ -57,7 +57,7 @@
                                 <c:otherwise> 
                                     <c:forEach var="certificate" items="${certificates}">
                                         <%-- <pre> --%>
-                                        <ul class="list-group list-group-flush">
+                                        <ul class="list-group list-group-flush text-left">
                                             <li class="list-group-item"><c:out value="Subject:            ${certificate.subjectDN}" /></li>
                                             <li class="list-group-item"><c:out value="Issuer:             ${certificate.issuerDN}" /></li>
                                             <li class="list-group-item"><c:out value="NotBefore:          ${certificate.validFromString}" /></li>

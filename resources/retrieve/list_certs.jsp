@@ -38,7 +38,7 @@
       </div>
       <div class="row justify-content-center">
           <div class="col-lg-8 col-md-11 col-sm-12">        
-              <div class="card text-center ml-50 mr-50">
+              <div class="card text-center ml-75 mr-75">
                   <div class="card-header"> 
                       <h3 class="title"> Distinguished Name </h3>
                   </div>

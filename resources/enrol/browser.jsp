@@ -32,7 +32,3 @@
 
 <%@ include file="apply/apply_main.jsp" %>
 <%@ include file="footer.inc" %>
-
-<script>
-    $(document).on()
-</script>
