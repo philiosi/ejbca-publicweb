@@ -37,8 +37,8 @@ if (isMultipart) {
                                 <span class="nav-item pt-10 pb-10 pr-30"><a href="../enrol/browser.jsp" class="nav-sub nav-alink-b"> Enroll</span>
                                 <li class="nav-item pt-10 pb-10 pr-30 nav-sub nav-alink-b"><a href="../retrieve/list_certs.jsp" class="nav-sub nav-alink-b"> Fetch Certificate</a></li>
                                 <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="../inpect/request.jsp" class="nav-alink-b nav-sub">Inspect Certificate</a></li>
-                                <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/request.jsp" class="nav-alink">Inspect certificate/CSR</a></li>
-                                <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/check_status.jsp" class="nav-alink">Check certificate status</a></li>
+                                <li class="nav-item pt-10 pb-10 pr-12"><a href="../inspect/request.jsp" class="nav-alink">Inspect certificate/CSR</a></li>
+                                <li class="nav-item pt-10 pb-10 pr-12"><a href="../inspect/check_status.jsp" class="nav-alink">Check certificate status</a></li>
                             </ul>
                         </ul>
                         </div> <!-- navbar collapse -->
@@ -49,10 +49,19 @@ if (isMultipart) {
     </div>
 </section>
 
-            <h1 class="title"><c:out value="Certificate/CSR dump" /></h1>
-            <hr/>
-            <p>File is of type: <c:out value="${dump.type}"/></p>
-<pre>
-<c:out value="${dump.dump}"></c:out>    
-</pre>            
+<section id="certificate" class="service-area gray-bg pt-30 pb-25">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center pb-30">
+                    <h6 class="title" style="font-size:30px;"><c:out value="Certificate/CSR dump" /></h6>
+                    <hr/>
+                    <p class="pt-10">File is of type: <c:out value="${dump.type}"/></p>
+                    <p> <c:out value="${dump.dump}"></c:out> </p>
+                </div>
+            </div>
+        </div> <!-- row END -->
+    </div>
+</section>
+
  <%@ include file="footer.inc" %>

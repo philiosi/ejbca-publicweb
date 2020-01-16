@@ -32,9 +32,8 @@
                 <div class="section-title text-center pb-30 mr-55 ml-55">
 					<h6 class="title" style="font-size:30px;">Check certificate status</h6>
 					<p>Enter the serial number of a certificate (in hexadecimal form) and click 'Check revocation' to see if the certificate is revoked.</p>
-					</div>
-          		</div>
-      		</div>
+				</div>
+          	</div>
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-md-11 col-sm-12">        
