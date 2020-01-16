@@ -14,7 +14,7 @@
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/ca_crls.jsp" class="nav-alink">Fetch CA CRLs</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/list_certs.jsp" class="nav-alink">List User's Certificates</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/latest_cert.jsp" class="nav-alink">Fetch User's Lastest Certificate</a></li>
-                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="../inspect/request.jsp" class="nav-alink-b nav-sub">Inspect Certificate</a></li>
+                                <li class="nav-item pt-10 pb-10 pr-12 pl-30"><a href="../inspect/request.jsp" class="nav-alink-b nav-sub">Inspect Certificate</a></li>
                             </ul>
                         </ul>
                         </div> <!-- navbar collapse -->
@@ -50,7 +50,7 @@
 									<span class="input-group-text"><i class="fas fa-id-card icon"></i></span>
 								</div>
 								<label for="issuer"></label>
-								<input name="issuer" id="issuer" placeholder="Issuer DN" type="text" accesskey="i" />
+								<input name="issuer" class="form-control" id="issuer" placeholder="Issuer DN" type="text" accesskey="i" />
 								<br />
 							</div>
 							<div class="input-group form-group">

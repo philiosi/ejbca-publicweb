@@ -14,7 +14,7 @@
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/ca_crls.jsp" class="nav-alink">Fetch CA CRLs</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/list_certs.jsp" class="nav-alink">List User's Certificates</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/latest_cert.jsp" class="nav-alink">Fetch User's Lastest Certificate</a></li>
-                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="../inpect/request.jsp" class="nav-alink-b nav-sub">Inspect Certificate</a></li>
+                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="../inspect/request.jsp" class="nav-alink-b nav-sub">Inspect Certificate</a></li>
                             </ul>
                         </ul>
                         </div> <!-- navbar collapse -->
@@ -40,7 +40,7 @@
           <div class="col-lg-8 col-md-11 col-sm-12">        
               <div class="card text-center ml-75 mr-75">
                   <div class="card-header"> 
-                      <h3 class="title"> Distinguished Name </h3>
+                      <h3 class="title"> DISTINGUISHED NAME </h3>
                   </div>
                   <div class="card-body">
                       <form action="list_certs_result.jsp" enctype="x-www-form-encoded" method="post">

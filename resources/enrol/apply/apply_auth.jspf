@@ -21,7 +21,7 @@
             <div class="col-lg-8 col-md-11 col-sm-12">
                 <div class="card text-center mt-10 mr-55 ml-55">
                     <div class="card-header "> 
-                        <h3 class="title"> Authentication </h3>
+                        <h3 class="title"> AUTHENTICATION </h3>
                     </div>
                     <div class="card-body">
                         <form name="CertReqForm" action="${THIS_FILENAME}"  method="post">

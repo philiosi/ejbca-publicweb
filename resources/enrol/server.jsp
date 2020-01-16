@@ -47,7 +47,7 @@
                 </p>        
                 <div class="card text-center mt-10 ml-45 mr-45">
                     <div class="card-header "> 
-                        <h3 class="title"> Enroll </h3>
+                        <h3 class="title"> ENROLL </h3>
                     </div> <!-- card-header END -->
                     <div class="card-body">
                         <form name="EJBCA" action="../certreq" method="post" enctype="multipart/form-data">

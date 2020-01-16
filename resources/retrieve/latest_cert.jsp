@@ -45,7 +45,7 @@
       <div class="col-lg-8 col-md-11 col-sm-12">
         <div class="card text-center mt-10 mr-55 ml-55">
           <div class="card-header "> 
-            <h3 class="title"> Name </h3>
+            <h3 class="title"> NAME </h3>
           </div>
           <div class="card-body">  
             <form action="../publicweb/webdist/certdist" enctype="x-www-form-encoded" method="post">

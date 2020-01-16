@@ -54,7 +54,7 @@
             <div class="col-lg-8 col-md-8 col-sm-9">        
                 <div class="card text-center mt-10">
                     <div class="card-header "> 
-                        <h3 class="title"> Options </h3>
+                        <h3 class="title"> OPTIONS </h3>
                     </div>
                     <div class="card-body">
                         <form action="../certreq" enctype="x-www-form-encoded" method="post">

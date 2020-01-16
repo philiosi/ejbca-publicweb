@@ -10,9 +10,9 @@
                             <ul class="navbar-nav ml-auto">
                                 <span class="nav-item pt-10 pb-10 pr-30"><a href="../enrol/browser.jsp" class="nav-sub nav-alink-b"> Enroll</span>
                                 <li class="nav-item pt-10 pb-10 pr-30 nav-sub nav-alink-b"><a href="../retrieve/list_certs.jsp" class="nav-sub nav-alink-b"> Fetch Certificate</a></li>
-                                <li class="nav-item pt-10 pb-10 pl-30 pr-12"><a href="../inpect/request.jsp" class="nav-alink-b nav-sub">Inspect Certificate</a></li>
+                                <li class="nav-item pt-10 pb-10 pr-12"><a href="../inpect/request.jsp" class="nav-alink-b nav-sub">Inspect Certificate</a></li>
                                 <li class="nav-item pt-10 pb-10 pr-12"><a href="../inspect/request.jsp" class="nav-alink">Inspect certificate/CSR</a></li>
-                                <li class="nav-item pt-10 pb-10 pr-12"><a href="../inspect/check_status.jsp" class="nav-alink">Check certificate status</a></li>
+                                <li class="nav-item pt-10 pb-10 pr-12"><a href="../retrieve/check_status.jsp" class="nav-alink">Check certificate status</a></li>
                             </ul>
                         </ul>
                         </div> <!-- navbar collapse -->
