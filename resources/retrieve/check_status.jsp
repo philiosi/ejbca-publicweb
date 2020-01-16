@@ -58,12 +58,11 @@
 									<span class="input-group-text"><i class="fas fa-check icon"></i></span>
 								</div>
 								<label for="serno"></label>
-								<input name="serno" class="form-control" placeholder="Serial No." id="serno" type="text" size="40" accesskey="s" />
-
-								<br />
-								<label for="ok"></label>
-								<input type="submit" id="ok" class="main-btn btn float-right login_btn" value="Check revocation" name="submit" />
+								<input name="serno" class="form-control" placeholder="Serial No." id="serno" type="text" accesskey="s" />
 							</div>
+							<br />
+							<label for="ok"></label>
+							<input type="submit" id="ok" class="main-btn btn float-right login_btn" value="Check revocation" name="submit" />
 						</form>
 					</div>
               	</div>
