@@ -35,6 +35,7 @@
 					</div>
           		</div>
       		</div>
+		</div>
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-md-11 col-sm-12">        
 				<div class="card text-center ml-75 mr-75">
@@ -50,7 +51,7 @@
 									<span class="input-group-text"><i class="fas fa-id-card icon"></i></span>
 								</div>
 								<label for="issuer"></label>
-								<input name="issuer" id="issuer" placeholder="Issuer DN" type="text" size="60" accesskey="i" />
+								<input name="issuer" id="issuer" placeholder="Issuer DN" type="text" accesskey="i" />
 								<br />
 							</div>
 							<div class="input-group form-group">

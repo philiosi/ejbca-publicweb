@@ -42,8 +42,8 @@
 
 						<c:set var="ca" value="${finder.CAInfo}" />
 
-						<hr />
-						<h4 class="pb-10 table-title"><i class="fas fa-university icon"></i><c:out value="CA: ${ca.name}" /></h4>
+						
+						<h4 class="pb-10 pt-30 table-title"><i class="fas fa-university icon"></i><c:out value="CA: ${ca.name}" /></h4>
 						<table class="table">
 						<thead>
 							<tr>

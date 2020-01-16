@@ -44,15 +44,6 @@
 
     <script type="text/javascript" src="../scripts/functions.js"></script>
     <script type="text/vbscript" src="../scripts/functions.vbs"></script>
-
-    <c:if test="${!empty header_redirect_url}">
-        <noscript><meta http-equiv="Refresh" content="1; URL=<c:out value="${header_redirect_url}"/>"></noscript>
-        <script type="text/javascript">
-        //<![CDATA[
-        setTimeout(function(){window.location = '<%= HTMLTools.javascriptEscape((String)request.getAttribute("header_redirect_url")) %>';}, 500);
-        //]]>
-        </script>
-    </c:if>
 </head>
   
 <body>
