@@ -30,7 +30,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
-        <div class="section-title text-left pb-30">
+        <div class="section-title text-left pb-30 mr-55 ml-55">
           <h3 class="title text-center" style="font-size:30px" >Fetch User's Certificate (latest)</h3>
           <p>Give subject DN to fetch users latest certificate.</p><br />
 
@@ -60,7 +60,6 @@
                   <label for="subject"></label>
                   <input name="subject" id="subject" type="text" class="form-control" placeholder="Subject DN" accesskey="s" />
                 </div>          
-                <br />
 
                 <div class="form-group" style="text-align:right;">
                   <label for="ok"></label>
@@ -71,8 +70,8 @@
           </div>
           <div class="card-footer">
             <div class="d-flex justify-content-center links">
-                <label for="ok"><i class="fas fa-exclamation-triangle icon"></i>Note:</label>
-                <p>If you receive a <span class="emphasis-mid">404-Not found</span> response, it means that
+                <label class="pt-20 pr-20"><i class="fas fa-exclamation-triangle icon"></i>Note</label>
+                <p class="text-left">If you receive a <span class="emphasis-mid">404-Not found</span> response, it means that
                   the subject does not have a certificate in the database. Check your entry to make sure 
                   you have specified all the DN components.
                 </p>

@@ -30,7 +30,7 @@
 <section id="certificates" class="service-area gray-bg pt-30 pb-25">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-6">
+			<div class="col-lg-10">
                 <div class="section-title text-left pb-30">
 					<h3 class="title text-center" style="font-size:30px;">Fetch CA certificates</h3>
 
@@ -43,12 +43,12 @@
 						<c:set var="ca" value="${finder.CAInfo}" />
 
 						<hr />
-						<h4 class="pb-10"><i class="fas fa-university icon"></i><c:out value="CA: ${ca.name}" /></h4>
+						<h4 class="pb-10 table-title"><i class="fas fa-university icon"></i><c:out value="CA: ${ca.name}" /></h4>
 						<table class="table">
 						<thead>
 							<tr>
-								<th scope="col" style="padding-right: 4em;"><i class="fas fa-id-card icon">DN<span class="emphasis">Distinguished Names</span> </th>
-								<th scope="col" style="padding-right: 4em;"><i class="fas fa-download icon">Download</th>
+								<th scope="col" style="padding-right: 4em;"><i class="fas fa-id-card icon"></i>Distinguished Name</th>
+								<th scope="col" style="padding-right: 4em;"><i class="fas fa-download icon"></i>Download</th>
 							</tr>
 						</thead>
 
@@ -66,8 +66,8 @@
 								<tbody>
 									<c:forEach var="cert" items="${chain}" varStatus="status">
 									<tr>
-										<td style="padding-right: 4em;"> <!-- col DN -->
-											<c:if test="${status.last}"><b></c:if>
+										<td style="padding-left: ${status.index}0px; padding-right:4em; margin-left: ${status.index}0px; "> <!-- col DN -->
+											<c:if test="${status.last}"><i class="fas fa-angle-right icon"></i><b></c:if>
 											<i><c:out value="${cert.subjectDN}" />
 											<c:if test="${status.last}"></b></c:if>
 										</td>
@@ -101,7 +101,7 @@
 									</tr>
 									</c:forEach>
 									<tr>
-										<td colspan="2" class="text-right" style="padding-right: 4em;">
+										<td colspan="2" class="text-left" style="padding-right: 4em;">
 											<i class="fas fa-link icon"></i><c:out value="CA certificate chain: " />
 											<c:url var="pemchain" value="../publicweb/webdist/certdist" >
 												<c:param name="cmd" value="cachain" />
@@ -114,7 +114,7 @@
 												<c:param name="caid" value="${ca_id}" />
 												<c:param name="format" value="jks" />
 											</c:url>					
-											<a href="${jkschain}" type="button" class="badge certDownLink">JKS truststore</a> (password changeit)
+											<a href="${jkschain}" type="button" class="badge certDownLink">JKS truststore</a> <span class="emphasis"> password changeit </span>
 										</td>
 									</tr>
 								</tbody>

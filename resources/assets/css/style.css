@@ -47,10 +47,17 @@ html{
   color:white;
 }
 
-/* #certificate {
-  height: 100%;
-} */
+table thead tr th {
+  color:#2d2f36;
+}
 
+table tr td {
+  color:#8a8fa3;
+}
+
+.table-title {
+  color:#033668
+}
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
 body {
