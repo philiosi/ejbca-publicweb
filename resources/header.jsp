@@ -81,8 +81,46 @@
                               <span class="toggler-icon"></span>
                               <span class="toggler-icon"></span>
                           </button>
-
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="nav navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#about">KISTI CA</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#service">GRID RESOURCES</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#enroll">registration</a></li>
+                                    <li class="nav-item dropdown-submenu">
+                                        <a class="page-scroll dropdown-toggle" href="#certificates" data-toggle="dropdown">CERTIFICATE</a>
+                                        <ul class="nav navbar-nav ml-auto dropdown-menu dropdown">
+                                            <li class="nav-item dropdown-submenu sub">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Enroll</a>
+                                                <ul class="dropdown-menu menu-3rd sub">
+                                                    <li class="nav-item sub"><a href="enrol/browser.jsp">Create Browser Certificate</a></li>
+                                                    <li class="nav-item sub"><a href="enrol/server.jsp">Create Certificate from CSR</a></li>
+                                                    <li class="nav-ite sub"><a href="enrol/keystore.jsp">Create Keystore</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu sub">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Retrieve </a>
+                                                <ul class="dropdown-menu dropdown menu-3rd sub">
+                                                    <li class="nav-item sub"><a href="retrieve/ca_certs.jsp">Fetch CA Certificates</a></li>
+                                                    <li class="nav-item sub"><a href="retrieve/ca_crls.jsp">Fetch CA CRLs</a></li>
+                                                    <li class="nav-item sub"><a href="retrieve/list_certs.jsp">List User's Certificate</a></li>
+                                                    <li class="nav-item sub"><a href="retrieve/latest_cert.jsp">List User's Last Certificate</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu sub">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inspect</a>
+                                                <ul class="dropdown-menu  dropdown menu-3rd sub">
+                                                    <li class="nav-item sub"><a href="inspect/request.jsp">Inspect Certificate/CSR</a></li>
+                                                    <li class="nav-item sub"><a href="retrieve/check_status.jsp">Check Certificate Status</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#site">Reference</a></li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                          <%-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <ul class="navbar-nav ml-auto">
                                   <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="#about">KISTI CA</a></li>
@@ -92,7 +130,7 @@
                                   <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
                                   <li class="nav-item"><a class="page-scroll" href="#site">Reference</a></li>
                               </ul>
-                          </div> <!-- navbar collapse -->
+                          </div> <!-- navbar collapse --> --%>
                       </nav> <!-- navbar -->
                   </div>
               </div> <!-- row -->
