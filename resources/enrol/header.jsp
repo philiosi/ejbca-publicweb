@@ -98,19 +98,19 @@
                           </button>
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
-                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#about">KISTI CA</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#service">GRID RESOURCES</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#enroll">registration</a></li>
+                                    <li class="nav-item active"><a class="page-scroll" href="../index.jsp#home">Home</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="../index.jsp#about">KISTI CA</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="../index.jsp#service">GRID RESOURCES</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="../index.jsp#enroll">registration</a></li>
                                     <li class="nav-item dropdown-submenu">
-                                        <a class="page-scroll dropdown-toggle" href="#certificates" data-toggle="dropdown">CERTIFICATE</a>
+                                        <a class="page-scroll dropdown-toggle" href="../index.jsp#certificates" data-toggle="dropdown">CERTIFICATE</a>
                                         <ul class="nav navbar-nav ml-auto dropdown-menu dropdown">
                                             <li class="nav-item dropdown-submenu sub">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Enroll</a>
                                                 <ul class="dropdown-menu menu-3rd sub">
-                                                    <li class="nav-item sub"><a href="browser.jsp">Create Browser Certificate</a></li>
-                                                    <li class="nav-item sub"><a href="server.jsp">Create Certificate from CSR</a></li>
-                                                    <li class="nav-ite sub"><a href="keystore.jsp">Create Keystore</a></li>
+                                                    <li class="nav-item sub"><a href="../enrol/browser.jsp">Create Browser Certificate</a></li>
+                                                    <li class="nav-item sub"><a href="../enrol/server.jsp">Create Certificate from CSR</a></li>
+                                                    <li class="nav-ite sub"><a href="../enrol/keystore.jsp">Create Keystore</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu sub">
