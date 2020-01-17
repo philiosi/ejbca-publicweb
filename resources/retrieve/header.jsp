@@ -86,13 +86,13 @@
                               <span class="toggler-icon"></span>
                               <span class="toggler-icon"></span>
                           </button>
-                          
+
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
                                     <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="../index.jsp#about">KISTI CA</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="../index.jsp#service">GRID RESOURCES</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="../index.jsp#enroll">registration</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="../index.jsp#register">registration</a></li>
                                     <li class="nav-item dropdown-submenu">
                                         <a class="page-scroll dropdown-toggle" href="../index.jsp#certificates" data-toggle="dropdown">CERTIFICATE</a>
                                         <ul class="nav navbar-nav ml-auto dropdown-menu dropdown">
