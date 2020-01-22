@@ -754,7 +754,7 @@ p {
         .navigation .navbar .navbar-nav .nav-item:not(.sub) a::before {
           position: absolute;
           content: '';
-          width: 3px;
+          width: 10px;
           height: 0;
           background-color: #754ef9;
           left: 50%;
