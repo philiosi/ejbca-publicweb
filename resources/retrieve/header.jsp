@@ -95,29 +95,29 @@
                                     <li class="nav-item"><a class="page-scroll" href="../index.jsp#register">registration</a></li>
                                     <li class="nav-item dropdown-submenu">
                                         <a class="page-scroll dropdown-toggle" href="../index.jsp#certificates" data-toggle="dropdown">CERTIFICATE</a>
-                                        <ul class="nav navbar-nav ml-auto dropdown-menu dropdown">
+                                        <ul class="nav navbar-nav ml-auto dropdown-menu dropdown" style="border-top:none; border-bottom:none;">
                                             <li class="nav-item dropdown-submenu">
                                                 <a href="#" class="dropdown-toggle sub" data-toggle="dropdown">Enroll</a>
-                                                <ul class="dropdown-menu menu-3rd sub">
-                                                    <li class="nav-item"><a class="sub" href="../enrol/browser.jsp">Create Browser Certificate</a></li>
-                                                    <li class="nav-item"><a class="sub" href="../enrol/server.jsp">Create Certificate from CSR</a></li>
-                                                    <li class="nav-ite "><a class="sub" href="../enrol/keystore.jsp">Create Keystore</a></li>
+                                                <ul class="dropdown-menu dropdown menu-3rd" style="border-left:none; border-right:none;">
+                                                    <li class="nav-item ml-0"><a class="sub" href="../enrol/browser.jsp">Create Browser Certificate</a></li>
+                                                    <li class="nav-item ml-0"><a class="sub" href="../enrol/server.jsp">Create Certificate from CSR</a></li>
+                                                    <li class="nav-item ml-0"><a class="sub" href="../enrol/keystore.jsp">Create Keystore</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
                                                 <a href="#" class="dropdown-toggle sub" data-toggle="dropdown">Retrieve </a>
-                                                <ul class="dropdown-menu dropdown menu-3rd sub">
-                                                    <li class="nav-item sub"><a class="sub" href="../retrieve/ca_certs.jsp">Fetch CA Certificates</a></li>
-                                                    <li class="nav-item sub"><a class="sub" href="../retrieve/ca_crls.jsp">Fetch CA CRLs</a></li>
-                                                    <li class="nav-item sub"><a class="sub" href="../retrieve/list_certs.jsp">List User's Certificate</a></li>
-                                                    <li class="nav-item sub"><a class="sub" href="../retrieve/latest_cert.jsp">List User's Last Certificate</a></li>
+                                                <ul class="dropdown-menu dropdown menu-3rd" style="border-left:none; border-right:none;">
+                                                    <li class="nav-item ml-0"><a class="sub" href="../retrieve/ca_certs.jsp">Fetch CA Certificates</a></li>
+                                                    <li class="nav-item ml-0"><a class="sub" href="../retrieve/ca_crls.jsp">Fetch CA CRLs</a></li>
+                                                    <li class="nav-item ml-0"><a class="sub" href="../retrieve/list_certs.jsp">List User's Certificate</a></li>
+                                                    <li class="nav-item ml-0"><a class="sub" href="../retrieve/latest_cert.jsp">List User's Last Certificate</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
                                                 <a href="#" class="dropdown-toggle sub" data-toggle="dropdown">Inspect</a>
-                                                <ul class="dropdown-menu  dropdown menu-3rd sub">
-                                                    <li class="nav-item"><a class="sub" href="../inspect/request.jsp">Inspect Certificate/CSR</a></li>
-                                                    <li class="nav-item"><a class="sub" href="../retrieve/check_status.jsp">Check Certificate Status</a></li>
+                                                <ul class="dropdown-menu dropdown menu-3rd" style="border-left:none; border-right:none;">
+                                                    <li class="nav-item ml-0"><a class="sub" href="../inspect/request.jsp">Inspect Certificate/CSR</a></li>
+                                                    <li class="nav-item ml-0"><a class="sub" href="../retrieve/check_status.jsp">Check Certificate Status</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
