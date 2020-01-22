@@ -87,7 +87,7 @@
                                     <li class="nav-item"><a class="page-scroll" href="#about">KISTI CA</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="#service">GRID RESOURCES</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="#register">registration</a></li>
-                                    <li class="nav-item active dropdown-submenu">
+                                    <li class="nav-item dropdown-submenu">
                                         <a class="page-scroll dropdown-toggle" href="#certificates" data-toggle="dropdown">CERTIFICATE</a>
                                         <ul class="nav navbar-nav ml-auto dropdown-menu dropdown" style="border-top:none; border-bottom:none;">
                                             <li class="nav-item dropdown-submenu">
