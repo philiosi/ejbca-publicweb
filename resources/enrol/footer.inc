@@ -89,7 +89,7 @@
         console.log('body', docHeight);
 
         if(docHeight > certHeight) {
-            $('#certificates').height(docHeight-68-30-25-59);
+            $('#certificates').height(docHeight-68-130-25);
             certHeight = $('#certificates').height();
             console.log('aftercert', certHeight);
         }
