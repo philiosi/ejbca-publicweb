@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright-text text-center pt-20">
-                            <p>Copyright © 2020. GSDC, 
+                            <p>Copyright <span style="color:white;"><i class="far fa-copyright"></i></span> 2020. GSDC, 
                                 <!-- <img src="assets/images/gsdc-blue.png" style="width: 3em;" alt="gsdc Logo"> -->
                                 Korea Institute of Science and Technology Information </p>
                         </div> <!-- copyright text -->

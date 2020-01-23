@@ -1,5 +1,4 @@
 <%@ include file="header.jsp" %>
-<h1 class="title">Fetch latest certificate</h1>
 
 <section id="certificates" class="service-area gray-bg pt-130 pb-25">
 	<div class="container">
