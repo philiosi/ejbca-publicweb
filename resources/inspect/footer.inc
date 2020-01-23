@@ -81,6 +81,20 @@
         }
     });
 
+    $(window).resize(function() {
+        certHeight = $('#certificates').height();
+        docHeight = $('html').height();
+
+        console.log('cert', certHeight);
+        console.log('body', docHeight);
+
+        if(docHeight > certHeight) {
+            $('#certificates').height(docHeight-68-30-25-59);
+            certHeight = $('#certificates').height();
+            console.log('aftercert', certHeight);
+        }
+    });
+
 
 
 </script>
