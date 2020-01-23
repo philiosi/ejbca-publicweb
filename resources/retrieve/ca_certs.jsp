@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ include file="header.jsp" %>
 
-<section id="certificates" class="service-area gray-bg pt-130 pb-25">
+<section id="certificates" class="service-area gray-bg pt-130 pb-25" style="min-height:940px;">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-10">
