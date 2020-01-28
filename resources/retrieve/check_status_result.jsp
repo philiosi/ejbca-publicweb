@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-6">
-                <div class="section-title text-left pb-30">
+                <div class="section-title text-left pb-30" style="overflow-wrap:break-word;">">
 					<h6 class="title text-center" style="font-size:30px;">Certificate Status</h6>
 				    <c:set var="issuer" value="${param.issuer}" />
 					<c:set var="serno" value="${param.serno}" />

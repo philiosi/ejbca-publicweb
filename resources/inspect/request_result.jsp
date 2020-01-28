@@ -26,11 +26,11 @@ if (isMultipart) {
 }
   %>
 
-<section id="certificates" class="service-area gray-bg pt-130 pb-25">
+<section id="certificates" class="service-area gray-bg pt-130 pb-25" style="min-height:1000px;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <div class="section-title text-center pb-30">
+                <div class="section-title text-left pb-30" style="overflow-wrap:break-word;">
                     <h6 class="title" style="font-size:30px;"><c:out value="Certificate/CSR dump" /></h6>
                     <hr/>
                     <p class="pt-10">File is of type: <c:out value="${dump.type}"/></p>
