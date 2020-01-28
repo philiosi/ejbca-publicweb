@@ -89,7 +89,7 @@
 
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
-                                    <li class="nav-item"><a class="page-scroll" href="#home">Home</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="../index.jsp#home">Home</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="../index.jsp#about">KISTI CA</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="../index.jsp#service">GRID RESOURCES</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="../index.jsp#register">registration</a></li>

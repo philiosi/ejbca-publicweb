@@ -42,7 +42,7 @@
 <script src="../assets/js/jquery.appear.min.js"></script>
 
 <!--====== Scrolling js ======-->
-<script src="../assets/js/scrolling-nav.js"></script>
+<!-- <script src="../assets/js/scrolling-nav.js"></script> -->
 <script src="../assets/js/jquery.easing.min.js"></script>
 
 
@@ -50,23 +50,6 @@
 <script src="../assets/js/main.js"></script>
 
 <script>
-
-    $(document).on('scroll', function () {
-        $('.counter-count').each(function () {
-            $(this).prop('Counter', 0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 5000,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-            });
-        });
-        $('.counter-count').removeClass('counter-count').addClass('counted')
-
-    });
-
      $(document).ready( function(){
         certHeight = $('#certificates').height();
         docHeight = $('html').height();
