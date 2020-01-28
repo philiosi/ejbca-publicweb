@@ -99,7 +99,7 @@
         //get the file name
         var fileName = $(this).val();
         //replace the "Choose a file" label
-        $('.uploadedFile').html(fileName);
+        $('.custom-file-label').html(fileName);
     })
 
 
