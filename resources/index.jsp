@@ -91,7 +91,7 @@
       </div> <!-- row -->
 
     <%! String count = 0; %>
-    <% 
+    <%
 
     Class.forName("com.mysql.jdbc.Driver");
 
@@ -115,7 +115,7 @@
         if(rs.next()){
             count = rs.getString(1);
         }
-    } catch(SQLException ex) {
+    } catch(SQLException ex) { 
         ex.getString();
     } finally {
         if(rs!=null) try{rs.close(); }catch(SQLException ex) {}
@@ -162,7 +162,6 @@
               </div> <!-- single service -->
           </div>
       </div> <!-- row -->
-      <% fil
       <div class="row">
           <div class="col-lg-6">
               <div class="about-content mt-10">
