@@ -101,7 +101,7 @@
     ResultSet rs=null;    
 
     try{
-        String jdbcDriver ="jdbc:mysql://localhost:3306/ejbca";
+        String jdbcDriver ="jdbc:mariadb://localhost:3306/ejbca";
         String dbUser="ejbca";
         String dbPass="ejbca";
         String query="SELECT count(*) FROM UserData WHREE status='40'";
