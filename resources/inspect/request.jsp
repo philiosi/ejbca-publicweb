@@ -24,7 +24,7 @@
                             </div>
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" name="reqfile" id="reqfile"></input>
-                                <label class="custom-file-label" for="reqfile">Certificate of CSR file</label>
+                                <label class="uploadedFile" for="reqfile">Certificate of CSR file</label>
                             </div>
                         </div>
                         <br />
@@ -37,5 +37,14 @@
       </div>
   </div>
 </section>
+
+<script>
+    $('#reqfile').on('change',function(){
+        //get the file name
+        var fileName = $(this).val();
+        //replace the "Choose a file" label
+        $(this).next('.uploadedFile').html(fileName);
+    })
+</script>
 
 <%@ include file="footer.inc" %>

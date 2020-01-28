@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" name="pkcs10file" id="pkcs10file"></input>
-                                    <label class="custom-file-label" for="pkcs10file">Certificate Signing Request (CSR) file</label>
+                                    <label class="uploadedFile" for="pkcs10file">Certificate Signing Request (CSR) file</label>
                                 </div>
                             </div>
                             <p class="emphasis-mid text-left">or copy and paste your CSR block below:</p>
@@ -93,5 +93,14 @@
         </div> <!-- row END -->
     </div>
 </section>
+
+<script>
+    $('#pkcs10file').on('change',function(){
+        //get the file name
+        var fileName = $(this).val();
+        //replace the "Choose a file" label
+        $(this).next('.uploadedFile').html(fileName);
+    })
+</script>
 
 <%@ include file="footer.inc" %>
