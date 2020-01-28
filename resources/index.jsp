@@ -535,7 +535,7 @@
                           </ul>
                       </div>
                       <div class="certificate-btn">
-                          <a class="main-btn" href="#contact"><i class="lni-enter icon"></i>inspect certificate</a>
+                          <a class="main-btn" href="#inspect-cert"><i class="lni-enter icon"></i>inspect certificate</a>
                       </div>
                   </div>
               </div> <!-- single certificate -->
@@ -620,7 +620,7 @@
       </div> <!-- Modal End: Retrieve Certificate -->
 
       <!-- Inspect Certificate -->
-      <div class="modal fade" id="retrieve-cert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      <div class="modal fade" id="inspect-cert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
           aria-hidden="true">
           <div class="modal-dialog" role="document">
               <div class="modal-content">
