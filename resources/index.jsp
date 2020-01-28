@@ -38,7 +38,7 @@
                       <h4 class="sub-title">Welcome,</h4>
                       <h1 class="title">KISTI CA</h1>
                       <p>(KISTI Certification Authority)</p>
-                      <a class="main-btn" href="#request">REQUEST CERTIFICATES</a>
+                      <a class="main-btn" href="#certificates">REQUEST CERTIFICATES</a>
                   </div> <!-- header content right -->
               </div>
               <div class="col-lg-6 offset-xl-1">
@@ -54,10 +54,10 @@
                   <div class="col-lg-12">
                       <div class="header-social-icon">
                           <ul>
-                              <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                              <%-- <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
                               <li><a href="#"><i class="lni-twitter-original"></i></a></li>
                               <li><a href="#"><i class="lni-behance-original"></i></a></li>
-                              <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                              <li><a href="#"><i class="lni-linkedin-original"></i></a></li> --%>
                           </ul>
                       </div> <!-- header social -->
                   </div>
@@ -89,7 +89,33 @@
               </div> <!-- section title -->
           </div>
       </div> <!-- row -->
+    <% 
 
+    Class.forName("com.mysql.jdbc.Driver");
+
+    Connection conn=null;
+    Statement stmt=null;
+    ResultSet rs=null;    
+    String count;
+
+    try{
+        String jdbcDriver ="jdbc:mysql://localhost:3306/ejbca";
+        String dbUser="ejbca";
+        String dbPass="ejbca";
+        String query="SELECT count(*) FROM UserData WHREE status='40';";
+
+        //2.데이터 베이스 커넥션 생성
+        conn=DriverManager.getConnection(jdbcDriver,dbUser,dbPass);
+        //3.Statement 생성
+        stmt=conn.createStatement();
+        //4. 쿼리실행
+        rs=stmt.executeQuery(query);
+        if(rs.next())
+            count = rs.getString(1);
+    }catch(SQLException ex) { %>
+        <div> <%= ex.getMessage() %> </div> <% 
+    }
+    %>
       <div class="row text-justify">
           <div class="col-lg-4 col-md-6 col-sm-8">
               <div class="single-service text-center mt-30">
@@ -98,7 +124,7 @@
                   </div>
                   <div class="service-content">
                       <h4 class="service-title"><a href="#">Enroll</a></h4>
-                      <h2 class="counter-count" data-to="100" data-speed="1500">153</h2>
+                      <h2 class="counter-count" data-to="100" data-speed="1500"><%=count %></h2>
                       <p class="count-text">Total</p>
                   </div>
               </div> <!-- single service -->
@@ -443,7 +469,7 @@
                   <!-- <h2 class="action-title">Will you be participating in the experiment above?</h2> -->
                   <h2 class="action-title">Do you need grid computing resources?</h2>
                   <p>Please Fill out the form below and contact the Registration Authority (RA) of your experiment community.
-                  <br><i class="lni-envelope" style="padding-right:10px"></i><a class="page-scroll" href="#contact" style="color:#FFF"> Community mail list</a></p>
+                  <i class="lni-envelope" style="padding-right:10px"></i><a class="page-scroll" href="#contact" style="color:#FFF"> Community mail list</a></p>
                   <ul>
                       <li><a class="main-btn custom" href="assets/docs/kisti_ca_user_form_v1.5.pdf" target="_blank"><i class="lni-download icon"></i>  Applicant</a></li>
                       <li><a class="main-btn custom-2" href="assets/docs/Personal_Information_Protection_Act.pdf" target="_blank"><i class="lni-download icon"></i>  Agreement</a></li>
@@ -467,8 +493,7 @@
           <div class="col-lg-8">
               <div class="section-title text-center pb-25">
                   <h2 class="title">CERTIFICATES</h2>
-                  <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur
-                      sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                  <p>The public key cryptography is the basis of grid security architecture. </br> Certification Authority(CA) is a mandatory componant of public key infrastructure(PKI).</p>
               </div> <!-- section title -->
           </div>
       </div> <!-- row -->
