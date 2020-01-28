@@ -111,18 +111,42 @@
         conn = DriverManager.getConnection(jdbcDriver,dbUser,dbPass); 
         //3.Statement 생성
         stmt = conn.prepareStatement(query);
-        stmt.setString(1, "userCount");
+    } catch(SQLException ex1) {
+        out.print("Connection Error...");
+        out.print(e.toString());
+    }
 
+    try{
+        stmt.setString(1, "userCount");
+    } catch(SQLException ex2) {
+        out.print("statement setString Error...");
+        out.print(e.toString());
+    }
+
+    try{
         //4. 쿼리실행
         rs = stmt.executeQuery();
+    } catch(SQLException ex2) {
+        out.print("executeQuery Error...");
+        out.print(e.toString());
+    }
+    
+    rs.next();
+    try{
+        userCnt = rs.getString("userCount");
+    } catch(SQLException ex2) {
+        out.print("userCnt Error...");
+        out.print(e.toString());
+    }
 
-        if(rs.next()){
-            userCnt = rs.getString("userCount");
-            count = rs.getString("userCount");
-        }
-    } catch(SQLException ex) { 
-        ex.getString();
-    } finally {
+    try{
+        count = rs.getString("userCount");
+    } catch(SQLException ex2) {
+        out.print("userCnt Error...");
+        out.print(e.toString());
+    }
+
+    finally {
         if(rs!=null) try{rs.close(); }catch(SQLException ex) {}
         if(stmt!=null) try{stmt.close();} catch(SQLException ex) {}
         if(conn!=null) try{conn.close(); }catch(SQLException ex) {}   
@@ -137,7 +161,7 @@
                   </div>
                   <div class="service-content">
                       <h4 class="service-title"><a href="#">Enroll</a></h4>
-                      <h2 class="counter-count" data-to="100" data-speed="1500"><%= count %></h2>
+                      <h2 class="counter-count" data-to="100" data-speed="1500"><%= count %> </h2>
                       <p class="count-text">Total</p>
                   </div>
               </div> <!-- single service -->
@@ -149,7 +173,7 @@
                   </div>
                   <div class="service-content">
                       <h4 class="service-title"><a href="#contact">Certificate</a></h4>
-                      <h2 class="counter-count" data-to="100" data-speed="1500">253</h2>
+                      <h2 class="counter-count" data-to="100" data-speed="1500"><%= userCnt %></h2>
                       <p>KISTI CA V4</p>
                   </div>
               </div> <!-- single service -->
