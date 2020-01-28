@@ -234,7 +234,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <ul class="list-group list-group-flush" >
+                            <ul class="list-group list-group-flush" style="overflow-wrap: break-word;">
                                 <li class="list-group-item">
                                     <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>Subject: C=KR,
                                         O=KISTI, CN=KISTI Certification Authority</li>
@@ -259,11 +259,9 @@
                                     (<a href="http://ca.gridcenter.or.kr/certs/certificates/kisti-ca-v3.signing_policy"
                                         target="_blank"><u>signing_policy</u></a>)
                                 </li>
-                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA256
-                                        Fingerprint=<br>CD:D6:F9:D8:39:75:94:29:71:6F:61:07:8E:77:91:A0:61:F7:42:B7:BE:72:CF:A9:CE:7C:E2:60:7F:5A:09:F1
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA256 Fingerprint=<br>CD:D6:F9:D8:39:75:94:29:71:6F:61:07:8E:77:91:A0:61:F7:42:B7:BE:72:CF:A9:CE:7C:E2:60:7F:5A:09:F1
                                 </li>
-                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA1
-                                        Fingerprint=<br>06:52:34:EE:81:0A:E5:9C:43:68:54:84:8C:8A:D4:DF:0D:75:A7:45
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA1 Fingerprint=<br>06:52:34:EE:81:0A:E5:9C:43:68:54:84:8C:8A:D4:DF:0D:75:A7:45
                                 </li>
                                 <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Issued Certificates <a
                                             href="http://ca.gridcenter.or.kr/issued_v3/" class="badge badge-light"
@@ -292,7 +290,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush" style="overflow-wrap: break-word;">
                                 <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> C=KR, O=KISTI, O=GRID,
                                         CN=KISTI Grid Certificate Authority</li>
                                 <li class="list-group-item">
@@ -315,11 +313,9 @@
                                     (<a href="http://ca.gridcenter.or.kr/certs/certificates/722e5071.signing_policy"
                                         target="_blank"><u>signing_policy</u></a>)
                                 </li>
-                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA256
-                                        Fingerprint=EA:08:BA:6A:36:C9:F1:0A:B5:2F:BB:67:C7:A4:3D:C9:52:B7:CE:DB
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA256 Fingerprint=EA:08:BA:6A:36:C9:F1:0A:B5:2F:BB:67:C7:A4:3D:C9:52:B7:CE:DB
                                 </li>
-                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA1
-                                        Fingerprint=06:52:34:EE:81:0A:E5:9C:43:68:54:84:8C:8A:D4:DF:0D:75:A7:45
+                                <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> SHA1 Fingerprint=06:52:34:EE:81:0A:E5:9C:43:68:54:84:8C:8A:D4:DF:0D:75:A7:45
                                 </li>
                                 <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Issued Certificates <a
                                             href="http://ca.gridcenter.or.kr/issued/" class="badge badge-light"
@@ -349,7 +345,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush" style="overflow-wrap: break-word;">
                                 <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Subject : C=KR,
                                         O=KISTI, CN=KISTI GRID ROOT CA</li>
                                 <li class="list-group-item"><span class="list-certificate"><i class="fas fa-certificate icon"></i></span> Valid until : May 30,
@@ -487,7 +483,7 @@
                           <p>Create certificate or keystore</p>
                       </div>
                       <div class="certificate-list">
-                          <ul>
+                          <ul class="text-left" style="margin-left: 2.8rem; height:140px;">
                               <li>Create Browser Certificate</li>
                               <li>Create Certificate from CSR</li>
                               <li>Create Keystore</li>
@@ -509,7 +505,7 @@
                           <p>Fetch CA/User certificates</p>
                       </div>
                       <div class="certificate-list">
-                          <ul style="text-align: left; margin-left: 3em;">
+                          <ul class="text-left" style="margin-left: 2.8rem; height:140px;">
                               <li>Fetch CA Certificate</li>
                               <li>Fetch CA CRLs</li>
                               <li>List User's Certificates</li>
@@ -533,7 +529,7 @@
                           <!-- <span class="price">$29.00</span> -->
                       </div>
                       <div class="certificate-list">
-                          <ul>
+                          <ul class="text-left" style="margin-left: 2.8rem; height:140px;">
                               <li>Inspect Certificate/CSR</li>
                               <li>Check Certificate Status</li>
                           </ul>
@@ -582,7 +578,7 @@
           </div>
       </div> <!-- Modal End: Enroll Certificate -->
 
-        <!-- Retrieve Certificate -->
+      <!-- Retrieve Certificate -->
       <div class="modal fade" id="retrieve-cert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
           aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -613,6 +609,37 @@
                                 <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
                                 <a href="retrieve/latest_cert.jsp" role="button"><h6 class="title">Fetch User's Latest Certificate</h6></a>
                                 <p class="pt-10">Download the last issued certificate for a user for whom you know the certificate Distinguished Name.</span>
+                            </li>
+                        </ul>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div> <!-- Modal End: Retrieve Certificate -->
+
+      <!-- Inspect Certificate -->
+      <div class="modal fade" id="retrieve-cert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Inspect Certificate/CSR </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                <a href="retrieve/ca_certs.jsp" role="button"><h6 class="title">Inspect Certificate/CSR</h6></a>
+                                <p class="pt-10">Inspect a dump of a CSR or a certificate. This gives an output of a CVC or ASN.1 dump, suitable for technical inspection and debugging.</span></li>
+                            <li class="list-group-item">
+                                <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
+                                <a href="retrieve/list_crls.jsp" role="button"><h6 class="title">Check Certificate Status</h6></a>
+                                <p class="pt-10">Check revocation status for a certificate where you know the Issuer Distinguished Name and the serial number.</span>
                             </li>
                         </ul>
                   </div>
