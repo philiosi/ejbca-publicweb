@@ -105,17 +105,15 @@
         String query="SELECT count(*) FROM UserData WHREE status='40';";
 
         //2.데이터 베이스 커넥션 생성
-        conn=DriverManager.getConnection(jdbcDriver,dbUser,dbPass);
+        conn = DriverManager.getConnection(jdbcDriver,dbUser,dbPass);
         //3.Statement 생성
-        stmt=conn.createStatement();
+        stmt = conn.createStatement();
         //4. 쿼리실행
-        rs=stmt.executeQuery(query);
-        if(rs.next())
+        rs = stmt.executeQuery(query);
+        if(rs.next()){
             count = rs.getString(1);
-    }catch(SQLException ex) { %>
-        <div> <%= ex.getMessage() %> </div> <% 
-    }
     %>
+
       <div class="row text-justify">
           <div class="col-lg-4 col-md-6 col-sm-8">
               <div class="single-service text-center mt-30">
@@ -124,7 +122,15 @@
                   </div>
                   <div class="service-content">
                       <h4 class="service-title"><a href="#">Enroll</a></h4>
-                      <h2 class="counter-count" data-to="100" data-speed="1500"><%=count %></h2>
+                      <h2 class="counter-count" data-to="100" data-speed="1500"><%= count %></h2>
+        <%  } 
+        } catch(SQLException ex) { %>
+            <div> <%= ex.getMessage() %> </div> <% 
+        } finally {
+            if(rs!=null) try{rs.close(); }catch(SQLException ex) {}
+            if(stmt!=null) try{stmt.close();} catch(SQLException ex) {}
+            if(conn!=null) try{conn.close(); }catch(SQLException ex) {}   
+        } %>
                       <p class="count-text">Total</p>
                   </div>
               </div> <!-- single service -->
@@ -154,6 +160,7 @@
               </div> <!-- single service -->
           </div>
       </div> <!-- row -->
+      <% fil
       <div class="row">
           <div class="col-lg-6">
               <div class="about-content mt-10">
