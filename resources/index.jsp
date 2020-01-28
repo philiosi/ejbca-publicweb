@@ -89,14 +89,16 @@
               </div> <!-- section title -->
           </div>
       </div> <!-- row -->
+
+    <%! String count = 0; %>
     <% 
 
     Class.forName("com.mysql.jdbc.Driver");
 
+
     Connection conn=null;
     Statement stmt=null;
     ResultSet rs=null;    
-    String count;
 
     try{
         String jdbcDriver ="jdbc:mysql://localhost:3306/ejbca";
@@ -112,6 +114,14 @@
         rs = stmt.executeQuery(query);
         if(rs.next()){
             count = rs.getString(1);
+        }
+    } catch(SQLException ex) {
+        ex.getString();
+    } finally {
+        if(rs!=null) try{rs.close(); }catch(SQLException ex) {}
+        if(stmt!=null) try{stmt.close();} catch(SQLException ex) {}
+        if(conn!=null) try{conn.close(); }catch(SQLException ex) {}   
+    }
     %>
 
       <div class="row text-justify">
@@ -123,14 +133,6 @@
                   <div class="service-content">
                       <h4 class="service-title"><a href="#">Enroll</a></h4>
                       <h2 class="counter-count" data-to="100" data-speed="1500"><%= count %></h2>
-        <%  } 
-        } catch(SQLException ex) { %>
-            <div> <%= ex.getMessage() %> </div> <% 
-        } finally {
-            if(rs!=null) try{rs.close(); }catch(SQLException ex) {}
-            if(stmt!=null) try{stmt.close();} catch(SQLException ex) {}
-            if(conn!=null) try{conn.close(); }catch(SQLException ex) {}   
-        } %>
                       <p class="count-text">Total</p>
                   </div>
               </div> <!-- single service -->
