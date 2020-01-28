@@ -90,15 +90,15 @@
           </div>
       </div> <!-- row -->
 
-    <%! String count; %>
+    <%! String count=null; %>
     <%
-
     Class.forName("org.mariadb.jdbc.Driver");
 
 
     Connection conn=null;
     PreparedStatement stmt=null;
     ResultSet rs=null;    
+    String userCnt=null;
 
     try{
         String jdbcDriver ="jdbc:mariadb://localhost:3306/ejbca";
@@ -117,6 +117,7 @@
         rs = stmt.executeQuery();
 
         if(rs.next()){
+            userCnt = rs.getString("userCount");
             count = rs.getString("userCount");
         }
     } catch(SQLException ex) { 
