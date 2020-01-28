@@ -535,7 +535,7 @@
                           </ul>
                       </div>
                       <div class="certificate-btn">
-                          <a class="main-btn" href="#inspect-cert"><i class="lni-enter icon"></i>inspect certificate</a>
+                          <a class="main-btn" href="#inspect-cert" data-toggle="modal" data-target="#inspect-cert"><i class="lni-enter icon"></i>inspect certificate</a>
                       </div>
                   </div>
               </div> <!-- single certificate -->
@@ -634,11 +634,11 @@
                       <ul class="list-group list-group-flush">
                             <li class="list-group-item">
                                 <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
-                                <a href="retrieve/ca_certs.jsp" role="button"><h6 class="title">Inspect Certificate/CSR</h6></a>
+                                <a href="inspect/request.jsp" role="button"><h6 class="title">Inspect Certificate/CSR</h6></a>
                                 <p class="pt-10">Inspect a dump of a CSR or a certificate. This gives an output of a CVC or ASN.1 dump, suitable for technical inspection and debugging.</span></li>
                             <li class="list-group-item">
                                 <span class="list-certificate"><i class="fas fa-certificate icon"></i></span>
-                                <a href="retrieve/list_crls.jsp" role="button"><h6 class="title">Check Certificate Status</h6></a>
+                                <a href="retrieve/check_status.jsp" role="button"><h6 class="title">Check Certificate Status</h6></a>
                                 <p class="pt-10">Check revocation status for a certificate where you know the Issuer Distinguished Name and the serial number.</span>
                             </li>
                         </ul>
