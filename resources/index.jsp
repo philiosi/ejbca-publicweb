@@ -90,7 +90,7 @@
           </div>
       </div> <!-- row -->
 
-    <%! String count = 0; %>
+    <%! String count; %>
     <%
 
     Class.forName("com.mysql.jdbc.Driver");
