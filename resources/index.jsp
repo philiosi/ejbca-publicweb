@@ -104,7 +104,7 @@
         String jdbcDriver ="jdbc:mysql://localhost:3306/ejbca";
         String dbUser="ejbca";
         String dbPass="ejbca";
-        String query="SELECT count(*) FROM UserData WHREE status='40';";
+        String query="SELECT count(*) as userCount FROM UserData WHREE status='40';";
 
         //2.데이터 베이스 커넥션 생성
         conn = DriverManager.getConnection(jdbcDriver,dbUser,dbPass);
@@ -113,7 +113,7 @@
         //4. 쿼리실행
         rs = stmt.executeQuery(query);
         if(rs.next()){
-            count = rs.getString(1);
+            count = rs.getString("userCount");
         }
     } catch(SQLException ex) { 
         ex.getString();
