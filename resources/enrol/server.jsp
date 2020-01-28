@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" name="pkcs10file" id="pkcs10file"></input>
-                                    <label class="custom-file-label" for="pkcs10file">Certificate Signing Request (CSR) file</label>
+                                    <label class="custom-file-label" for="pkcs10file" style="text-align:left;">Certificate Signing Request (CSR) file</label>
                                 </div>
                             </div>
                             <p class="emphasis-mid text-left">or copy and paste your CSR block below:</p>

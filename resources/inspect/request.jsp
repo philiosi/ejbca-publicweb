@@ -24,7 +24,7 @@
                             </div>
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" name="reqfile" id="reqfile"></input>
-                                <label class="custom-file-label" for="reqfile">Certificate of CSR file</label>
+                                <label class="custom-file-label" for="reqfile" style="text-align:left;">Certificate of CSR file</label>
                             </div>
                         </div>
                         <br />
