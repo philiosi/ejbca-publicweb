@@ -108,7 +108,6 @@
     
     try{
         conn = DriverManager.getConnection(jdbcDriver,dbUser,dbPass); 
-        stmt = conn.prepareStatement(query);
     } catch(SQLException e) {
         out.print("<div>Connection Error...</div>");
         out.print(e.toString());
@@ -116,6 +115,7 @@
     
     try{ // userCount status = 40
         query="SELECT count(*) as userCount FROM UserData WHERE status='40'";
+        stmt = conn.prepareStatement(query);
         rs = stmt.executeQuery();
         rs.next();
         userCnt = rs.getString("userCount");
