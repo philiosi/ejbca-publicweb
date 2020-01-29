@@ -105,7 +105,7 @@
         String jdbcDriver ="jdbc:mariadb://localhost:3306/ejbca";
         String dbUser="ejbca";
         String dbPass="ejbca";
-        String query="SELECT count(*) as userCount FROM UserData WHREE status='40'";
+        String query="SELECT count(*) as userCount FROM UserData WHERE status='40'";
 
         //2.데이터 베이스 커넥션 생성
     
