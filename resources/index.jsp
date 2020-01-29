@@ -124,8 +124,6 @@
         out.print("statement setString Error...");
         out.print(e.toString());
     }
-    %>
-    <%--
     try{
         //4. 쿼리실행
         rs = stmt.executeQuery();
@@ -136,14 +134,14 @@
     
     rs.next();
     try{
-        userCnt = rs.getString("userCount");
+        count = rs.getString("userCount");
     } catch(SQLException e) {
         out.print("userCnt Error...");
         out.print(e.toString());
     }
 
     try{
-        count = rs.getString("userCount");
+        userCnt = rs.getString("userCount");
     } catch(SQLException e) {
         out.print("userCnt Error...");
         out.print(e.toString());
@@ -153,7 +151,8 @@
         if(rs!=null) try{rs.close(); }catch(SQLException ex) {}
         if(stmt!=null) try{stmt.close();} catch(SQLException ex) {}
         if(conn!=null) try{conn.close(); }catch(SQLException ex) {}   
-    } --%>
+    } 
+    %>
 
       <div class="row text-justify">
           <div class="col-lg-4 col-md-6 col-sm-8">
@@ -177,7 +176,7 @@
                   <div class="service-content">
                       <h4 class="service-title"><a href="#contact">Certificate</a></h4>
                       <%-- <%= userCnt %> --%>
-                      <h2 class="counter-count" data-to="100" data-speed="1500">251</h2>
+                      <h2 class="counter-count" data-to="100" data-speed="1500"><%=userCnt%>></h2>
                       <p>KISTI CA V4</p>
                   </div>
               </div> <!-- single service -->
