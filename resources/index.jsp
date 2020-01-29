@@ -107,25 +107,14 @@
     String dbPass="ejbca";
     
     try{
-        //2.데이터 베이스 커넥션 생성
         conn = DriverManager.getConnection(jdbcDriver,dbUser,dbPass); 
-        //3.Statement 생성
         stmt = conn.prepareStatement(query);
     } catch(SQLException e) {
         out.print("<div>Connection Error...</div>");
         out.print(e.toString());
     }
     
-    %>
-    <%-- try{
-        stmt.setString(1, "userCount");
-    } catch(SQLException e) {
-        out.print("statement setString Error...");
-        out.print(e.toString());
-    } --%>
-    <%
-    try{
-        //4. 쿼리실행
+    try{ // userCount status = 40
         query="SELECT count(*) as userCount FROM UserData WHERE status='40'";
         rs = stmt.executeQuery();
         rs.next();
@@ -135,14 +124,7 @@
         out.print(e.toString());
     }
     
-    try{
-        
-    } catch(SQLException e) {
-        out.print("userCnt Error...");
-        out.print(e.toString());
-    }
-
-    try{
+    try{ // certificate Count status = 20 (not revoked)
         stmt=null;
         rs=null;
 
@@ -156,7 +138,7 @@
         out.print(e.toString());
     }
 
-    try{
+    try{  // revoked certificate Count status = 40
         stmt=null;
         rs=null;
 
@@ -174,7 +156,7 @@
         if(rs!=null) try{rs.close(); }catch(SQLException ex) {}
         if(stmt!=null) try{stmt.close();} catch(SQLException ex) {}
         if(conn!=null) try{conn.close(); }catch(SQLException ex) {}   
-    } 
+    }
     %>
 
       <div class="row text-justify">
