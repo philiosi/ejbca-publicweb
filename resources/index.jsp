@@ -90,7 +90,10 @@
           </div>
       </div> <!-- row -->
 
-    <%! String count="15"; %>
+    <%! String userCnt=""; %>
+    <%! String certCnt=""; %>
+    <%! String revokedCnt=""; %>
+    
     <%
     Class.forName("org.mariadb.jdbc.Driver");
 
@@ -99,16 +102,13 @@
     PreparedStatement stmt=null;
     ResultSet rs=null;    
     String userCnt="";
+    String query="";
+    String jdbcDriver ="jdbc:mariadb://localhost:3306/ejbca";
+    String dbUser="ejbca";
+    String dbPass="ejbca";
     
     try{
-        out.print("<h2>"+ count +"</h2>");
-        String jdbcDriver ="jdbc:mariadb://localhost:3306/ejbca";
-        String dbUser="ejbca";
-        String dbPass="ejbca";
-        String query="SELECT count(*) as userCount FROM UserData WHERE status='40'";
-
         //2.데이터 베이스 커넥션 생성
-    
         conn = DriverManager.getConnection(jdbcDriver,dbUser,dbPass); 
         //3.Statement 생성
         stmt = conn.prepareStatement(query);
@@ -117,33 +117,57 @@
         out.print(e.toString());
     }
     
-    
-    try{
+    %>
+    <%-- try{
         stmt.setString(1, "userCount");
     } catch(SQLException e) {
         out.print("statement setString Error...");
         out.print(e.toString());
-    }
+    } --%>
+    <%
     try{
         //4. 쿼리실행
+        query="SELECT count(*) as userCount FROM UserData WHERE status='40'";
         rs = stmt.executeQuery();
+        rs.next();
+        userCnt = rs.getString("userCount");
     } catch(SQLException e) {
         out.print("executeQuery Error...");
         out.print(e.toString());
     }
     
-    rs.next();
     try{
-        count = rs.getString("userCount");
+        
     } catch(SQLException e) {
         out.print("userCnt Error...");
         out.print(e.toString());
     }
 
     try{
-        userCnt = rs.getString("userCount");
+        stmt=null;
+        rs=null;
+
+        query = "SELECT count(*) as certCount FROM CertificateData WHERE status='20'";
+        stmt = conn.prepareStatement(query);
+        rs = stmt.executeQuery();
+        rs.next();
+        certCnt = rs.getString("certCount");
     } catch(SQLException e) {
-        out.print("userCnt Error...");
+        out.print("certCount Error...");
+        out.print(e.toString());
+    }
+
+    try{
+        stmt=null;
+        rs=null;
+
+        query = "SELECT count(*) as revokedCount FROM CertificateData WHERE status='40'";
+        stmt = conn.prepareStatement(query);
+        rs = stmt.executeQuery();
+        rs.next();
+        revokedCnt = rs.getString("revokedCount");
+    } catch(SQLException e) {
+        out.print("certCount Error...");
         out.print(e.toString());
     }
 
@@ -163,7 +187,7 @@
                   <div class="service-content">
                       <h4 class="service-title"><a href="#">Enroll</a></h4>
                       <%-- <%= count %> --%>
-                      <h2 class="counter-count" data-to="100" data-speed="1500"> <%=count%> </h2>
+                      <h2 class="counter-count" data-to="100" data-speed="1500"> <%=userCnt%> </h2>
                       <p class="count-text">Total</p>
                   </div>
               </div> <!-- single service -->
@@ -176,7 +200,7 @@
                   <div class="service-content">
                       <h4 class="service-title"><a href="#contact">Certificate</a></h4>
                       <%-- <%= userCnt %> --%>
-                      <h2 class="counter-count" data-to="100" data-speed="1500"><%=userCnt%>></h2>
+                      <h2 class="counter-count" data-to="100" data-speed="1500"><%=certCnt%></h2>
                       <p>KISTI CA V4</p>
                   </div>
               </div> <!-- single service -->
@@ -188,7 +212,7 @@
                   </div>
                   <div class="service-content">
                       <h4 class="service-title"><a href="#">Revoked</a></h4>
-                      <h2 class="counter-count" data-to="100" data-speed="1500">112</h2>
+                      <h2 class="counter-count" data-to="100" data-speed="1500"><%=revokedCnt%></h2>
                       <p>KISTI CA V4</p>
                   </div>
               </div> <!-- single service -->
