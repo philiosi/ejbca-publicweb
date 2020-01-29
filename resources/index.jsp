@@ -90,7 +90,7 @@
           </div>
       </div> <!-- row -->
 
-    <%! String count=""; %>
+    <%! String count="15"; %>
     <%
     Class.forName("org.mariadb.jdbc.Driver");
 
@@ -99,8 +99,9 @@
     PreparedStatement stmt=null;
     ResultSet rs=null;    
     String userCnt=null;
-    %>
-    <%-- try{
+    
+    try{
+        out.print("<h2>"+ count +"</h2>");
         String jdbcDriver ="jdbc:mariadb://localhost:3306/ejbca";
         String dbUser="ejbca";
         String dbPass="ejbca";
@@ -112,10 +113,11 @@
         //3.Statement 생성
         stmt = conn.prepareStatement(query);
     } catch(SQLException e) {
-        out.print("Connection Error...");
+        out.print("<div>Connection Error...</div>");
         out.print(e.toString());
     }
-
+    %>
+    <%--
     try{
         stmt.setString(1, "userCount");
     } catch(SQLException e) {
