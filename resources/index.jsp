@@ -97,10 +97,9 @@
     <%
     Class.forName("org.mariadb.jdbc.Driver");
 
-
     Connection conn=null;
     PreparedStatement stmt=null;
-    ResultSet rs=null;    
+    ResultSet rs=null;
     String userCnt="";
     String query="";
     String jdbcDriver ="jdbc:mariadb://localhost:3306/ejbca";
