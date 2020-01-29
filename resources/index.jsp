@@ -98,14 +98,14 @@
     Connection conn=null;
     PreparedStatement stmt=null;
     ResultSet rs=null;    
-    String userCnt=null;
+    String userCnt="";
     
     try{
         out.print("<h2>"+ count +"</h2>");
         String jdbcDriver ="jdbc:mariadb://localhost:3306/ejbca";
         String dbUser="ejbca";
         String dbPass="ejbca";
-        String query="SELECT count(*) FROM UserData WHREE status='40'";
+        String query="SELECT count(*) as userCount FROM UserData WHREE status='40'";
 
         //2.데이터 베이스 커넥션 생성
     
