@@ -4,6 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> <!--for apply_main.jsp-->
 
 <%@ page import="java.sql.*" %>
+<%@ page import="org.mariadb.jdbc.Driver" %>
 <%-- <%@ page import="java.sql.DriverManager" %>
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.Statement" %>
