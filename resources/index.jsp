@@ -90,7 +90,7 @@
           </div>
       </div> <!-- row -->
 
-    <%! String count=null; %>
+    <%! String count=""; %>
     <%
     Class.forName("org.mariadb.jdbc.Driver");
 
@@ -99,8 +99,8 @@
     PreparedStatement stmt=null;
     ResultSet rs=null;    
     String userCnt=null;
-
-    try{
+    %>
+    <%-- try{
         String jdbcDriver ="jdbc:mariadb://localhost:3306/ejbca";
         String dbUser="ejbca";
         String dbPass="ejbca";
@@ -150,8 +150,7 @@
         if(rs!=null) try{rs.close(); }catch(SQLException ex) {}
         if(stmt!=null) try{stmt.close();} catch(SQLException ex) {}
         if(conn!=null) try{conn.close(); }catch(SQLException ex) {}   
-    }
-    %>
+    } --%>
 
       <div class="row text-justify">
           <div class="col-lg-4 col-md-6 col-sm-8">
@@ -161,7 +160,8 @@
                   </div>
                   <div class="service-content">
                       <h4 class="service-title"><a href="#">Enroll</a></h4>
-                      <h2 class="counter-count" data-to="100" data-speed="1500"><%= count %> </h2>
+                      <%-- <%= count %> --%>
+                      <h2 class="counter-count" data-to="100" data-speed="1500">150 </h2>
                       <p class="count-text">Total</p>
                   </div>
               </div> <!-- single service -->
@@ -173,7 +173,8 @@
                   </div>
                   <div class="service-content">
                       <h4 class="service-title"><a href="#contact">Certificate</a></h4>
-                      <h2 class="counter-count" data-to="100" data-speed="1500"><%= userCnt %></h2>
+                      <%-- <%= userCnt %> --%>
+                      <h2 class="counter-count" data-to="100" data-speed="1500">251</h2>
                       <p>KISTI CA V4</p>
                   </div>
               </div> <!-- single service -->
