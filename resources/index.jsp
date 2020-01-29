@@ -111,14 +111,14 @@
         conn = DriverManager.getConnection(jdbcDriver,dbUser,dbPass); 
         //3.Statement 생성
         stmt = conn.prepareStatement(query);
-    } catch(SQLException ex1) {
+    } catch(SQLException e) {
         out.print("Connection Error...");
         out.print(e.toString());
     }
 
     try{
         stmt.setString(1, "userCount");
-    } catch(SQLException ex2) {
+    } catch(SQLException e) {
         out.print("statement setString Error...");
         out.print(e.toString());
     }
@@ -126,7 +126,7 @@
     try{
         //4. 쿼리실행
         rs = stmt.executeQuery();
-    } catch(SQLException ex2) {
+    } catch(SQLException e) {
         out.print("executeQuery Error...");
         out.print(e.toString());
     }
@@ -134,14 +134,14 @@
     rs.next();
     try{
         userCnt = rs.getString("userCount");
-    } catch(SQLException ex2) {
+    } catch(SQLException e) {
         out.print("userCnt Error...");
         out.print(e.toString());
     }
 
     try{
         count = rs.getString("userCount");
-    } catch(SQLException ex2) {
+    } catch(SQLException e) {
         out.print("userCnt Error...");
         out.print(e.toString());
     }
