@@ -116,15 +116,16 @@
         out.print("<div>Connection Error...</div>");
         out.print(e.toString());
     }
-    %>
-    <%--
+    
+    
     try{
         stmt.setString(1, "userCount");
     } catch(SQLException e) {
         out.print("statement setString Error...");
         out.print(e.toString());
     }
-
+    %>
+    <%--
     try{
         //4. 쿼리실행
         rs = stmt.executeQuery();
@@ -163,7 +164,7 @@
                   <div class="service-content">
                       <h4 class="service-title"><a href="#">Enroll</a></h4>
                       <%-- <%= count %> --%>
-                      <h2 class="counter-count" data-to="100" data-speed="1500">150 </h2>
+                      <h2 class="counter-count" data-to="100" data-speed="1500"> <%=count%> </h2>
                       <p class="count-text">Total</p>
                   </div>
               </div> <!-- single service -->
