@@ -3,7 +3,7 @@
 <section id="certificates" class="service-area gray-bg pt-130 pb-25">
   <div class="container">
       <div class="row justify-content-center">
-          <div class="col-lg-12"> 
+          <div class="col-lg-8 col-md-11 col-sm-12"> 
               <div class="section-title text-center pb-30">
                   <h6 class="title" style="font-size:30px;">List certificates</h6>
                   <p>Enter the subject DN (e.g., &quot<code>c=SE, O=AnaTom, CN=foo</code>&quot;) to list a user's certificates.</p>
@@ -12,7 +12,7 @@
       </div>
       <div class="row justify-content-center">
           <div class="col-lg-8 col-md-11 col-sm-12">        
-              <div class="card text-center ml-75 mr-75">
+              <div class="card text-center ml-auto mr-auto">
                   <div class="card-header"> 
                       <h3 class="title"> DISTINGUISHED NAME </h3>
                   </div>

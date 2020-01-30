@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
-        <div class="section-title text-left pb-30 mr-55 ml-55">
+        <div class="section-title text-left pb-30 ml-auto mr-auto">
           <h3 class="title text-center" style="font-size:30px" >Fetch User's Certificate (latest)</h3>
           <p>Give subject DN to fetch users latest certificate.</p><br />
 
@@ -17,7 +17,7 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-8 col-md-11 col-sm-12">
-        <div class="card text-center mt-10 mr-55 ml-55">
+        <div class="card text-center mt-20 ml-auto mr-auto">
           <div class="card-header "> 
             <h3 class="title"> NAME </h3>
           </div>

@@ -38,7 +38,7 @@
                       <h4 class="sub-title">Welcome,</h4>
                       <h1 class="title">KISTI CA</h1>
                       <p>(KISTI Certification Authority)</p>
-                      <a class="main-btn" href="#certificates">REQUEST CERTIFICATES</a>
+                      <a class="main-btn" class="page-scroll" href="#certificates">REQUEST CERTIFICATES</a>
                   </div> <!-- header content right -->
               </div>
               <div class="col-lg-6 offset-xl-1">
@@ -210,7 +210,7 @@
                               </div>
                               <div class="info-text">
                                   <p><span class="main-btn-2">will be added current KISTI CA V4.0</span>
-                                      <a class="badge badge-light" data-toggle="modal"
+                                      <a class="badge badge-light" data-toggle="modal" type="button"
                                           data-target="#">details
                                       </a>
                                       : Apr, 2020 - </p>
@@ -224,7 +224,7 @@
                               </div>
                               <div class="info-text">
                                   <p><span class="main-btn-2">CP/CPS </span>
-                                      <a class="badge badge-light" data-toggle="modal"
+                                      <a class="badge badge-light emphasis" data-toggle="modal" type="button"
                                           data-target="#">details
                                       </a>
                                   </p>
@@ -244,7 +244,7 @@
                               </div>
                               <div class="info-text">
                                   <p><span class="main-btn-2">KISTI CA v3.0</span>
-                                      <a class="badge badge-light" data-toggle="modal"
+                                      <a class="badge badge-light" data-toggle="modal" type="button"
                                           data-target="#kisticav3">details</a>
                                       : Apr 14, 2017 - Apr 9, 2037 (for 20 years)</p>
                               </div>
@@ -257,7 +257,7 @@
                               </div>
                               <div class="info-text">
                                   <p><span>KISTI CA v2.0:</span>
-                                      <a class="badge badge-light" data-toggle="modal"
+                                      <a class="badge badge-light" data-toggle="modal" type="button"
                                           data-target="#kisticav2">details</a>
                                       Jul 12, 2007 - Aug 1, 2017 (for 20 years)</p>
                               </div>
@@ -270,7 +270,7 @@
                               </div>
                               <div class="info-text">
                                   <p><span>Production Level:</span>
-                                      <a class="badge badge-light" data-toggle="modal"
+                                      <a class="badge badge-light" data-toggle="modal" type="button"
                                           data-target="#productionLevel">details</a>
                                       Jun 1, 2004 - Nov 2006</p>
                               </div>

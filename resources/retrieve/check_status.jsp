@@ -13,7 +13,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-md-11 col-sm-12">        
-				<div class="card text-center ml-75 mr-75">
+				<div class="card text-center">
 					<div class="card-header"> 
 						<h3 class="title"> Certificate Data </h3>
 					</div>

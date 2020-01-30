@@ -23,7 +23,7 @@
                         starting with <code class="emphasis-mid"><b>-----BEGIN CERTIFICATE REQUEST-----</code></b><br />
                         and ending with <code class="emphasis-mid"><b>-----END CERTIFICATE REQUEST-----</code></b>
                 </p>        
-                <div class="card text-center mt-10 ml-45 mr-45">
+                <div class="card text-center mt-10 ml-auto mr-auto">
                     <div class="card-header "> 
                         <h3 class="title"> ENROLL </h3>
                     </div> <!-- card-header END -->

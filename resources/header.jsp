@@ -98,7 +98,7 @@
                                     <li class="nav-item"><a class="page-scroll" href="#register">registration</a></li>
                                     <li class="nav-item dropdown-submenu">
                                         <a class="page-scroll dropdown-toggle" href="#certificates" data-toggle="dropdown">CERTIFICATE</a>
-                                        <ul class="nav navbar-nav ml-auto dropdown-menu dropdown" style="border-top:none; border-bottom:none;">
+                                        <ul class="nav navbar-nav dropdown-menu dropdown" style="border-top:none; border-bottom:none;">
                                             <li class="nav-item dropdown-submenu">
                                                 <a href="#" class="dropdown-toggle sub" data-toggle="dropdown">Enroll</a>
                                                 <ul class="dropdown-menu dropdown menu-3rd" style="border-left:none; border-right:none;">
