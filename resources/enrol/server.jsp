@@ -15,10 +15,10 @@
         </div> <!-- row END -->
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-11 col-sm-12">
-                <p class="mr-45 ml-45">Please give your username and enrollment code, select a PEM- or DER-formated certification request file (CSR) for upload, 
+                <p class="mr-70 ml-70">Please give your username and enrollment code, select a PEM- or DER-formated certification request file (CSR) for upload, 
                     or paste a PEM-formated request into the field below and click OK to fetch your certificate. </p>
                 <br>
-                <p class="mr-45 ml-45">
+                <p class="mr-70 ml-70">
                         A PEM-formatted request is a BASE64 encoded certificate request <br />
                         starting with <code class="emphasis-mid"><b>-----BEGIN CERTIFICATE REQUEST-----</code></b><br />
                         and ending with <code class="emphasis-mid"><b>-----END CERTIFICATE REQUEST-----</code></b>
