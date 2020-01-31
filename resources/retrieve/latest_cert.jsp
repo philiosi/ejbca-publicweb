@@ -4,14 +4,13 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
-        <div class="section-title text-left pb-30 ml-auto mr-auto">
+        <div class="section-title text-left pb-0 ml-70 mr-70">
           <h3 class="title text-center" style="font-size:30px" >Fetch User's Certificate (latest)</h3>
-          <p>Give subject DN to fetch users latest certificate.</p><br />
-
           <p class="emphasis-mid"> Note that the order or case of element descriptors in the DN (C, O, CN, etc.) is unimportant.
           The case of elements themselves, on the other hand, <em>IS</em> important.
           </p>
           <p> For example, <code>cn=foo</code> is considered equal to <code>CN=foo</code> but different from <code>cn=FOO</code>.</p>
+          <p>Give subject DN to fetch users latest certificate.</p><br />
         </div>
       </div>
     </div>
