@@ -13,7 +13,7 @@
                 </div>
             </div>
         </div> <!-- row END -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="min-width:1200px;">
             <div class="col-lg-8 col-md-11 col-sm-12">
                 <p class="mr-70 ml-70">Please give your username and enrollment code, select a PEM- or DER-formated certification request file (CSR) for upload, 
                     or paste a PEM-formated request into the field below and click OK to fetch your certificate. </p>
