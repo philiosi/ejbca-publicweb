@@ -10,7 +10,8 @@
           The case of elements themselves, on the other hand, <em>IS</em> important.
           </p>
           <p> For example, <code>cn=foo</code> is considered equal to <code>CN=foo</code> but different from <code>cn=FOO</code>.</p>
-          <p>Give subject DN to fetch users latest certificate.</p><br />
+          </br>
+          <p style="margin-bottom:-20px;">Give subject DN to fetch users latest certificate.</p><br />
         </div>
       </div>
     </div>
