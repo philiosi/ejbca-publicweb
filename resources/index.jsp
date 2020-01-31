@@ -113,43 +113,45 @@
         out.print(e.toString());
     }
 
-    try{
-        // userCount status = 40
+    try{ // userCount status = 40
         query="SELECT count(*) as userCount FROM UserData WHERE status='40'";
         stmt = conn.prepareStatement(query);
-        stmt.addBatch();
-
-        // certificate Count status = 20 (not revoked)
-        query = "SELECT count(*) as certCount FROM CertificateData WHERE status='20'";
-        stmt = conn.prepareStatement(query);
-        stmt.addBatch();
-
-        // revoked certificate Count status = 40
-        query = "SELECT count(*) as revokedCount FROM CertificateData WHERE status='40'";
-        stmt = conn.prepareStatement(query);
-        stmt.addBatch();
-    }catch(SQLException e) {
-        out.print("addbatch Error...");
-        out.print(e.toString());
-    }
-
-    try{
-        rs = stmt.executeBatch();
-    }catch(SQLException e) {
-        out.print("executeBatch Error...");
-        out.print(e.toString());
-    }
-
-
-    try{
+        rs = stmt.executeQuery();
         rs.next();
         userCnt = rs.getString("userCount");
-        certCnt = rs.getString("certCount");
-        revokedCnt = rs.getString("revokedCount");
-    }catch(SQLException e) {
-        out.print("getString Error...");
+    } catch(SQLException e) {
+        out.print("executeQuery Error...");
         out.print(e.toString());
     }
+    
+    try{ // certificate Count status = 20 (not revoked)
+        stmt=null;
+        rs=null;
+
+        query = "SELECT count(*) as certCount FROM CertificateData WHERE status='20'";
+        stmt = conn.prepareStatement(query);
+        rs = stmt.executeQuery();
+        rs.next();
+        certCnt = rs.getString("certCount");
+    } catch(SQLException e) {
+        out.print("certCount Error...");
+        out.print(e.toString());
+    }
+
+    try{  // revoked certificate Count status = 40
+        stmt=null;
+        rs=null;
+
+        query = "SELECT count(*) as revokedCount FROM CertificateData WHERE status='40'";
+        stmt = conn.prepareStatement(query);
+        rs = stmt.executeQuery();
+        rs.next();
+        revokedCnt = rs.getString("revokedCount");
+    } catch(SQLException e) {
+        out.print("certCount Error...");
+        out.print(e.toString());
+    }
+    
     finally {
         if(rs!=null) try{rs.close(); }catch(SQLException ex) {}
         if(stmt!=null) try{stmt.close();} catch(SQLException ex) {}
