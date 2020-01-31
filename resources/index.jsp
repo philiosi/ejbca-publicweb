@@ -134,8 +134,7 @@
     }
 
     try{
-        stmt.executeBatch();
-        rs.next();
+        rs = stmt.executeBatch();
     }catch(SQLException e) {
         out.print("executeBatch Error...");
         out.print(e.toString());
@@ -143,6 +142,7 @@
 
 
     try{
+        rs.next();
         userCnt = rs.getString("userCount");
         certCnt = rs.getString("certCount");
         revokedCnt = rs.getString("revokedCount");
