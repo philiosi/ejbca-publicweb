@@ -799,7 +799,7 @@
     </div> <!-- container -->
 </section>
 
-<section id="reference" class="contact-area pt-125 pb-130 white-bg">
+<section id="reference" class="reference-area pt-125 pb-130 gray-bg">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -811,27 +811,29 @@
         </div> <!-- row -->
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="contact-box text-center mt-30">
-                    <div class="contact-icon">
-                        <i class="lni-map-marker"></i>
+                <div class="single-service text-center mt-30">
+                    <div class="certificate-package">
+                        <i class="lni-library"></i>
+                        <h4 class="package-title">Documents</h4>
                     </div>
-                    <div class="contact-content">
-                        <h6 class="contact-title">documents</h6>
-                        <ul>
-                            <li>doc1</li>
-                            <li>doc2</li>
-                            <li>doc3</li>
-                            <li>doc4</li>
-                        </ul>
+                    <div class="certificate-body">
+                        <div class="certificate-list">
+                            <ul class="text-left" style="margin-left:2.8rem;">
+                                <li>doc1</li>
+                                <li>doc2</li>
+                                <li>doc3</li>
+                                <li>doc4</li>
+                            </ul>
+                        </div>
                     </div>
                 </div> <!-- contact box -->
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="contact-box text-center mt-30">
-                    <div class="contact-icon">
+                <div class="single-service text-center mt-30">
+                    <div class="service-icon">
                         <i class="lni-phone"></i>
                     </div>
-                    <div class="contact-content">
+                    <div class="service-content">
                         <h6 class="contact-title">CA Sites</h6>
                         <ul>
                             <li>doc1</li>
