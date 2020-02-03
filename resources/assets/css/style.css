@@ -24,7 +24,7 @@
     8.CONTACT
     9.FOOTER
     10.PAGE BANNER
-    10.SINGLE BLOG PAGE
+    10.SINGLE reference PAGE
 
 -----------------------------------------------------------------------------------*/
 html{
@@ -1420,34 +1420,34 @@ p {
       color: #754ef9; }
 
 /*===========================
-       7.BLOG css 
+       7.reference css 
 ===========================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .blog-area {
+  .reference-area {
     padding-top: 90px;
     padding-bottom: 100px; } }
 @media (max-width: 767px) {
-  .blog-area {
+  .reference-area {
     padding-top: 70px;
     padding-bottom: 80px; } }
 
-.single-blog {
+.single-reference {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(152, 152, 152, 0.25);
   -moz-box-shadow: 0px 0px 15px 0px rgba(152, 152, 152, 0.25);
   box-shadow: 0px 0px 15px 0px rgba(152, 152, 152, 0.25);
   position: relative;
   border-radius: 5px;
   overflow: hidden; }
-  .single-blog .blog-image {
+  .single-reference .reference-image {
     overflow: hidden; }
-    .single-blog .blog-image img {
+    .single-reference .reference-image img {
       width: 100%;
       -webkit-transition: all 0.3s ease-out 0s;
       -moz-transition: all 0.3s ease-out 0s;
       -ms-transition: all 0.3s ease-out 0s;
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
-  .single-blog .blog-content {
+  .single-reference .reference-content {
     width: 75%;
     position: absolute;
     bottom: 0;
@@ -1460,9 +1460,9 @@ p {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s; }
     @media (max-width: 767px) {
-      .single-blog .blog-content {
+      .single-reference .reference-content {
         padding: 20px; } }
-    .single-blog .blog-content .blog-title a {
+    .single-reference .reference-content .reference-title a {
       font-size: 22px;
       font-weight: 600;
       padding-bottom: 5px;
@@ -1473,9 +1473,9 @@ p {
       transition: all 0.3s ease-out 0s;
       color: #32333c; }
       @media (max-width: 767px) {
-        .single-blog .blog-content .blog-title a {
+        .single-reference .reference-content .reference-title a {
           font-size: 18px; } }
-    .single-blog .blog-content span {
+    .single-reference .reference-content span {
       font-size: 16px;
       color: #8a8fa3;
       -webkit-transition: all 0.3s ease-out 0s;
@@ -1483,17 +1483,17 @@ p {
       -ms-transition: all 0.3s ease-out 0s;
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
-  .single-blog:hover .blog-image img {
+  .single-reference:hover .reference-image img {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2); }
-  .single-blog:hover .blog-content {
+  .single-reference:hover .reference-content {
     background-color: #754ef9; }
-    .single-blog:hover .blog-content .blog-title a {
+    .single-reference:hover .reference-content .reference-title a {
       color: #fff; }
-    .single-blog:hover .blog-content span {
+    .single-reference:hover .reference-content span {
       color: #fff; }
 
 /*===========================

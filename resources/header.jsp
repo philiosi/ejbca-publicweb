@@ -126,7 +126,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#site">Reference</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#reference">Reference</a></li>
                                 </ul>
                             </div> <!-- navbar collapse -->
                           <%-- <div class="collapse navbar-collapse" id="navbarSupportedContent">

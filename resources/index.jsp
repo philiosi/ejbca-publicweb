@@ -799,6 +799,53 @@
     </div> <!-- container -->
 </section>
 
+<section id="reference" class="contact-area pt-125 pb-130 white-bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center pb-25">
+                    <h2 class="title">Reference</h2>
+                    <p>related CA sites and documents</p>
+                </div> <!-- section title -->
+            </div>
+        </div> <!-- row -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="contact-box text-center mt-30">
+                    <div class="contact-icon">
+                        <i class="lni-map-marker"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h6 class="contact-title">documents</h6>
+                        <ul>
+                            <li>doc1</li>
+                            <li>doc2</li>
+                            <li>doc3</li>
+                            <li>doc4</li>
+                        </ul>
+                    </div>
+                </div> <!-- contact box -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="contact-box text-center mt-30">
+                    <div class="contact-icon">
+                        <i class="lni-phone"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h6 class="contact-title">CA Sites</h6>
+                        <ul>
+                            <li>doc1</li>
+                            <li>doc2</li>
+                            <li>doc3</li>
+                            <li>doc4</li>
+                        </ul>
+                    </div>
+                </div> <!-- contact box -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>
+
 <!--====== CONTACT PART ENDS ======-->
 
 <%@ include file="footer.inc" %>

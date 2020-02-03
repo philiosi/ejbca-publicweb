@@ -123,7 +123,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item"><a class="page-scroll" href="../index.jsp#contact">Contact</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="../index.jsp#site">Reference</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="../index.jsp#reference">Reference</a></li>
                                 </ul>
                           </div> <!-- navbar collapse -->
                           <%-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
