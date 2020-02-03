@@ -799,7 +799,7 @@
     </div> <!-- container -->
 </section>
 
-<section id="reference" class="certificate-area pt-125 pb-130 gray-bg">
+<section id="reference" class="reference-area pt-125 pb-130 gray-bg">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -811,36 +811,34 @@
         </div> <!-- row -->
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="single-certificate text-center mt-30">
-                    <div class="certificate-package">
-                        <h4 class="package-title"><i class="lni-library icon"></i>Documents</h4>
+                <div class="single-service text-center mt-30">
+                    <div class="service-icon">
+                        <i class="lni-library icon"></i>
                     </div>
-                    <div class="certificate-body">
-                        <div class="certificate-list">
-                            <ul class="text-left" style="margin-left:2.8rem;">
-                                <li>doc1</li>
-                                <li>doc2</li>
-                                <li>doc3</li>
-                                <li>doc4</li>
-                            </ul>
-                        </div>
+                    <div class="service-content">
+                        <h4 class="service-title">Documents</h4>
+                        <ul class="text-left" style="margin-left:2.8rem;">
+                            <li>doc1</li>
+                            <li>doc2</li>
+                            <li>doc3</li>
+                            <li>doc4</li>
+                        </ul>
                     </div>
                 </div> <!-- single certificate -->
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="single-certificate text-center mt-30">
-                    <div class="certificate-package">
-                        <h4 class="package-title"><i class="lni-bookmark-alt icon"></i>CA Sites</h4>
+           <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="single-service text-center mt-30">
+                    <div class="service-icon">
+                        <i class="lni-bookmark-alt icon"></i>
                     </div>
-                    <div class="certificate-body">
-                        <div class="certificate-list">
-                            <ul class="text-left" style="margin-left:2.8rem;">
-                                <li>site1</li>
-                                <li>site2</li>
-                                <li>site3</li>
-                                <li>site4</li>
-                            </ul>
-                        </div>
+                    <div class="service-content">
+                        <h4 class="service-title">CA Sites</h4>
+                        <ul class="text-left" style="margin-left:2.8rem;">
+                            <li>site1</li>
+                            <li>site2</li>
+                            <li>site3</li>
+                            <li>site4</li>
+                        </ul>
                     </div>
                 </div> <!-- single certificate -->
             </div>
