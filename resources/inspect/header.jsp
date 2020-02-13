@@ -20,7 +20,8 @@
     <title>Enroll < KISTI CA</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
+    <%-- <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png"> --%>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
 
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
