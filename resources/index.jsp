@@ -804,7 +804,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="section-title text-center pb-25">
-                    <h2 class="title">Reference</h2>
+                    <h2 class="title">REFERENCE</h2>
                     <p>related CA sites and documents</p>
                 </div> <!-- section title -->
             </div>
